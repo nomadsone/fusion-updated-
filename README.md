@@ -29,7 +29,7 @@ Maintained by **Palawan Collective** — a digital agency.
 | UI | **React** | 19.2.4 |
 | Language | **TypeScript** — `strict: true`, `moduleResolution: bundler` | 5.x |
 | Styling | **Tailwind CSS** via `@tailwindcss/postcss` | v4 |
-| Runtime | Node.js (CI & Docker use 22, `engines.node >= 20.9.0`) | ≥ 20.9.0 |
+| Runtime | Node.js — CI and Docker use **22**; Next 16 itself requires ≥ 20.9.0 | 22 |
 | Path alias | `@/*` → repo root (`tsconfig.json` `paths`) | — |
 
 ### Data
@@ -39,7 +39,7 @@ Maintained by **Palawan Collective** — a digital agency.
 | Database | **PostgreSQL 18** on **Neon (Lakebase)** | region `aws-ap-southeast-1` |
 | ORM | **Drizzle ORM** 0.45.1 + **drizzle-kit** 0.31.10 | schema: `lib/db/schema.ts` (49 tables) |
 | Driver | **`@neondatabase/serverless`** 1.0.2 — `neon()` HTTP driver | pooled `-pooler` host |
-| Migrations | SQL migrations in `drizzle/` | apply with `npm run db:push` |
+| Migrations | SQL migrations in `drizzle/` | **push-based**: `npm run db:push` (no `migrate` script) |
 | Config | `drizzle.config.ts` reads `DATABASE_URL` from `.env.local` | `dialect: "postgresql"` |
 | Infra-as-code | **`neon.ts`** (`@neon/config`) + `.neon` project link | `neon deploy` |
 
@@ -49,11 +49,13 @@ Maintained by **Palawan Collective** — a digital agency.
 | --- | --- |
 | Auth / sessions | Custom JWT sessions signed with **`jose`** — `fc_session` cookie, 30-day TTL, roles `admin` \| `employee`. Guarded by `middleware.ts` and `lib/auth.ts` |
 | Validation | **Zod** 4.x (`lib/validations/`) |
-| Server state | **TanStack React Query** 5.x |
-| Server mutations | Next.js **Server Actions** (`lib/actions/`) |
+| Data reading | Server Components query Drizzle directly (no client cache layer) |
+| Server mutations | Next.js **Server Actions** — 14 modules in `lib/actions/` |
+| Client data | `fetch()` against the REST API, with SSE streaming for chat / skill runs |
 | API surface | **112 REST route handlers** under `app/api/` |
-| Forms | **react-hook-form** |
 | Background jobs | `app/api/cron/` + `cron-jobs` module |
+
+> **Note:** `@tanstack/react-query`, `react-hook-form` and `resend` are present in `package.json` but **not imported anywhere** — they are unused dependencies, not active parts of the stack.
 
 ### UI
 
@@ -77,7 +79,7 @@ Maintained by **Palawan Collective** — a digital agency.
 | OpenAI | — | `/voice` (Realtime API), whisper transcription |
 | fal.ai | `@fal-ai/client` | Image generation |
 | Google Workspace | `googleapis` | Gmail, Calendar, Contacts |
-| Resend | `resend` | Transactional email |
+| Resend | `resend` | ⚠️ installed but **never imported** — email not wired up |
 | Vercel Blob | `@vercel/blob` | Studio file uploads |
 | WordPress | custom (`lib/wordpress/`) | Publishing target |
 | upload-post | `upload-post` | Social publishing |
@@ -197,21 +199,24 @@ npm run db:push                     # drizzle-kit push
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `DATABASE_URL` | ✅ | Neon Postgres connection string (use the `-pooler` host) |
-| `SESSION_SECRET` | ✅ | Signs JWT session cookies |
+| `SESSION_SECRET` | ✅ | Signs JWT session cookies (fallback chain: `SESSION_SECRET` → `MCP_API_KEY` → `OWNER_PASSWORD`) |
 | `OWNER_PASSWORD` | ✅ in prod | Initial owner login — **503s without it on Vercel** |
 | `OWNER_NAME`, `OWNER_EMAIL` | ✅ in prod | Seed owner profile |
 | `MCP_API_KEY` | ✅ for MCP | Agent access key |
-| `ENCRYPTION_KEY` | ✅ | Encrypts user-supplied API keys in Settings vault |
+| `ENCRYPTION_KEY` | ✅ | 64-char hex AES-256-GCM key for the Settings vault |
+| `WP_ENCRYPTION_KEY` | ✅ for WordPress | 64-char hex key for stored WP site credentials |
 | `NEXT_PUBLIC_APP_URL` | ✅ | Canonical app URL |
 | `OPENROUTER_API_KEY` | for AI features | Skills, council, chat, reflection loop |
 | `OPENAI_API_KEY` | optional | `/voice` Realtime API + transcription |
 | `FAL_KEY` | optional | Image generation |
-| `RESEND_API_KEY` | optional | Transactional email |
+| `RESEND_API_KEY` | optional | ⚠️ referenced by the integrations route only — `resend` is never imported |
 | `BLOB_READ_WRITE_TOKEN` | optional | Studio file uploads |
 | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | optional | Google Workspace integration |
-| `NEXT_PUBLIC_DEMO_MODE` / `NEXT_PUBLIC_DEMO_URL` | optional | Public demo mode |
+| `WIKI_QUERY_MODEL`, `WIKI_INGEST_MODEL` | optional | Wiki Brain model override (default `anthropic/claude-sonnet-4`) |
+| `NEXT_PUBLIC_DEMO_MODE` / `NEXT_PUBLIC_DEMO_URL` | optional | Read-only public demo mode |
+| `NEXT_PUBLIC_HAS_OPENAI` | optional | Toggles OpenAI hints on `/voice` (build-time; never set by code) |
 
-Full reference: [`docs/reference/env-vars.md`](docs/reference/env-vars.md)
+> `docs/reference/env-vars.md` is still a "coming soon" placeholder, so the table above is derived from the code. Sources: `.env.local.example`, `.env.example`, `scripts/onboard.ts`, `docker-compose.yml`, and `process.env` greps across `app/`, `lib/`, `middleware.ts` and `mcp-server/`.
 
 ### Scripts
 
