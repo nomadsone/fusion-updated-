@@ -58,3 +58,6 @@ LAUNCH-CHECKLIST.md
 WHATS-NEW.md
 LAUNCH_PLAN.md
 .neon
+
+.vercel
+.env*
