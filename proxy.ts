@@ -92,7 +92,7 @@ export default async function proxy(req: NextRequest) {
   if (DEMO_MODE) {
     if (isApi(pathname) && !DEMO_READ_METHODS.has(req.method) && !DEMO_WRITE_ALLOW.some((re) => re.test(pathname))) {
       return NextResponse.json(
-        { error: 'This is a read-only demo of FusionClaw. Nothing is saved here. Get your own instance at https://fusionclaw.app/#pricing.' },
+        { error: 'This is a read-only demo of Palawan Collective. Nothing is saved here. Get your own instance at https://fusionclaw.app/#pricing.' },
         { status: 403, headers: { 'x-fusionclaw-demo': 'read-only' } },
       )
     }

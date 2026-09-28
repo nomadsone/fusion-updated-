@@ -11,7 +11,7 @@ function getDb(): Db {
   const url = process.env.DATABASE_URL;
   if (!url) {
     throw new Error(
-      "FusionClaw: DATABASE_URL is not set.\n" +
+      "Palawan Collective: DATABASE_URL is not set.\n" +
         "  → Run `npm run onboard` to configure your environment, OR\n" +
         "  → Copy .env.example to .env.local and fill in your Neon connection string.\n" +
         "  → Free Neon database: https://neon.tech"

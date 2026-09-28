@@ -1,6 +1,6 @@
 <div align="center">
 
-# FusionClaw
+# Palawan Collective
 
 ### All hustle. No luck. One database.
 

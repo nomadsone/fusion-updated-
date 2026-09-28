@@ -10,9 +10,9 @@ Then AI agents arrived — but they can only see what you connect them to. If yo
 
 What if everything lived in one place?
 
-FusionClaw puts CRM, operations, content creation, marketing, and bookkeeping into a single dark-mode dashboard backed by one database. Then it exposes the entire platform through 234 MCP tools — so any AI agent (Claude Code, OpenClaw, custom agents) can read, write, and automate across your whole business with a single API key.
+Palawan Collective puts CRM, operations, content creation, marketing, and bookkeeping into a single dark-mode dashboard backed by one database. Then it exposes the entire platform through 234 MCP tools — so any AI agent (Claude Code, OpenClaw, custom agents) can read, write, and automate across your whole business with a single API key.
 
-Your AI doesn't need 10 integrations. It needs one: FusionClaw.
+Your AI doesn't need 10 integrations. It needs one: Palawan Collective.
 
 ## Who This Is For
 
@@ -31,7 +31,7 @@ Your AI doesn't need 10 integrations. It needs one: FusionClaw.
 
 **Self-hostable.** Your data stays on your infrastructure. Clone the repo, set your env vars, deploy to Vercel or run it locally. No vendor lock-in.
 
-**White-label ready.** FusionClaw is a template. Fork it, rebrand it, sell it to your clients. The architecture is designed to be customized, not just consumed.
+**White-label ready.** Palawan Collective is a template. Fork it, rebrand it, sell it to your clients. The architecture is designed to be customized, not just consumed.
 
 ## Where We're Going
 

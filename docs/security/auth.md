@@ -1,11 +1,11 @@
 ---
 title: Authentication
-summary: How auth works in FusionClaw — localhost trust, OWNER_PASSWORD, MCP API key, and the security model behind each.
+summary: How auth works in Palawan Collective — localhost trust, OWNER_PASSWORD, MCP API key, and the security model behind each.
 ---
 
 # Authentication
 
-FusionClaw has **no third-party auth provider.** No Clerk, no Auth0, no NextAuth, no signup with anyone but yourself. The auth model is deliberately simple:
+Palawan Collective has **no third-party auth provider.** No Clerk, no Auth0, no NextAuth, no signup with anyone but yourself. The auth model is deliberately simple:
 
 - **Localhost** is trusted. No login screen.
 - **Deployed** instances gate the web UI on a single `OWNER_PASSWORD` env var.
@@ -81,7 +81,7 @@ If `OWNER_PASSWORD` is not set on a deployed instance, `/api/auth/login` returns
 
 Optional. Owners stay single-user by default.
 
-When the owner adds an employee from `/employees`, the system generates a one-time invite token (random 32 bytes, base64url encoded) stored in the `users` table as the employee's `auth_id`. The owner shares the invite link with the employee out-of-band (email, Signal, Slack — not FusionClaw's problem).
+When the owner adds an employee from `/employees`, the system generates a one-time invite token (random 32 bytes, base64url encoded) stored in the `users` table as the employee's `auth_id`. The owner shares the invite link with the employee out-of-band (email, Signal, Slack — not Palawan Collective's problem).
 
 The employee clicks the link, the server verifies the token, issues a signed cookie, and the employee is now authenticated as themselves with `role = 'employee'`. They have a subset of admin's permissions.
 
@@ -134,7 +134,7 @@ The files that define the perimeter:
 | `app/api/auth/logout/route.ts` | Cookie clearing |
 | `.env.local` | Where the secrets live |
 
-When auditing FusionClaw security, start with these four. Don't trust any other code claiming to "verify" auth without going through these.
+When auditing Palawan Collective security, start with these four. Don't trust any other code claiming to "verify" auth without going through these.
 
 ---
 

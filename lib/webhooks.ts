@@ -31,8 +31,8 @@ export async function fireOutboundWebhooks(event: string, payload: Record<string
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              "X-FusionClaw-Event": event,
-              "X-FusionClaw-Webhook-Id": sub.id,
+              "X-Palawan Collective-Event": event,
+              "X-Palawan Collective-Webhook-Id": sub.id,
             },
             body: JSON.stringify({ event, payload, timestamp: new Date().toISOString() }),
             signal: AbortSignal.timeout(10_000),

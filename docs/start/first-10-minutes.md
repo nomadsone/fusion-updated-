@@ -17,7 +17,7 @@ npm run dev
 
 Visit [http://localhost:3000](http://localhost:3000).
 
-**What you should see:** the FusionClaw landing page — dark mode, parallax hero, install snippet, feature grid.
+**What you should see:** the Palawan Collective landing page — dark mode, parallax hero, install snippet, feature grid.
 
 **Click `Live Demo` in the nav.** You'll be routed straight to `/dashboard`. **No login required on localhost** — the middleware trusts your machine.
 
@@ -84,7 +84,7 @@ Open `~/.claude/mcp_servers.json` (create if it doesn't exist). Add:
   "mcpServers": {
     "fusionclaw": {
       "command": "node",
-      "args": ["/absolute/path/to/FusionClaw/mcp-server/dist/index.js"],
+      "args": ["/absolute/path/to/Palawan Collective/mcp-server/dist/index.js"],
       "env": {
         "MCP_API_KEY": "fusionclaw_sk_live_...",
         "DATABASE_URL": "postgresql://..."
@@ -119,7 +119,7 @@ Add an OpenRouter key here, then go to `/chat` and test the assistant. It now ha
 ## You're set up
 
 What you have right now:
-- A working FusionClaw instance on localhost
+- A working Palawan Collective instance on localhost
 - One lead in the CRM
 - One task in the kanban
 - One wiki page with a wikilink

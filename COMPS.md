@@ -11,7 +11,7 @@ they pay, and who are they paying?**
 
 ## 1. The category actually being entered
 
-FusionClaw is no longer competing with client-ops suites. That comparison was lost before it
+Palawan Collective is no longer competing with client-ops suites. That comparison was lost before it
 started — HoneyBook, Bonsai and Moxie all ship proposals, contracts, e-signature and a client
 portal that this does not have, from $12 to $36 a month. That verdict stands and is recorded in
 §5 so nobody re-litigates it.
@@ -22,7 +22,7 @@ The category it is in is **governed MCP access to business records**, and it has
 |---|---|---|
 | **Bundled into the app** — the vendor owns the data and ships an MCP endpoint over it | Twenty, HoneyBook, Odoo (first-party modules) | Included in a seat that already costs $9–$59 |
 | **Third-party governed gateway** — somebody else's MCP server in front of somebody else's ERP | Pantalytics MCP Pro (Odoo), MuK, various Odoo App Store modules | €0 free tier, €25–€100 per user per month |
-| **Own the data and the server** — one instance, one database, one business | FusionClaw. Twenty self-hosted with the community MCP server is the nearest thing | £0 licence, cost of hosting |
+| **Own the data and the server** — one instance, one database, one business | Palawan Collective. Twenty self-hosted with the community MCP server is the nearest thing | £0 licence, cost of hosting |
 
 The middle row is the one to price against, because it is the only row selling *governance* as
 the product rather than as a checkbox.
@@ -52,7 +52,7 @@ the product rather than as a checkbox.
 - published rate limits (Twenty, per minute; Pantalytics, per day)
 - one-line install into an MCP client
 
-FusionClaw v1 shipped **none** of these, while its landing page promised "guardrails and context
+Palawan Collective v1 shipped **none** of these, while its landing page promised "guardrails and context
 control". That was the whole gap and it is closed. It is not, however, a differentiator any more
 — it is admission price.
 
@@ -64,7 +64,7 @@ control". That was the whole gap and it is closed. It is not, however, a differe
    before you say yes is different in kind from "are you sure?".
 2. **Scope-filtered `tools/list`.** Every comp authorises at call time. None found filters the
    tool list, so a read-only agent is still handed the full catalogue and spends its context on
-   tools it will be refused. FusionClaw hands a read-only key 77 tools, not 276.
+   tools it will be refused. Palawan Collective hands a read-only key 77 tools, not 276.
 3. **Not metered.** Pantalytics charges by calls per day and Composio by calls per month. An
    agent's call count is not correlated with the value it produced — a single "close the month"
    run can be four hundred calls. Metering an agent is metering the wrong thing, and everyone
@@ -89,7 +89,7 @@ control". That was the whole gap and it is closed. It is not, however, a differe
 | Bonsai Premium | $39/user/mo | No AI on any plan |
 | Pantalytics MCP Pro Max | **€100/user/mo** | 10,000 calls/day |
 | HoneyBook Premium | $129/mo | |
-| **FusionClaw, as it was priced** | **$99/mo** | Single tenant, hand-provisioned, no scopes, no audit |
+| **Palawan Collective, as it was priced** | **$99/mo** | Single tenant, hand-provisioned, no scopes, no audit |
 
 The old $99 sat above HoneyBook Essentials and just under Pantalytics Max, while shipping less
 governance than the €0 Odoo module. There was no reading of this table in which it was the right
@@ -99,7 +99,7 @@ number.
 
 ## 5. The verdict that has not changed
 
-As a **solo-operator ops suite**, FusionClaw still cannot compete, and this file does not argue
+As a **solo-operator ops suite**, Palawan Collective still cannot compete, and this file does not argue
 otherwise. It has no proposals, no contracts, no e-signature, no client portal and no self-serve
 signup, against Moxie at $12, Bonsai at $15 and HoneyBook at $36 — all of which have all of them.
 That comparison is settled. The front page now says so out loud in "What this is not".

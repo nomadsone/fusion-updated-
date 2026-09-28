@@ -1,6 +1,6 @@
-# FusionClaw MCP Tools Reference
+# Palawan Collective MCP Tools Reference
 
-This document lists all 234 tools available in the FusionClaw MCP Server.
+This document lists all 234 tools available in the Palawan Collective MCP Server.
 
 ## Table of Contents
 

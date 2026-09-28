@@ -13,13 +13,13 @@
     "openclaw",
     "claude"
   ],
-  "homepage": "https://github.com/Fusion-Data-Company/FusionClaw#readme",
+  "homepage": "https://github.com/Fusion-Data-Company/Palawan Collective#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fusion-Data-Company/FusionClaw.git",
+    "url": "git+https://github.com/Fusion-Data-Company/Palawan Collective.git",
     "directory": "mcp-server"
   },
-  "bugs": "https://github.com/Fusion-Data-Company/FusionClaw/issues",
+  "bugs": "https://github.com/Fusion-Data-Company/Palawan Collective/issues",
   "license": "MIT",
   "author": "Fusion Data Company <rob@fusiondataco.com>",
   "type": "module",

@@ -30,7 +30,7 @@ export const TEMPLATES: SkillTemplate[] = [
   {
     id: "karpathy/icp-score-v3",
     authorHandle: "karpathy",
-    authorName: "FusionClaw Core",
+    authorName: "Palawan Collective Core",
     name: "ICP Fit Score (v3)",
     description: "Rates a lead 1-10 against an ICP rubric with a factor breakdown. Returns a generative-UI scorecard.",
     category: "qualification",
@@ -90,7 +90,7 @@ Return ONLY this JSON shape:
   {
     id: "karpathy/cold-email-opener",
     authorHandle: "karpathy",
-    authorName: "FusionClaw Core",
+    authorName: "Palawan Collective Core",
     name: "Cold Email Opener",
     description: "60-word first-touch email — one specific observation, one soft ask, no links. Returns email-preview UI.",
     category: "outreach",
@@ -135,7 +135,7 @@ Return ONLY JSON:
   {
     id: "karpathy/company-intel-brief",
     authorHandle: "karpathy",
-    authorName: "FusionClaw Core",
+    authorName: "Palawan Collective Core",
     name: "Company Intel Brief",
     description: "Browses a company URL, returns a structured intel card with hooks, key people, recent signals.",
     category: "research",
@@ -174,7 +174,7 @@ If you can't find something, omit that field. Don't fabricate names or news.`,
   {
     id: "karpathy/inbound-triage",
     authorHandle: "karpathy",
-    authorName: "FusionClaw Core",
+    authorName: "Palawan Collective Core",
     name: "Inbound Lead Triage",
     description: "Classifies an inbound contact-form submission as hot/warm/spam/wrong-fit with rationale.",
     category: "qualification",
@@ -208,7 +208,7 @@ Return ONLY this JSON:
   {
     id: "karpathy/blog-post-from-outline",
     authorHandle: "karpathy",
-    authorName: "FusionClaw Core",
+    authorName: "Palawan Collective Core",
     name: "Blog Post from Outline",
     description: "1200-word HTML blog post from a 5-bullet outline. Matches brand voice. Used by Content Studio.",
     category: "content",
@@ -243,7 +243,7 @@ Rules:
   {
     id: "karpathy/daily-pipeline-digest",
     authorHandle: "karpathy",
-    authorName: "FusionClaw Core",
+    authorName: "Palawan Collective Core",
     name: "Daily Pipeline Digest",
     description: "Scans last 24h of pipeline activity, summarizes wins/losses/stalls in 5 bullets. For 8am cron.",
     category: "ops",

@@ -1,6 +1,6 @@
 ---
 title: resend integration
-summary: How FusionClaw uses resend — full content coming in v1.0.x docs polish pass.
+summary: How Palawan Collective uses resend — full content coming in v1.0.x docs polish pass.
 ---
 
 # resend

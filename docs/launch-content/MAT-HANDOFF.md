@@ -1,6 +1,6 @@
-# Mat — FusionClaw Launch Handoff
+# Mat — Palawan Collective Launch Handoff
 
-> **For Mat (and his Claude / Cowork session):** This is a one-document context dump. Paste it into your Cowork session, or save it as `CLAUDE.md` in a working folder. After reading it, Mat's Claude has everything it needs to drive the FusionClaw social-media launch campaign.
+> **For Mat (and his Claude / Cowork session):** This is a one-document context dump. Paste it into your Cowork session, or save it as `CLAUDE.md` in a working folder. After reading it, Mat's Claude has everything it needs to drive the Palawan Collective social-media launch campaign.
 >
 > **Author:** Rob Yeager · **For:** Mat · **Date:** 2026-04-27 · **Status:** Repo is live, public, v1.0.0 tagged. Social/announcement side is yours.
 
@@ -8,13 +8,13 @@
 
 ## TL;DR — what this hand-off is
 
-Rob is the developer. He just shipped FusionClaw v1.0.0 and made the GitHub repo public. The code, docs, README, and v1.0.0 release are done. **Mat is taking over the launch announcement side** — social media posts, channel coordination, response management, community building.
+Rob is the developer. He just shipped Palawan Collective v1.0.0 and made the GitHub repo public. The code, docs, README, and v1.0.0 release are done. **Mat is taking over the launch announcement side** — social media posts, channel coordination, response management, community building.
 
 You don't write code. You don't change the repo. You drive **the megaphone**.
 
 ---
 
-## What FusionClaw is (60-second version)
+## What Palawan Collective is (60-second version)
 
 **Tagline:** *All hustle. No luck. One database.*
 
@@ -28,16 +28,16 @@ You don't write code. You don't change the repo. You drive **the megaphone**.
 - AI-first operators who want their agent to actually *do* things
 - Developers who want a self-hostable platform they can fork
 
-**How it relates to OpenClaw:** OpenClaw is the assistant that messages you across chat platforms. FusionClaw is the **business** that assistant operates on. They complement each other — never frame as competitive.
+**How it relates to OpenClaw:** OpenClaw is the assistant that messages you across chat platforms. Palawan Collective is the **business** that assistant operates on. They complement each other — never frame as competitive.
 
 ---
 
 ## What's already done (don't redo)
 
-✅ GitHub repo is **public** at https://github.com/Fusion-Data-Company/FusionClaw
+✅ GitHub repo is **public** at https://github.com/Fusion-Data-Company/Palawan Collective
 ✅ License is **MIT**
 ✅ Default branch is `main`
-✅ **v1.0.0 release** is live at https://github.com/Fusion-Data-Company/FusionClaw/releases/tag/v1.0.0 with the full CHANGELOG body
+✅ **v1.0.0 release** is live at https://github.com/Fusion-Data-Company/Palawan Collective/releases/tag/v1.0.0 with the full CHANGELOG body
 ✅ README is polished with new tagline + agent-native features section
 ✅ Repo description + topics set
 ✅ Launch decisions all locked in `memory/fusionclaw_launch_plan.md` and `docs/agent-protocols/fusionclaw_launch_plan.md`
@@ -228,8 +228,8 @@ The big rule: **truth always.** Rob does not accept "looks great" or "should wor
 
 | Thing | Path |
 |---|---|
-| The repo | https://github.com/Fusion-Data-Company/FusionClaw |
-| Live release | https://github.com/Fusion-Data-Company/FusionClaw/releases/tag/v1.0.0 |
+| The repo | https://github.com/Fusion-Data-Company/Palawan Collective |
+| Live release | https://github.com/Fusion-Data-Company/Palawan Collective/releases/tag/v1.0.0 |
 | Marketing domain | https://fusionclaw.app (DNS set, no content yet) |
 | Demo domain | https://demo.fusionclaw.app (DNS NOT routed yet — TODO) |
 | Docs domain | https://docs.fusionclaw.app (DNS NOT routed yet — TODO) |
@@ -243,8 +243,8 @@ The big rule: **truth always.** Rob does not accept "looks great" or "should wor
 
 To get the latest of any of these:
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 ls docs/launch-content/
 ```
 
@@ -252,7 +252,7 @@ ls docs/launch-content/
 
 ## Founder bio (for press / podcasts / journalists)
 
-> **Rob Yeager** is the founder of [Fusion Data Company](https://fusiondataco.com), an AI-native platform agency. We build business operating systems for small businesses and agencies — the platforms our clients' AI agents operate on. **FusionClaw** is the open-source foundation behind every project we ship. Released April 2026 under MIT.
+> **Rob Yeager** is the founder of [Fusion Data Company](https://fusiondataco.com), an AI-native platform agency. We build business operating systems for small businesses and agencies — the platforms our clients' AI agents operate on. **Palawan Collective** is the open-source foundation behind every project we ship. Released April 2026 under MIT.
 
 Contact: rob@fusiondataco.com
 
@@ -270,7 +270,7 @@ If Mat's Claude has a question that isn't answered here:
 
 ## One last thing
 
-**Rob worked through 30+ rounds of conversation to get FusionClaw to v1.0.0.** The protocols, the decisions, the launch plan are all the product of real iteration. **Honor them.** Don't second-guess the tagline, the channel mix, the Karpathy framing, the "no third-party auth" positioning, or the mascot universe — these are deliberate.
+**Rob worked through 30+ rounds of conversation to get Palawan Collective to v1.0.0.** The protocols, the decisions, the launch plan are all the product of real iteration. **Honor them.** Don't second-guess the tagline, the channel mix, the Karpathy framing, the "no third-party auth" positioning, or the mascot universe — these are deliberate.
 
 Mat: build the megaphone. Run point on community. Keep the truth-first protocol intact.
 

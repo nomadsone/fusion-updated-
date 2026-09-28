@@ -32,7 +32,7 @@ Rewrite the content to:
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
         "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-        "X-Title": "FusionClaw",
+        "X-Title": "Palawan Collective",
       },
       body: JSON.stringify({
         model: "anthropic/claude-sonnet-4",

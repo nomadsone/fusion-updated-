@@ -17,19 +17,19 @@ Two YouTube videos for launch. Both go live the moment you flip the repo public.
 | 0:00 | Black → mascot artwork appears (B.Y.O.A. + diamonds) | "FUSIONCLAW" | bass drop |
 | 0:02 | Mascot art holds, tagline appears | "All hustle. No luck. One database." | bass continues |
 | 0:04 | Cut to clean Mac terminal, no commands typed | "Day 1. Empty laptop." | beat |
-| 0:06 | Type at terminal speed | `git clone https://github.com/Fusion-Data-Company/FusionClaw.git && cd FusionClaw && npm install` | typing keys |
+| 0:06 | Type at terminal speed | `git clone https://github.com/Fusion-Data-Company/Palawan Collective.git && cd Palawan Collective && npm install` | typing keys |
 | 0:10 | Press Return. npm install streams | "cloning repo… installing deps…" | progress sounds |
-| 0:18 | Onboard wizard ASCII banner appears | "FusionClaw onboard wizard" | clean tone |
+| 0:18 | Onboard wizard ASCII banner appears | "Palawan Collective onboard wizard" | clean tone |
 | 0:21 | Wizard prompts for DATABASE_URL, paste a Neon URL | "Paste your Neon database URL" | typing |
 | 0:25 | Hit Enter, optional API keys (OpenRouter, fal.ai) — skip both | "Optional keys — skip for now" | beat |
 | 0:29 | Wizard generates MCP API key + session secret + encryption key | "Auto-generates MCP API key" | progress |
 | 0:33 | drizzle-kit push runs, shows the migrations | "Schema migrating to your DB" | progress |
-| 0:38 | Wizard ends with "Your FusionClaw instance is ready!" + the MCP key in cyan | "Done." | resolved tone |
+| 0:38 | Wizard ends with "Your Palawan Collective instance is ready!" + the MCP key in cyan | "Done." | resolved tone |
 | 0:42 | Cut to terminal: `npm run dev` | `npm run dev` | typing |
 | 0:45 | Browser opens to localhost:3000, landing page renders | "localhost:3000" | UI sound |
 | 0:48 | Click "Live Demo" → dashboard renders with stat cards animating in | "Click in. No login." | UI sound |
 | 0:52 | Quick zoom on Wiki Brain entry in sidebar → cut to Wiki Brain graph view animating | "Wiki Brain · graph view" | beat |
-| 0:55 | Cut to mascot art with end-card text | "FusionClaw · MIT · github.com/Fusion-Data-Company/FusionClaw" | resolution |
+| 0:55 | Cut to mascot art with end-card text | "Palawan Collective · MIT · github.com/Fusion-Data-Company/Palawan Collective" | resolution |
 | 0:58 | End card holds | "All hustle. No luck. One database." | bass tail |
 
 ### PRODUCTION NOTES
@@ -53,7 +53,7 @@ Two YouTube videos for launch. Both go live the moment you flip the repo public.
   npm install →
   AI BUSINESS OS
 
-[Bottom-right corner: FusionClaw logo]
+[Bottom-right corner: Palawan Collective logo]
 ```
 
 ---
@@ -68,7 +68,7 @@ Two YouTube videos for launch. Both go live the moment you flip the repo public.
 
 #### 0:00–0:30 — INTRO
 
-> Hey, I'm Rob Yeager. I run Fusion Data Company. We build AI-native platforms for small businesses and agencies, and FusionClaw is the platform behind every project we ship. Today I'm releasing it as open source under MIT. In the next few minutes I'm going to walk you through what it does, who it's for, and how to connect your AI agent to it.
+> Hey, I'm Rob Yeager. I run Fusion Data Company. We build AI-native platforms for small businesses and agencies, and Palawan Collective is the platform behind every project we ship. Today I'm releasing it as open source under MIT. In the next few minutes I'm going to walk you through what it does, who it's for, and how to connect your AI agent to it.
 
 [Screen: dashboard at localhost:3000/dashboard, briefly]
 
@@ -214,7 +214,7 @@ Two YouTube videos for launch. Both go live the moment you flip the repo public.
   THE OPEN-SOURCE
   AI BUSINESS OS
 
-[Bottom-right: FusionClaw logo + run-time badge "9 MIN"]
+[Bottom-right: Palawan Collective logo + run-time badge "9 MIN"]
 ```
 
 ---

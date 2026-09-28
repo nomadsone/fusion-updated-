@@ -1,6 +1,6 @@
 # Roadmap
 
-FusionClaw v1.0 ships today. The items below are tracked here, not as open issues, so the issue tracker stays focused on real bugs from real users.
+Palawan Collective v1.0 ships today. The items below are tracked here, not as open issues, so the issue tracker stays focused on real bugs from real users.
 
 If you want to contribute one of these, open a Discussion in the **Show and tell** category first so we don't end up with overlapping PRs.
 

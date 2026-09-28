@@ -11,18 +11,18 @@
 | Time | Visual | Audio / Text overlay |
 |---|---|---|
 | 0:00–0:02 | Black screen → mascot artwork punches in (All Hustle No Luck logo + diamonds + cash mascot) | Audio: heavy bassline drop · Text: "ALL HUSTLE." |
-| 0:02–0:04 | Cut to dashboard splash, FusionClaw logo zooms in | Text: "NO LUCK." |
+| 0:02–0:04 | Cut to dashboard splash, Palawan Collective logo zooms in | Text: "NO LUCK." |
 | 0:04–0:06 | Dashboard tour montage — Wiki Brain graph view force-animating into shape, leads kanban, invoices grid | Text: "ONE DATABASE." |
 | 0:06–0:14 | Quick cuts of: terminal running `npm run onboard` → wizard prompts → dashboard rendering | Text overlay: "Self-hosted. Free. Yours." |
 | 0:14–0:25 | Show MCP API key being copied into a Claude Code config; Claude Code agent calling tools; results appearing in dashboard | Text: "Your AI agent runs your business now." |
 | 0:25–0:35 | Cut back to mascot art; tagline reveal | Text: "FUSIONCLAW · MIT-LICENSED · OUT NOW" + URL |
-| 0:35–0:40 | End card with CTA | Text: "github.com/Fusion-Data-Company/FusionClaw" + handle tag |
+| 0:35–0:40 | End card with CTA | Text: "github.com/Fusion-Data-Company/Palawan Collective" + handle tag |
 
 ## CAPTION
 
 🦞 wait, wrong mascot.
 
-🎩 **FusionClaw is live.**
+🎩 **Palawan Collective is live.**
 
 The agent-native business OS we built at Fusion Data Company is now open source. CRM, ops, finance, content, marketing — one Postgres database, 234 MCP tools, your AI agent can run all of it.
 

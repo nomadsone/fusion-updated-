@@ -1,8 +1,8 @@
 # Setup Guide
 
-Complete guide to getting FusionClaw running locally and in production.
+Complete guide to getting Palawan Collective running locally and in production.
 
-> **Why no signup screen?** FusionClaw is self-hosted and free. There is no third-party auth provider, no required account with our company, no telemetry, no tracking. On localhost you're trusted automatically. On a deployed instance, a single `OWNER_PASSWORD` you control protects the UI. AI agents authenticate with the MCP API key.
+> **Why no signup screen?** Palawan Collective is self-hosted and free. There is no third-party auth provider, no required account with our company, no telemetry, no tracking. On localhost you're trusted automatically. On a deployed instance, a single `OWNER_PASSWORD` you control protects the UI. AI agents authenticate with the MCP API key.
 
 ## Prerequisites
 
@@ -15,8 +15,8 @@ Complete guide to getting FusionClaw running locally and in production.
 ## 1. Clone and install
 
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 npm install
 ```
 
@@ -71,7 +71,7 @@ Then add to your Claude Code config (`~/.claude/mcp_servers.json`):
 {
   "fusionclaw": {
     "command": "node",
-    "args": ["/absolute/path/to/FusionClaw/mcp-server/dist/index.js"],
+    "args": ["/absolute/path/to/Palawan Collective/mcp-server/dist/index.js"],
     "env": {
       "MCP_API_KEY": "<the key from npm run onboard>",
       "DATABASE_URL": "<your Neon URL>"
@@ -80,7 +80,7 @@ Then add to your Claude Code config (`~/.claude/mcp_servers.json`):
 }
 ```
 
-Restart Claude Code. Run `/mcp` and you should see all 234 FusionClaw tools listed.
+Restart Claude Code. Run `/mcp` and you should see all 234 Palawan Collective tools listed.
 
 See [MCP Tools Reference](./mcp-tools.md) for the full tool catalog.
 

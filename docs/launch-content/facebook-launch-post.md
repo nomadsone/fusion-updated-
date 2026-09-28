@@ -11,7 +11,7 @@
 
 It's launch day.
 
-I just open-sourced **FusionClaw** — the platform we built at Fusion Data Company to let AI agents actually run a business.
+I just open-sourced **Palawan Collective** — the platform we built at Fusion Data Company to let AI agents actually run a business.
 
 What it is, in plain English:
 - One dashboard instead of ten SaaS tools
@@ -22,7 +22,7 @@ What it is, in plain English:
 
 If you run a small business, an agency, or you've been wondering "can my AI agent actually do anything useful with my data," this is for you.
 
-🔗 https://github.com/Fusion-Data-Company/FusionClaw
+🔗 https://github.com/Fusion-Data-Company/Palawan Collective
 🔗 https://fusionclaw.app
 
 Star it if it's useful. Share it if you know someone who'd benefit. Send me your feedback either way.

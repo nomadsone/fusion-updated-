@@ -1,6 +1,6 @@
 ---
 title: Local install
-summary: Install FusionClaw on your laptop with one curl command or `git clone`.
+summary: Install Palawan Collective on your laptop with one curl command or `git clone`.
 ---
 
 # Local install (clone + npm)
@@ -23,8 +23,8 @@ Closest to what OpenClaw users are used to. One command, ~60 seconds, working da
 ## Install
 
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 npm install
 npm run onboard
 npm run dev
@@ -103,7 +103,7 @@ Re-run `npm run dev`. Your data persists.
 ## Uninstalling
 
 ```bash
-rm -rf ~/FusionClaw
+rm -rf ~/Palawan Collective
 ```
 
 Optional: drop your Neon database from the [Neon dashboard](https://console.neon.tech).

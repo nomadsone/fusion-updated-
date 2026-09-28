@@ -1,10 +1,10 @@
 ---
-name: Wiki Brain — Karpathy LLM Wiki pattern (synthesized for FusionClaw)
-description: Implementation pattern for FusionClaw's Wiki Brain feature, synthesized from Karpathy's LLM Wiki gist (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) + forrestchang's CLAUDE.md schema (https://github.com/forrestchang/andrej-karpathy-skills). Adapted into a hybrid agent that sits on a RAW folder, processes ingested files, and maintains the wiki + index + log automatically. This is the concrete implementation reference for PRD §15 Phase 1.1.
+name: Wiki Brain — Karpathy LLM Wiki pattern (synthesized for Palawan Collective)
+description: Implementation pattern for Palawan Collective's Wiki Brain feature, synthesized from Karpathy's LLM Wiki gist (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) + forrestchang's CLAUDE.md schema (https://github.com/forrestchang/andrej-karpathy-skills). Adapted into a hybrid agent that sits on a RAW folder, processes ingested files, and maintains the wiki + index + log automatically. This is the concrete implementation reference for PRD §15 Phase 1.1.
 type: project
 originSessionId: 873c8513-c34d-4abc-8c15-b87d084c10da
 ---
-# Wiki Brain — the Karpathy synthesis (FusionClaw implementation)
+# Wiki Brain — the Karpathy synthesis (Palawan Collective implementation)
 
 ## The pattern (verbatim from Karpathy's gist, our notes interleaved)
 
@@ -20,7 +20,7 @@ originSessionId: 873c8513-c34d-4abc-8c15-b87d084c10da
 **Our adaptation:**
 - Raw sources → Postgres table `raw_sources` + Vercel Blob for binary
 - Wiki → Postgres tables `wiki_pages` + `wiki_links` (already exist from Phase 1)
-- Schema → FusionClaw's CLAUDE.md + a Wiki-specific section appended to it
+- Schema → Palawan Collective's CLAUDE.md + a Wiki-specific section appended to it
 - Index → computed view over `wiki_pages` (no separate table needed at first)
 - Log → Postgres table `wiki_log` (append-only)
 
@@ -28,7 +28,7 @@ originSessionId: 873c8513-c34d-4abc-8c15-b87d084c10da
 
 User drops a file on Wiki Brain → file goes into RAW (DB row + Blob URL) → agent processes RAW → agent creates/updates wiki page(s) → agent appends log entry.
 
-The agent's behavior is governed by FusionClaw's CLAUDE.md (already exists) plus a wiki-specific schema section. Same discipline that governs Claude Code — "think before coding, simplicity first, surgical changes, goal-driven execution" — applied to wiki maintenance.
+The agent's behavior is governed by Palawan Collective's CLAUDE.md (already exists) plus a wiki-specific schema section. Same discipline that governs Claude Code — "think before coding, simplicity first, surgical changes, goal-driven execution" — applied to wiki maintenance.
 
 ## Schema additions needed (PRD §15 Phase 1.1)
 
@@ -94,7 +94,7 @@ export const wikiLog = pgTable("wiki_log", {
 The agent gets called with a raw_source row + the current wiki index. The prompt:
 
 ```
-You are FusionClaw's Wiki Brain ingest agent. You operate per the Karpathy LLM Wiki pattern:
+You are Palawan Collective's Wiki Brain ingest agent. You operate per the Karpathy LLM Wiki pattern:
 - The wiki is a compounding artifact. Integrate this source into existing pages where relevant.
 - Maintain cross-references via [[slug]] wikilinks.
 - Flag contradictions with existing claims.
@@ -182,7 +182,7 @@ The OpenRouter model used is configurable; default to a strong reasoning model (
 
 ## Schema file referenced for the pattern
 
-`memory/watchdog_briefing.md` and the existing project CLAUDE.md together form FusionClaw's "schema" layer per Karpathy's pattern. The ingest agent reads CLAUDE.md as part of its context to enforce the same discipline.
+`memory/watchdog_briefing.md` and the existing project CLAUDE.md together form Palawan Collective's "schema" layer per Karpathy's pattern. The ingest agent reads CLAUDE.md as part of its context to enforce the same discipline.
 
 ## Sources
 

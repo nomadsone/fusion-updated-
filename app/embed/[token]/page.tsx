@@ -166,7 +166,7 @@ function Row({ icon: Icon, label, value }: { icon: typeof Mail; label: string; v
 function Footer() {
   return (
     <div className="text-center mt-12 pt-6 border-t border-border">
-      <div className="text-[10px] text-text-muted">Powered by FusionClaw · this link is private</div>
+      <div className="text-[10px] text-text-muted">Powered by Palawan Collective · this link is private</div>
     </div>
   );
 }

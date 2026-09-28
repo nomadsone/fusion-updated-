@@ -77,7 +77,7 @@ async function seed() {
     { company: "Harbor View Restaurant", contact: "Chef Marco Russo", email: "marco@harborviewdining.com", phone: "(941) 555-0134", status: "new" as const, priority: "medium" as const, source: "website", jobTitle: "Owner/Chef", facebook: "https://facebook.com/harborviewdining", description: "Upscale restaurant, wants marketing + social media management", tags: ["restaurant", "hospitality"], timesContacted: 1 },
     { company: "TrueNorth Insurance", contact: "Linda Park", email: "linda@truenorthins.com", phone: "(614) 555-0211", status: "qualified" as const, priority: "high" as const, dealValue: "15000.00", source: "referral", website: "https://truenorthins.com", jobTitle: "Agency Principal", description: "Independent insurance agency, 8 agents, needs full business OS", tags: ["insurance", "high-value"], timesContacted: 3 },
     { company: "Bloom & Vine Florist", contact: "Sophie Laurent", email: "sophie@bloomandvine.co", phone: "(503) 555-0167", status: "contacted" as const, priority: "low" as const, source: "instagram", instagram: "https://instagram.com/bloomandvine", jobTitle: "Owner", description: "Boutique florist, event-based, needs simple invoicing", tags: ["retail", "events"], timesContacted: 2 },
-    { company: "Velocity SaaS", contact: "Ryan Blackwood", email: "ryan@velocitysaas.io", phone: "(512) 555-0244", status: "proposal" as const, priority: "urgent" as const, dealValue: "42000.00", source: "conference", website: "https://velocitysaas.io", linkedin: "https://linkedin.com/in/rblackwood", jobTitle: "CTO", description: "Wants white-label FusionClaw for their own clients", tags: ["saas", "white-label", "enterprise"], timesContacted: 5 },
+    { company: "Velocity SaaS", contact: "Ryan Blackwood", email: "ryan@velocitysaas.io", phone: "(512) 555-0244", status: "proposal" as const, priority: "urgent" as const, dealValue: "42000.00", source: "conference", website: "https://velocitysaas.io", linkedin: "https://linkedin.com/in/rblackwood", jobTitle: "CTO", description: "Wants white-label Palawan Collective for their own clients", tags: ["saas", "white-label", "enterprise"], timesContacted: 5 },
   ];
 
   for (const lead of leadData) {
@@ -109,7 +109,7 @@ async function seed() {
       clientName: "Apex Digital Solutions",
       clientEmail: "jwalsh@apexdigital.io",
       items: [
-        { description: "FusionClaw Platform License (Annual)", qty: 1, rate: 18000, amount: 18000 },
+        { description: "Palawan Collective Platform License (Annual)", qty: 1, rate: 18000, amount: 18000 },
         { description: "Onboarding & Data Migration", qty: 1, rate: 4500, amount: 4500 },
         { description: "Custom MCP Integration", qty: 1, rate: 2000, amount: 2000 },
       ],
@@ -122,7 +122,7 @@ async function seed() {
       clientName: "Summit Auto Repair",
       clientEmail: "jake@summitauto.repair",
       items: [
-        { description: "FusionClaw Platform License (Annual)", qty: 1, rate: 7200, amount: 7200 },
+        { description: "Palawan Collective Platform License (Annual)", qty: 1, rate: 7200, amount: 7200 },
         { description: "Setup & Training (4 hours)", qty: 4, rate: 150, amount: 600 },
         { description: "Monthly Support Plan", qty: 12, rate: 99, amount: 1188 },
       ],
@@ -135,7 +135,7 @@ async function seed() {
       clientName: "Ironworks Fitness",
       clientEmail: "derek@ironworksgym.com",
       items: [
-        { description: "FusionClaw Multi-Location License", qty: 3, rate: 4800, amount: 14400 },
+        { description: "Palawan Collective Multi-Location License", qty: 3, rate: 4800, amount: 14400 },
         { description: "Custom Dashboard Build", qty: 1, rate: 3600, amount: 3600 },
       ],
       subtotal: "18000.00", taxRate: "0.0700", taxAmount: "1260.00", total: "19260.00",
@@ -147,7 +147,7 @@ async function seed() {
       clientName: "GreenLeaf Landscaping",
       clientEmail: "tom@greenleafland.com",
       items: [
-        { description: "FusionClaw Platform License (Annual)", qty: 1, rate: 9600, amount: 9600 },
+        { description: "Palawan Collective Platform License (Annual)", qty: 1, rate: 9600, amount: 9600 },
         { description: "Employee Shift Module Setup", qty: 1, rate: 1200, amount: 1200 },
         { description: "Data Import Service", qty: 1, rate: 800, amount: 800 },
       ],
@@ -160,7 +160,7 @@ async function seed() {
       clientName: "TrueNorth Insurance",
       clientEmail: "linda@truenorthins.com",
       items: [
-        { description: "FusionClaw Business OS License", qty: 1, rate: 12000, amount: 12000 },
+        { description: "Palawan Collective Business OS License", qty: 1, rate: 12000, amount: 12000 },
         { description: "Agent CRM Configuration (8 agents)", qty: 8, rate: 200, amount: 1600 },
       ],
       subtotal: "13600.00", taxRate: "0.0600", taxAmount: "816.00", total: "14416.00",
@@ -172,7 +172,7 @@ async function seed() {
       clientName: "Bright Horizons Therapy",
       clientEmail: "aisha@brighthorizons.health",
       items: [
-        { description: "FusionClaw Platform License (6-month)", qty: 1, rate: 4200, amount: 4200 },
+        { description: "Palawan Collective Platform License (6-month)", qty: 1, rate: 4200, amount: 4200 },
         { description: "HIPAA Compliance Add-on", qty: 1, rate: 2400, amount: 2400 },
       ],
       subtotal: "6600.00", taxRate: "0.0700", taxAmount: "462.00", total: "7062.00",
@@ -193,7 +193,7 @@ async function seed() {
     { category: "software" as const, vendor: "OpenRouter", description: "AI API credits — March", amount: "47.82", date: daysAgo(3), taxDeductible: true },
     { category: "software" as const, vendor: "fal.ai", description: "Image generation credits", amount: "12.50", date: daysAgo(7), taxDeductible: true },
     { category: "software" as const, vendor: "GitHub", description: "Team plan — 3 seats", amount: "12.00", date: daysAgo(10), isRecurring: true, recurringFrequency: "monthly" as const, taxDeductible: true },
-    { category: "marketing" as const, vendor: "Google Ads", description: "Search campaign — FusionClaw branded terms", amount: "342.17", date: daysAgo(8), taxDeductible: true },
+    { category: "marketing" as const, vendor: "Google Ads", description: "Search campaign — Palawan Collective branded terms", amount: "342.17", date: daysAgo(8), taxDeductible: true },
     { category: "marketing" as const, vendor: "Canva", description: "Pro subscription for social graphics", amount: "12.99", date: daysAgo(12), isRecurring: true, recurringFrequency: "monthly" as const, taxDeductible: true },
     { category: "contractor" as const, vendor: "Sarah Chen", description: "Frontend development — 20 hours @ $75/hr", amount: "1500.00", date: daysAgo(14), taxDeductible: true },
     { category: "contractor" as const, vendor: "Marcus Rivera", description: "QA testing & bug reports — 10 hours @ $50/hr", amount: "500.00", date: daysAgo(14), taxDeductible: true },
@@ -212,8 +212,8 @@ async function seed() {
 
   // ─── 7. CAMPAIGNS (4 campaigns) ─────────────────────────────────────────
   const campaignData = [
-    { title: "March Newsletter — Product Update", type: "newsletter", status: "sent" as const, subject: "What's New in FusionClaw: Finance Module, 234 MCP Tools", contentHtml: "<h1>FusionClaw March Update</h1><p>We shipped invoicing, expense tracking, and a P&L dashboard this month...</p>", sentAt: tsAgo(7), stats: { sent: 847, opened: 412, clicked: 89, bounced: 12 }, createdBy: adminId },
-    { title: "Cold Outreach — Auto Shops", type: "outreach", status: "draft" as const, subject: "Stop losing invoices. FusionClaw tracks everything.", contentHtml: "<h1>Hey {{name}}</h1><p>Running an auto shop means juggling parts orders, invoices, and employee schedules...</p>", createdBy: adminId },
+    { title: "March Newsletter — Product Update", type: "newsletter", status: "sent" as const, subject: "What's New in Palawan Collective: Finance Module, 234 MCP Tools", contentHtml: "<h1>Palawan Collective March Update</h1><p>We shipped invoicing, expense tracking, and a P&L dashboard this month...</p>", sentAt: tsAgo(7), stats: { sent: 847, opened: 412, clicked: 89, bounced: 12 }, createdBy: adminId },
+    { title: "Cold Outreach — Auto Shops", type: "outreach", status: "draft" as const, subject: "Stop losing invoices. Palawan Collective tracks everything.", contentHtml: "<h1>Hey {{name}}</h1><p>Running an auto shop means juggling parts orders, invoices, and employee schedules...</p>", createdBy: adminId },
     { title: "Webinar Invite — AI for Small Business", type: "event", status: "scheduled" as const, subject: "Free Webinar: How AI Agents Can Run Your Back Office", scheduledFor: new Date(Date.now() + 14 * 86400000), createdBy: adminId },
     { title: "Win-Back — Lost Leads Q4", type: "outreach", status: "cancelled" as const, subject: "We've changed a lot since we last talked", contentHtml: "<p>Hi {{name}}, a lot has happened since...</p>", createdBy: adminId },
   ];
@@ -226,10 +226,10 @@ async function seed() {
   // ─── 8. AI CONTENT QUEUE (5 items) ──────────────────────────────────────
   const queueData = [
     { type: "blog", title: "Why Small Businesses Need an AI Operating System in 2026", content: "The average small business uses 10+ SaaS tools. Here's why that's about to change...", status: "approved" as const },
-    { type: "social", title: "LinkedIn post — FusionClaw launch announcement", content: "We just open-sourced our entire business operating system. 234 MCP tools. One API key. Here's why...", status: "pending" as const },
-    { type: "email", title: "Welcome email sequence — Day 1", content: "Welcome to FusionClaw! Here's how to get the most out of your first week...", status: "published" as const },
-    { type: "blog", title: "How We Built 234 MCP Tools in 30 Days", content: "The technical story behind FusionClaw's agent integration layer...", status: "pending" as const },
-    { type: "social", title: "Twitter thread — Before/After FusionClaw", content: "Before: 10 tabs, 10 logins, 10 bills. After: one dashboard, one database, one agent...", status: "rejected" as const, reviewNotes: "Too promotional. Rewrite with more specific data points." },
+    { type: "social", title: "LinkedIn post — Palawan Collective launch announcement", content: "We just open-sourced our entire business operating system. 234 MCP tools. One API key. Here's why...", status: "pending" as const },
+    { type: "email", title: "Welcome email sequence — Day 1", content: "Welcome to Palawan Collective! Here's how to get the most out of your first week...", status: "published" as const },
+    { type: "blog", title: "How We Built 234 MCP Tools in 30 Days", content: "The technical story behind Palawan Collective's agent integration layer...", status: "pending" as const },
+    { type: "social", title: "Twitter thread — Before/After Palawan Collective", content: "Before: 10 tabs, 10 logins, 10 bills. After: one dashboard, one database, one agent...", status: "rejected" as const, reviewNotes: "Too promotional. Rewrite with more specific data points." },
   ];
 
   for (const q of queueData) {
@@ -239,8 +239,8 @@ async function seed() {
 
   // ─── 9. KNOWLEDGE BASE (4 articles) ────────────────────────────────────
   const kbData = [
-    { title: "Getting Started with FusionClaw", content: "Welcome to FusionClaw! This is your unified business platform. Use the sidebar to navigate between modules: Dashboard for overview, Contacts for CRM, Tasks for project management, and Studio for AI content generation.\n\n## Quick Start\n1. Dashboard — See your daily metrics at a glance\n2. Leads — Import or add your contacts and track them through the pipeline\n3. Tasks — Create and assign work items with priority levels\n4. Invoices — Bill your clients and track payments\n5. Studio — Generate AI images and content" },
-    { title: "MCP Server Configuration", content: "The FusionClaw MCP server exposes 234 tools for AI agent control.\n\n## Setup\n1. Build: `npm run mcp:build`\n2. Start: `npm run mcp`\n3. Add to Claude Code config:\n```json\n{\"fusionclaw\": {\"command\": \"node\", \"args\": [\"./mcp-server/dist/index.js\"]}}\n```\n\n## Tool Categories\n- CRUD (208 tools): Full database access\n- Analytics (7): Dashboard metrics, forecasting\n- AI (5): Chat, image gen, humanizer\n- System (10): Settings, cron, health" },
+    { title: "Getting Started with Palawan Collective", content: "Welcome to Palawan Collective! This is your unified business platform. Use the sidebar to navigate between modules: Dashboard for overview, Contacts for CRM, Tasks for project management, and Studio for AI content generation.\n\n## Quick Start\n1. Dashboard — See your daily metrics at a glance\n2. Leads — Import or add your contacts and track them through the pipeline\n3. Tasks — Create and assign work items with priority levels\n4. Invoices — Bill your clients and track payments\n5. Studio — Generate AI images and content" },
+    { title: "MCP Server Configuration", content: "The Palawan Collective MCP server exposes 234 tools for AI agent control.\n\n## Setup\n1. Build: `npm run mcp:build`\n2. Start: `npm run mcp`\n3. Add to Claude Code config:\n```json\n{\"fusionclaw\": {\"command\": \"node\", \"args\": [\"./mcp-server/dist/index.js\"]}}\n```\n\n## Tool Categories\n- CRUD (208 tools): Full database access\n- Analytics (7): Dashboard metrics, forecasting\n- AI (5): Chat, image gen, humanizer\n- System (10): Settings, cron, health" },
     { title: "Invoice Best Practices", content: "## Creating Invoices\n- Always include a clear description for each line item\n- Set payment terms (Net 15, Net 30) in the due date\n- Add tax rate appropriate to your jurisdiction\n\n## Following Up\n- Send invoices immediately after work is completed\n- Follow up at 7 days if unpaid\n- Mark as overdue at the due date\n- Consider offering a 2% early payment discount for large invoices" },
     { title: "Employee Shift Tracking", content: "## Daily Workflow\n1. Employee starts shift — clock in from Today page\n2. Complete daily checklist items (social posts, outreach, follow-ups)\n3. Log metrics (emails sent, calls made, proposals submitted)\n4. Upload proof of work for checklist items\n5. Submit shift for review\n\n## Accountability Reports\nThe Reports page shows completion percentages, productivity trends, and individual performance over time." },
   ];

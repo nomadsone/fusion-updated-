@@ -1,14 +1,14 @@
 ---
 title: Getting Started
-summary: Install FusionClaw in 60 seconds and connect your first agent.
+summary: Install Palawan Collective in 60 seconds and connect your first agent.
 read_when:
   - First-time install
-  - Brand-new visitor evaluating FusionClaw
+  - Brand-new visitor evaluating Palawan Collective
 ---
 
 # Getting Started
 
-Install FusionClaw in 60 seconds. Three paths — pick the one that fits your machine.
+Install Palawan Collective in 60 seconds. Three paths — pick the one that fits your machine.
 
 ---
 
@@ -17,8 +17,8 @@ Install FusionClaw in 60 seconds. Three paths — pick the one that fits your ma
 The fastest way if you have Node 20+ already.
 
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 npm install
 npm run onboard
 ```
@@ -48,8 +48,8 @@ Open [http://localhost:3000](http://localhost:3000), click **Live Demo**, and yo
 Zero Node setup required. You just need Docker.
 
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 docker compose up
 ```
 
@@ -63,7 +63,7 @@ This brings up Next.js + Postgres locally; open `http://localhost:3000` when it'
 
 Get a public URL in 90 seconds. Vercel does the building, Neon does the database, you set the keys.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FFusion-Data-Company%2FFusionClaw&env=DATABASE_URL,MCP_API_KEY,SESSION_SECRET,OWNER_PASSWORD&envDescription=All%20generated%20by%20the%20onboard%20wizard%20on%20a%20local%20checkout%20first)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FFusion-Data-Company%2FPalawan Collective&env=DATABASE_URL,MCP_API_KEY,SESSION_SECRET,OWNER_PASSWORD&envDescription=All%20generated%20by%20the%20onboard%20wizard%20on%20a%20local%20checkout%20first)
 
 → Full guide: [install/vercel](../install/vercel.md)
 
@@ -77,7 +77,7 @@ The MCP API key is printed when `npm run onboard` finishes. Add this to your Cla
 {
   "fusionclaw": {
     "command": "node",
-    "args": ["/absolute/path/to/FusionClaw/mcp-server/dist/index.js"],
+    "args": ["/absolute/path/to/Palawan Collective/mcp-server/dist/index.js"],
     "env": {
       "MCP_API_KEY": "fusionclaw_sk_live_...",
       "DATABASE_URL": "postgresql://..."
@@ -116,4 +116,4 @@ For the full first-10-minutes walkthrough: [start/first-10-minutes](first-10-min
 - [help/troubleshooting](../help/troubleshooting.md)
 - [help/install-issues](../help/install-issues.md)
 - [Discord](#) (link in the repo description)
-- [GitHub Discussions](https://github.com/Fusion-Data-Company/FusionClaw/discussions)
+- [GitHub Discussions](https://github.com/Fusion-Data-Company/Palawan Collective/discussions)

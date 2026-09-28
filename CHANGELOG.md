@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to FusionClaw are documented here.
+All notable changes to Palawan Collective are documented here.
 
 ## [1.1.0] - 2026-04-27 — Wiki Brain crown jewel
 
@@ -49,7 +49,7 @@ Karpathy's LLM Wiki pattern: raw sources → ingest agent → wiki pages + log.
 
 ## [1.0.0] - 2026-04-27 — Elite Launch
 
-The OSS-launch release. FusionClaw becomes an agent-native business OS — the
+The OSS-launch release. Palawan Collective becomes an agent-native business OS — the
 agents write their own skills, evaluate themselves with real test cases, and
 improve overnight via a Karpathy reflection loop.
 

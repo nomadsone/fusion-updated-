@@ -27,7 +27,7 @@ const server = new Server(
   {
     capabilities: { tools: {} },
     instructions:
-      "FusionClaw is the business-data layer for this agent: customers, jobs, invoices, expenses, notes and the " +
+      "Palawan Collective is the business-data layer for this agent: customers, jobs, invoices, expenses, notes and the " +
       "wiki memory, on one Postgres. Call fusionclaw_whoami first — it tells you which of these tools your key may " +
       "actually run, so you can plan inside your scope instead of collecting refusals. Reads are free; writes are " +
       "rate limited; deletes and bulk updates return a preview and a one-time confirm_token before they do anything. " +

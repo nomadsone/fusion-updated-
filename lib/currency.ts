@@ -1,5 +1,5 @@
 /**
- * Currency helpers for FusionClaw.
+ * Currency helpers for Palawan Collective.
  * Default primary = PHP (Philippines Peso), secondary = USD.
  * Agency admins can override via the Settings table.
  */

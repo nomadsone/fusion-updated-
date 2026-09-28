@@ -114,7 +114,7 @@ export async function GET(req: Request) {
   try {
     const res = await fetch(normalized, {
       method: "GET",
-      headers: { "User-Agent": "FusionClaw-BrandIntel/1.0" },
+      headers: { "User-Agent": "Palawan Collective-BrandIntel/1.0" },
       signal: AbortSignal.timeout(8000),
       redirect: "follow",
     });

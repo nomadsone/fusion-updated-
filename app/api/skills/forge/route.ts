@@ -5,7 +5,7 @@ import { skills } from "@/lib/db/schema";
 export const dynamic = "force-dynamic";
 export const maxDuration = 45;
 
-const FORGE_SYSTEM = `You are the FusionClaw Skill Forge. You design new agentic skills from a one-line operator goal.
+const FORGE_SYSTEM = `You are the Palawan Collective Skill Forge. You design new agentic skills from a one-line operator goal.
 
 Output ONLY a JSON object matching this shape — no prose, no preamble:
 {
@@ -57,7 +57,7 @@ export async function POST(req: Request) {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-        "X-Title": "FusionClaw Skill Forge",
+        "X-Title": "Palawan Collective Skill Forge",
       },
       body: JSON.stringify({
         model: "anthropic/claude-sonnet-4",

@@ -14,7 +14,7 @@ const PAGES = [
   { path: "/leads/pipeline", text: "PIPELINE VALUE" },
   { path: "/campaigns", text: "TOTAL CAMPAIGNS" },
   { path: "/knowledge-base", text: "Getting Started" },
-  { path: "/chat", text: "FusionClaw" },  // logo text in sidebar
+  { path: "/chat", text: "Palawan Collective" },  // logo text in sidebar
   { path: "/studio", text: "PROMPT" },
   { path: "/gallery", text: "No Images Yet" },
   { path: "/publishing", text: "No Sites Connected" },

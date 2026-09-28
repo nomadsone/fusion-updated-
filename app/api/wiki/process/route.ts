@@ -29,7 +29,7 @@ export const maxDuration = 120;
  * Always logs to wiki_log. Never throws.
  */
 
-const INGEST_AGENT_SYSTEM = `You are FusionClaw's Wiki Brain ingest agent. You operate per the Karpathy LLM Wiki pattern:
+const INGEST_AGENT_SYSTEM = `You are Palawan Collective's Wiki Brain ingest agent. You operate per the Karpathy LLM Wiki pattern:
 - The wiki is a compounding artifact. Integrate this source into existing pages where relevant.
 - Maintain cross-references via [[slug]] wikilinks.
 - Flag contradictions with existing claims using > [!contradicts] callouts.
@@ -97,7 +97,7 @@ async function callIngestAgent(
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
         "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-        "X-Title": "FusionClaw Wiki Ingest",
+        "X-Title": "Palawan Collective Wiki Ingest",
       },
       body: JSON.stringify({
         model,

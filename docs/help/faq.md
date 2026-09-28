@@ -9,14 +9,14 @@ summary: Quick answers to questions that come up before/during install and the f
 
 ## General
 
-**Is FusionClaw really free?**
+**Is Palawan Collective really free?**
 Yes. MIT licensed. No SaaS we control. You run it on your own machine, your own Vercel project, your own Neon database. No phone-home telemetry. No emails collected. No tracking.
 
 **Do you have a hosted version?**
-Not as a SaaS. The marketing site at [fusionclaw.app](https://fusionclaw.app) shows you what the platform looks like, but to run FusionClaw with your own data you self-host. Three install paths in [install/](../install/).
+Not as a SaaS. The marketing site at [fusionclaw.app](https://fusionclaw.app) shows you what the platform looks like, but to run Palawan Collective with your own data you self-host. Three install paths in [install/](../install/).
 
-**What's the difference between FusionClaw and OpenClaw?**
-[OpenClaw](https://github.com/openclaw/openclaw) is a multi-channel gateway — a personal AI assistant you can message from WhatsApp, Slack, etc. **FusionClaw is the business** that an OpenClaw or Claude Code agent operates. They complement each other. You can use FusionClaw without OpenClaw (with Claude Code or any MCP-compatible agent).
+**What's the difference between Palawan Collective and OpenClaw?**
+[OpenClaw](https://github.com/openclaw/openclaw) is a multi-channel gateway — a personal AI assistant you can message from WhatsApp, Slack, etc. **Palawan Collective is the business** that an OpenClaw or Claude Code agent operates. They complement each other. You can use Palawan Collective without OpenClaw (with Claude Code or any MCP-compatible agent).
 
 **Can I use it commercially?**
 Yes. MIT license permits any use, including selling to your clients as a white-labeled product.
@@ -35,7 +35,7 @@ The bash install script targets macOS and Linux. Windows users should use WSL or
 For the local install path, yes. Free tier is fine. For Docker, no — Docker brings up its own Postgres locally. For Vercel, yes — you'll provide a Neon URL during setup.
 
 **Why Neon and not RDS / Supabase / [other Postgres]?**
-Neon is fastest to get to a free, working URL. The code is plain Drizzle + Postgres — any Postgres-compatible database works. If you point `DATABASE_URL` at Supabase or RDS, FusionClaw doesn't care. Neon is the recommended default because the onboard wizard's UX is calibrated for it.
+Neon is fastest to get to a free, working URL. The code is plain Drizzle + Postgres — any Postgres-compatible database works. If you point `DATABASE_URL` at Supabase or RDS, Palawan Collective doesn't care. Neon is the recommended default because the onboard wizard's UX is calibrated for it.
 
 **Can I use SQLite for local development?**
 Not currently. Drizzle's `pgTable` definitions don't translate. v1.1 may add a SQLite adapter for local-only setups.
@@ -82,7 +82,7 @@ No. Skill Forge generates them — type a one-line goal, get a working skill. Yo
 
 ## Data, privacy, security
 
-**Does FusionClaw collect telemetry?**
+**Does Palawan Collective collect telemetry?**
 No, by default. Self-host telemetry is opt-in only — the onboard wizard asks once, defaults No. If you opt in, you send: install count, version, OS, Node version, schema migration outcome. **No** data, **no** domain, **no** users. See [security/telemetry](../security/telemetry.md) (when written).
 
 **Where does my data go?**
@@ -92,7 +92,7 @@ Wherever your `DATABASE_URL` points. Local dev → your Neon free tier. Vercel d
 Neon encrypts at rest by default. Connection encryption is enforced via `sslmode=require` in the connection string (the wizard's example URL). For column-level encryption (e.g., on user-supplied API keys in Settings), the `ENCRYPTION_KEY` env var is used to AES-256-GCM encrypt those values before storage.
 
 **What happens to my data if I uninstall?**
-Local install → `rm -rf ~/FusionClaw` removes the code; your Neon DB still has your data until you drop it from the Neon dashboard.
+Local install → `rm -rf ~/Palawan Collective` removes the code; your Neon DB still has your data until you drop it from the Neon dashboard.
 Docker → `docker compose down -v` wipes the local Postgres volume.
 Vercel → delete the project; data persists in Neon until you drop the database.
 
@@ -114,10 +114,10 @@ Turbopack (Next.js 16's bundler) needs a warm-up. First request after `npm run d
 ## Project & community
 
 **Where do I report bugs?**
-[GitHub Issues](https://github.com/Fusion-Data-Company/FusionClaw/issues) — pick the right template (bug / feature / install issue / MCP tool request).
+[GitHub Issues](https://github.com/Fusion-Data-Company/Palawan Collective/issues) — pick the right template (bug / feature / install issue / MCP tool request).
 
 **Where do I ask questions?**
-[GitHub Discussions](https://github.com/Fusion-Data-Company/FusionClaw/discussions) for async / long-form. [Discord](#) (link in repo description) for real-time.
+[GitHub Discussions](https://github.com/Fusion-Data-Company/Palawan Collective/discussions) for async / long-form. [Discord](#) (link in repo description) for real-time.
 
 **Is there a roadmap?**
 Yes. See `docs/PRD-OSS-LAUNCH.md` (internal — phased delivery plan). The public summary is in [VISION.md](../../VISION.md). At launch + 14 days the v1.1 roadmap goes up as a public Discussion thread with community input.
@@ -129,4 +129,4 @@ GitHub Sponsors is enabled at launch + 7 days. The launch is free, no donate-but
 
 ## I have a different question
 
-[GitHub Discussions](https://github.com/Fusion-Data-Company/FusionClaw/discussions) is the right place. Search first; if it's a new question, post in Q&A. Most questions get answered within 24 hours.
+[GitHub Discussions](https://github.com/Fusion-Data-Company/Palawan Collective/discussions) is the right place. Search first; if it's a new question, post in Q&A. Most questions get answered within 24 hours.

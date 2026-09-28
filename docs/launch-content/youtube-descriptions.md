@@ -4,7 +4,7 @@ Two videos at launch. These descriptions are SEO-optimized (keywords in first 15
 
 ---
 
-## VIDEO 1 — "FusionClaw — install the open-source business OS in 60 seconds"
+## VIDEO 1 — "Palawan Collective — install the open-source business OS in 60 seconds"
 
 **Length target:** 60 seconds (no longer)
 **Thumbnail:** Mascot art + giant text "60 SECONDS" + URL
@@ -12,22 +12,22 @@ Two videos at launch. These descriptions are SEO-optimized (keywords in first 15
 
 ### TITLE
 ```
-FusionClaw — install the open-source AI business OS in 60 seconds
+Palawan Collective — install the open-source AI business OS in 60 seconds
 ```
 
 ### DESCRIPTION
 ```
-Install FusionClaw, the agent-native business operating system, in 60 seconds. CRM, operations, content, finance, and marketing in one Postgres database with 234 MCP tools — your AI agent can read and write all of it through one API key.
+Install Palawan Collective, the agent-native business operating system, in 60 seconds. CRM, operations, content, finance, and marketing in one Postgres database with 234 MCP tools — your AI agent can read and write all of it through one API key.
 
 Self-hosted. MIT-licensed. Free. Built for solo founders and agency owners.
 
-⭐ GitHub: https://github.com/Fusion-Data-Company/FusionClaw
+⭐ GitHub: https://github.com/Fusion-Data-Company/Palawan Collective
 🌐 Site: https://fusionclaw.app
 🎮 Live demo: https://fusionclaw.app
 💬 Discord: [PASTE INVITE URL BEFORE PUBLISHING]
 
 📝 What you saw in this video:
-0:00 — What FusionClaw is
+0:00 — What Palawan Collective is
 0:08 — Clone the repo
 0:14 — Run the onboard wizard (database URL, optional API keys)
 0:32 — Schema migration runs automatically
@@ -37,14 +37,14 @@ Self-hosted. MIT-licensed. Free. Built for solo founders and agency owners.
 
 🔧 Built with: Next.js 16, Drizzle ORM, Neon Postgres, Tailwind CSS v4, Model Context Protocol SDK, OpenRouter, fal.ai
 
-Built by Rob Yeager / Fusion Data Company. We build AI-native platforms for small businesses and agencies. FusionClaw is the open-source foundation we use internally — released today as our gift to anyone who wants to run their business with an AI agent on their own infrastructure.
+Built by Rob Yeager / Fusion Data Company. We build AI-native platforms for small businesses and agencies. Palawan Collective is the open-source foundation we use internally — released today as our gift to anyone who wants to run their business with an AI agent on their own infrastructure.
 
 #OpenSource #AI #MCP #SelfHosted #NextJS
 ```
 
 ---
 
-## VIDEO 2 — "FusionClaw demo walkthrough — the open-source business OS for AI agents"
+## VIDEO 2 — "Palawan Collective demo walkthrough — the open-source business OS for AI agents"
 
 **Length target:** 5–10 minutes
 **Thumbnail:** Dashboard screenshot with arrow callouts to Wiki Brain graph view + the mascot
@@ -52,21 +52,21 @@ Built by Rob Yeager / Fusion Data Company. We build AI-native platforms for smal
 
 ### TITLE
 ```
-FusionClaw full demo — the open-source business OS your AI agent can actually run
+Palawan Collective full demo — the open-source business OS your AI agent can actually run
 ```
 
 ### DESCRIPTION
 ```
-A full walkthrough of FusionClaw — what each module does, how the MCP tools work, and what it feels like to have an AI agent operating your business through them.
+A full walkthrough of Palawan Collective — what each module does, how the MCP tools work, and what it feels like to have an AI agent operating your business through them.
 
-⭐ Star the repo: https://github.com/Fusion-Data-Company/FusionClaw
+⭐ Star the repo: https://github.com/Fusion-Data-Company/Palawan Collective
 🌐 fusionclaw.app
 🎮 Live demo: https://fusionclaw.app
 💬 Discord: [PASTE INVITE URL BEFORE PUBLISHING]
-📚 Docs: https://github.com/Fusion-Data-Company/FusionClaw/tree/main/docs
+📚 Docs: https://github.com/Fusion-Data-Company/Palawan Collective/tree/main/docs
 
 ⏱️ Chapters:
-0:00 — Intro: what FusionClaw is and who it's for
+0:00 — Intro: what Palawan Collective is and who it's for
 0:45 — Dashboard tour (Command Center)
 1:30 — CRM module — leads database (37k+ row virtual table) and pipeline kanban
 2:30 — Operations — Today, Tasks, Employees, Reports
@@ -82,13 +82,13 @@ A full walkthrough of FusionClaw — what each module does, how the MCP tools wo
 
 🔒 Self-hosted. MIT-licensed. No third-party auth provider — localhost trusted, deployed instances use a single OWNER_PASSWORD env var. Your data stays on your infrastructure.
 
-📅 Built by Rob Yeager / Fusion Data Company. We build AI-native platforms for small businesses and agencies. FusionClaw is the open-source foundation behind our client work — released today.
+📅 Built by Rob Yeager / Fusion Data Company. We build AI-native platforms for small businesses and agencies. Palawan Collective is the open-source foundation behind our client work — released today.
 
 If this resonates, star the repo, install your own instance, connect an agent, and tell me what you build with it.
 
 All hustle. No luck. One database.
 
-#FusionClaw #OpenSource #MCP #AIAgents #SelfHosted #NextJS #BusinessSoftware #SaaS #DevTools
+#Palawan Collective #OpenSource #MCP #AIAgents #SelfHosted #NextJS #BusinessSoftware #SaaS #DevTools
 ```
 
 ---

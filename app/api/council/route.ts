@@ -89,7 +89,7 @@ Times contacted: ${lead.timesContacted ?? 0}${wikiContext}`;
                 Authorization: `Bearer ${apiKey}`,
                 "Content-Type": "application/json",
                 "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-                "X-Title": "FusionClaw Council",
+                "X-Title": "Palawan Collective Council",
               },
               body: JSON.stringify({
                 model: "anthropic/claude-haiku-4-5-20251001",
@@ -148,7 +148,7 @@ Times contacted: ${lead.timesContacted ?? 0}${wikiContext}`;
             Authorization: `Bearer ${apiKey}`,
             "Content-Type": "application/json",
             "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-            "X-Title": "FusionClaw Council Vote",
+            "X-Title": "Palawan Collective Council Vote",
           },
           body: JSON.stringify({
             model: "anthropic/claude-haiku-4-5-20251001",

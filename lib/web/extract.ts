@@ -109,7 +109,7 @@ export async function extractPage(rawUrl: string, opts: { maxBytes?: number; tim
   const t0 = Date.now();
   const res = await fetch(normalized, {
     method: "GET",
-    headers: { "User-Agent": "FusionClaw-Browser/1.0 (+https://fusionclaw.dev)" },
+    headers: { "User-Agent": "Palawan Collective-Browser/1.0 (+https://fusionclaw.dev)" },
     signal: AbortSignal.timeout(opts.timeoutMs ?? 8000),
     redirect: "follow",
   });

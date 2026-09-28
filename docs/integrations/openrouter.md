@@ -1,6 +1,6 @@
 ---
 title: openrouter integration
-summary: How FusionClaw uses openrouter — full content coming in v1.0.x docs polish pass.
+summary: How Palawan Collective uses openrouter — full content coming in v1.0.x docs polish pass.
 ---
 
 # openrouter

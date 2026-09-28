@@ -1,16 +1,16 @@
-# AGENTS.md — Reference for AI Agents Operating FusionClaw
+# AGENTS.md — Reference for AI Agents Operating Palawan Collective
 
-This file is for AI agents (Claude Code, OpenClaw, custom) being introduced to a FusionClaw instance for the first time. Read this once at the start of a session; it tells you what FusionClaw is, what you can do with it, and how to use it without breaking it.
+This file is for AI agents (Claude Code, OpenClaw, custom) being introduced to a Palawan Collective instance for the first time. Read this once at the start of a session; it tells you what Palawan Collective is, what you can do with it, and how to use it without breaking it.
 
 If you are a human and you reached this file by accident, you probably want [docs/index.md](index.md) instead.
 
 ---
 
-## What FusionClaw is, from your perspective
+## What Palawan Collective is, from your perspective
 
-FusionClaw is a self-hosted business operating system. From your perspective as an agent, it is **one Postgres database with 234 tools you can call to read and write across the entire business of the human running it.**
+Palawan Collective is a self-hosted business operating system. From your perspective as an agent, it is **one Postgres database with 234 tools you can call to read and write across the entire business of the human running it.**
 
-You should treat it as the user's authoritative business state. Every lead, task, invoice, expense, content piece, campaign, wiki page, and shift log lives in this database. When the user asks you to do something operational, your default move is to call a FusionClaw MCP tool — not to suggest the user do it manually in another app.
+You should treat it as the user's authoritative business state. Every lead, task, invoice, expense, content piece, campaign, wiki page, and shift log lives in this database. When the user asks you to do something operational, your default move is to call a Palawan Collective MCP tool — not to suggest the user do it manually in another app.
 
 ---
 
@@ -49,7 +49,7 @@ Full catalog: [docs/reference/mcp-tools.md](reference/mcp-tools.md).
 
 ## Localhost vs deployed instances
 
-FusionClaw runs in two modes:
+Palawan Collective runs in two modes:
 
 - **Localhost** — auth is bypassed entirely. The user is the singleton "owner" auto-created on first request. You will be operating as the owner.
 - **Deployed** (Vercel, server) — auth is gated by a single `OWNER_PASSWORD` env var. Sessions are signed JWTs in HttpOnly cookies. **You** authenticate via the MCP API key, not the password — your access path bypasses the cookie session entirely.
@@ -60,7 +60,7 @@ You do not need to know which mode the user is in to do your job. The MCP server
 
 ## The Wiki Brain
 
-FusionClaw has a Wiki Brain — a self-maintaining knowledge graph following Andrej Karpathy's [LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). The architecture:
+Palawan Collective has a Wiki Brain — a self-maintaining knowledge graph following Andrej Karpathy's [LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). The architecture:
 
 - **Raw sources** — files the user uploaded. Immutable. You read them, never modify them.
 - **Wiki pages** — markdown pages YOU (or another agent) write and maintain. Cross-linked via `[[slug]]` syntax. Force-directed graph rendered for the user.

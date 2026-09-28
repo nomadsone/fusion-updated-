@@ -15,7 +15,7 @@ const TOOLS_SPEC = [
   {
     type: "function" as const,
     name: "wiki_retrieve",
-    description: "Search the FusionClaw knowledge wiki by keyword.",
+    description: "Search the Palawan Collective knowledge wiki by keyword.",
     parameters: { type: "object", properties: { query: { type: "string" }, limit: { type: "integer" } }, required: ["query"] },
   },
   {
@@ -39,7 +39,7 @@ const TOOLS_SPEC = [
   {
     type: "function" as const,
     name: "create_task",
-    description: "Create a task in FusionClaw.",
+    description: "Create a task in Palawan Collective.",
     parameters: { type: "object", properties: { title: { type: "string" }, dueDate: { type: "string" }, priority: { type: "string" } }, required: ["title"] },
   },
   {
@@ -311,7 +311,7 @@ export default function VoicePage() {
           <h1 className="text-2xl font-bold text-text-primary" style={{ fontFamily: "var(--font-display)" }}>
             Voice
           </h1>
-          <p className="text-xs text-text-muted">Talk to FusionClaw — full duplex, with tools wired to your skills + leads + tasks.</p>
+          <p className="text-xs text-text-muted">Talk to Palawan Collective — full duplex, with tools wired to your skills + leads + tasks.</p>
         </div>
       </div>
 

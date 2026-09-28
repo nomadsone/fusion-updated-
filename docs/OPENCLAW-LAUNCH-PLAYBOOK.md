@@ -1,7 +1,7 @@
 # OpenClaw Launch Playbook — What They Actually Did
 
 **Researched:** 2026-04-26
-**Purpose:** Boss asked me to study OpenClaw's launch arc (Clawdbot → Moltbot → OpenClaw) and recommend what FusionClaw should copy. This is that research, with sources, no embellishment.
+**Purpose:** Boss asked me to study OpenClaw's launch arc (Clawdbot → Moltbot → OpenClaw) and recommend what Palawan Collective should copy. This is that research, with sources, no embellishment.
 
 ---
 
@@ -22,13 +22,13 @@
 
 ---
 
-## What OpenClaw Actually Is (Not What FusionClaw Is)
+## What OpenClaw Actually Is (Not What Palawan Collective Is)
 
 OpenClaw is a **personal AI assistant you run on your own devices**, local-first, that hooks into chat platforms you already use (WhatsApp, Telegram, Slack, Discord, iMessage, Signal, Microsoft Teams, ~20 more). It can speak and listen on macOS/iOS/Android. It has a live Canvas you can control.
 
 **It is not** a CRM, a finance platform, an ops tool, or a marketing system. It is one focused product that does one thing extremely well — and integrates broadly with channels users already live in.
 
-This matters for FusionClaw because **OpenClaw shipped focused; FusionClaw is shipping broad.** Five separate modules (CRM + ops + finance + content + marketing) each compete with mature SaaS — every one of them needs to be polished or the whole thing feels half-built. OpenClaw didn't have this problem.
+This matters for Palawan Collective because **OpenClaw shipped focused; Palawan Collective is shipping broad.** Five separate modules (CRM + ops + finance + content + marketing) each compete with mature SaaS — every one of them needs to be polished or the whole thing feels half-built. OpenClaw didn't have this problem.
 
 ---
 
@@ -43,13 +43,13 @@ The space lobster (named **Molty**) and the 🦞 emoji are present in:
 - The marketing site
 - Community discussion ("the lobster way" as a phrase used by users, not just maintainers)
 
-**For FusionClaw:** Boss already has the "All Hustle No Luck" / B.Y.O.A. mascot universe. Right now it's used as a full-page background and that's it. The OpenClaw playbook would have that mascot showing up consistently — in the docs site, in marketing copy phrases, in CLI banner art, in Twitter/X posts, in error pages. Not as background wallpaper, as a *character*.
+**For Palawan Collective:** Boss already has the "All Hustle No Luck" / B.Y.O.A. mascot universe. Right now it's used as a full-page background and that's it. The OpenClaw playbook would have that mascot showing up consistently — in the docs site, in marketing copy phrases, in CLI banner art, in Twitter/X posts, in error pages. Not as background wallpaper, as a *character*.
 
 ### 2. The tagline is a worldview, not a feature list
 
 "Your own personal AI assistant. Any OS. Any Platform. **The lobster way.**" Three sentences. The first two describe the product. The third is the vibe. That last phrase ("the lobster way") is what makes it stick in people's heads — it's the hook for community language.
 
-**For FusionClaw:** the current tagline is *"Connect Your OpenClaw or Claude Agent Safely to Your Business."* This is a feature description. It doesn't have a hook phrase. Possible hook phrases that match Boss's mascot universe:
+**For Palawan Collective:** the current tagline is *"Connect Your OpenClaw or Claude Agent Safely to Your Business."* This is a feature description. It doesn't have a hook phrase. Possible hook phrases that match Boss's mascot universe:
 - "Run your business the hustle way."
 - "All hustle. No luck. One database."
 - "Bring your own agent. Run your own business."
@@ -61,23 +61,23 @@ These are first-cut options. The point is: there should be a five-word phrase th
 
 Steinberger built PSPDFKit. PSPDFKit was a respected developer toolkit with a real customer base and millions in ARR. When he posted Clawdbot on HN, the upvotes weren't just for the project — they were because *he* shipped it. HN gave him benefit of the doubt.
 
-**For FusionClaw:** Boss has built Fusion Data Company, theinsuranceschool.com (with the Wiki Brain / graph view / voice agent stack we just looked at), thefloridalocal.com, and client deliverables for real businesses. That's a real track record. The launch post should lead with that — not "I made an open-source thing," but "I run an agency that builds business operating systems for clients, and I'm releasing the platform we use internally as open source." That framing earns the same benefit-of-the-doubt Steinberger got.
+**For Palawan Collective:** Boss has built Fusion Data Company, theinsuranceschool.com (with the Wiki Brain / graph view / voice agent stack we just looked at), thefloridalocal.com, and client deliverables for real businesses. That's a real track record. The launch post should lead with that — not "I made an open-source thing," but "I run an agency that builds business operating systems for clients, and I'm releasing the platform we use internally as open source." That framing earns the same benefit-of-the-doubt Steinberger got.
 
 ### 4. They did not coordinate a launch — they coordinated a product
 
 Reading the timeline: there was no Product Hunt push, no synchronized HN+Twitter+Reddit blast, no PR firm. The README, the docs, and the install script were ready. Someone posted to HN. The HN crowd found the install actually worked, the README was clear, and the project didn't oversell itself. Word spread.
 
-**For FusionClaw:** the implication is that **launch energy is wasted if the product itself isn't tight**. We don't need a marketing site, a Product Hunt campaign, a coordinated rollout — we need a working install, a sharp README, a docs site that answers questions, and a product that delivers a *moment* when a user opens it for the first time. Then post once, somewhere, and let it travel.
+**For Palawan Collective:** the implication is that **launch energy is wasted if the product itself isn't tight**. We don't need a marketing site, a Product Hunt campaign, a coordinated rollout — we need a working install, a sharp README, a docs site that answers questions, and a product that delivers a *moment* when a user opens it for the first time. Then post once, somewhere, and let it travel.
 
 ### 5. License: MIT, not BSL
 
 OpenClaw is MIT-licensed after the rebrand. MIT is the de-facto OSS standard. It maximizes adoption. It does not restrict commercial use. It does not require any forking conditions.
 
-**For FusionClaw:** currently BSL 1.1 (converts to Apache 2.0 in 2030). BSL is more protective — it prevents cloud vendors from strip-mining the project commercially during the protection window. It's the right call if Boss is worried about a Vercel or AWS eventually taking the codebase and offering it as a managed service in competition with Fusion Data Company. But it's also a known adoption headwind — MIT projects spread faster because corporate users don't have to lawyer the license. **This is a Boss judgment call**, not a copy-OpenClaw call. Worth thinking about deliberately.
+**For Palawan Collective:** currently BSL 1.1 (converts to Apache 2.0 in 2030). BSL is more protective — it prevents cloud vendors from strip-mining the project commercially during the protection window. It's the right call if Boss is worried about a Vercel or AWS eventually taking the codebase and offering it as a managed service in competition with Fusion Data Company. But it's also a known adoption headwind — MIT projects spread faster because corporate users don't have to lawyer the license. **This is a Boss judgment call**, not a copy-OpenClaw call. Worth thinking about deliberately.
 
 ---
 
-## What FusionClaw Should Copy
+## What Palawan Collective Should Copy
 
 1. **One sharp tagline with a hook phrase.** Not a feature description.
 2. **The mascot consistently used as a character**, not as wallpaper. Show up in CLI banners (the onboard wizard already does this — good), error pages, docs, Twitter posts.
@@ -86,12 +86,12 @@ OpenClaw is MIT-licensed after the rebrand. MIT is the de-facto OSS standard. It
 5. **A README that loads in 30 seconds and tells the user the story.** OpenClaw's README has the tagline, the install one-liner, the supported channels list, screenshots, and a "what is it" section in that order. Ours is currently feature-list heavy.
 6. **A working one-curl install that actually works on a clean machine.** OpenClaw's `curl ... | bash` works. Ours is currently `git clone && cd && npm install && npm run onboard && npm run dev` — better than nothing but not the same magic.
 
-## What FusionClaw Should NOT Copy
+## What Palawan Collective Should NOT Copy
 
 1. **The lobster theme.** We have our own mascot. Don't dilute it.
-2. **The breadth of integrations.** OpenClaw integrates with 20+ chat platforms because that's their hero feature. FusionClaw's hero is "one database, agent-native business OS" — not breadth of integrations.
+2. **The breadth of integrations.** OpenClaw integrates with 20+ chat platforms because that's their hero feature. Palawan Collective's hero is "one database, agent-native business OS" — not breadth of integrations.
 3. **The "personal AI assistant" framing.** That's their positioning. Ours is different — we're the data/business layer that sits *under* an AI agent. The current "Connect your OpenClaw or Claude agent safely to your business" framing is actually correct on this axis — it just needs the hook phrase added.
-4. **Date-based versioning** (`v2026.4.20`). Semver is fine for FusionClaw.
+4. **Date-based versioning** (`v2026.4.20`). Semver is fine for Palawan Collective.
 
 ---
 

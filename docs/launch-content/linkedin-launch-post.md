@@ -15,7 +15,7 @@ For the last few years at Fusion Data Company, I've been building AI-native plat
 
 Every client wanted the same thing. Every project recreated the same patterns. So I built it once, properly, and made it the foundation for everything we ship.
 
-That platform is **FusionClaw**.
+That platform is **Palawan Collective**.
 
 CRM. Operations. Content studio. Marketing. Bookkeeping. One Postgres database. 234 MCP tools that let any AI agent — Claude, OpenClaw, custom — operate every part of it through one API key.
 
@@ -31,9 +31,9 @@ This is my first open-source release. The plan is simple: give it to the world, 
 
 If you've been duct-taping ten SaaS tools together and dreaming of something unified — this is it.
 
-→ **Repo:** https://github.com/Fusion-Data-Company/FusionClaw
+→ **Repo:** https://github.com/Fusion-Data-Company/Palawan Collective
 → **Live demo:** https://fusionclaw.app
-→ **One-line install:** `git clone https://github.com/Fusion-Data-Company/FusionClaw && cd FusionClaw && npm run onboard`
+→ **One-line install:** `git clone https://github.com/Fusion-Data-Company/Palawan Collective && cd Palawan Collective && npm run onboard`
 
 All hustle. No luck. One database.
 
@@ -47,4 +47,4 @@ All hustle. No luck. One database.
 - The 4 emoji-bulleted features are scannable on mobile.
 - The "this is my first open-source release" line is deliberate humility — earns benefit of the doubt instead of "elite operator" framing that reads as bragging on LinkedIn.
 - Hashtags at the end, not inline (cleaner read).
-- After posting: comment under your own post within the first hour with a follow-up like "If you're an agency owner running a small team — happy to answer specific 'can FusionClaw do X' questions in the comments." Boosts engagement.
+- After posting: comment under your own post within the first hour with a follow-up like "If you're an agency owner running a small team — happy to answer specific 'can Palawan Collective do X' questions in the comments." Boosts engagement.

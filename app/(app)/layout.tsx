@@ -245,12 +245,12 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           role="note"
           className="fixed bottom-0 left-0 right-0 z-[60] border-t border-amber-500/40 bg-[#0b0f14]/95 px-4 py-2 text-center text-xs text-white/80 backdrop-blur"
         >
-          FusionClaw public demo: every company, contact, invoice and task here is fictional, and nothing you change is saved.{" "}
+          Palawan Collective public demo: every company, contact, invoice and task here is fictional, and nothing you change is saved.{" "}
           <a href="https://buy.stripe.com/bJe00j7Hdcy87wb8h8aAw0c" className="font-semibold text-amber-400 hover:text-amber-300">
             Get your own hosted instance — $99/mo, 14-day trial
           </a>{" "}
           or{" "}
-          <a href="https://github.com/Fusion-Data-Company/FusionClaw" className="font-semibold text-cyan-400 hover:text-cyan-300">
+          <a href="https://github.com/Fusion-Data-Company/Palawan Collective" className="font-semibold text-cyan-400 hover:text-cyan-300">
             self-host free (MIT)
           </a>
           .
@@ -286,13 +286,13 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/fusionclaw-logo.png"
-                alt="FusionClaw"
+                alt="Palawan Collective"
                 className="w-full h-full object-cover"
               />
             </div>
             {!sidebarCollapsed && (
               <span className="text-lg font-extrabold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: "var(--font-display)" }}>
-                FusionClaw
+                Palawan Collective
               </span>
             )}
           </div>

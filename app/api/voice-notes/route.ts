@@ -40,7 +40,7 @@ async function summarizeAndExtract(transcript: string): Promise<{ summary: strin
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-        "X-Title": "FusionClaw Voice Notes",
+        "X-Title": "Palawan Collective Voice Notes",
       },
       body: JSON.stringify({
         model: "anthropic/claude-haiku-4-5-20251001",

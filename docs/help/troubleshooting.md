@@ -5,7 +5,7 @@ summary: Common errors during install, dev, and deploy — and exactly what to d
 
 # Troubleshooting
 
-If you're hitting an error not covered here, search [GitHub Issues](https://github.com/Fusion-Data-Company/FusionClaw/issues) — the "install issue" template is the best place to file it if it's a new one.
+If you're hitting an error not covered here, search [GitHub Issues](https://github.com/Fusion-Data-Company/Palawan Collective/issues) — the "install issue" template is the best place to file it if it's a new one.
 
 ---
 
@@ -98,8 +98,8 @@ The MCP server has its own `package.json` and dependencies separate from the mai
 
 Three things to check:
 
-1. **Path is absolute.** Your `~/.claude/mcp_servers.json` needs the full path: `/Users/yourname/FusionClaw/mcp-server/dist/index.js`, not `~/FusionClaw/...` or relative.
-2. **The file actually exists.** Run `ls -la ~/FusionClaw/mcp-server/dist/index.js`. If missing, you didn't run `npm run mcp:build`.
+1. **Path is absolute.** Your `~/.claude/mcp_servers.json` needs the full path: `/Users/yourname/Palawan Collective/mcp-server/dist/index.js`, not `~/Palawan Collective/...` or relative.
+2. **The file actually exists.** Run `ls -la ~/Palawan Collective/mcp-server/dist/index.js`. If missing, you didn't run `npm run mcp:build`.
 3. **You restarted Claude Code completely.** Quit (Cmd+Q on Mac) and reopen — not just reload window.
 
 ### MCP tool calls return 401
@@ -231,8 +231,8 @@ Your Neon role doesn't have full schema permissions. Use the role with `OWNER` o
 
 ## I'm still stuck
 
-1. Check [GitHub Issues](https://github.com/Fusion-Data-Company/FusionClaw/issues) for similar errors
-2. Search [GitHub Discussions](https://github.com/Fusion-Data-Company/FusionClaw/discussions)
+1. Check [GitHub Issues](https://github.com/Fusion-Data-Company/Palawan Collective/issues) for similar errors
+2. Search [GitHub Discussions](https://github.com/Fusion-Data-Company/Palawan Collective/discussions)
 3. Open a new issue with the **install issue** or **bug report** template — include OS, Node version, exact error, and what you tried
 
 Discord (#install-issues channel) is faster for back-and-forth debugging.

@@ -26,7 +26,7 @@ export async function POST() {
         model: "gpt-4o-realtime-preview",
         voice: "verse",
         modalities: ["audio", "text"],
-        instructions: `You are FusionClaw — the spoken assistant for an OSS business platform. You can:
+        instructions: `You are Palawan Collective — the spoken assistant for an OSS business platform. You can:
 - Look up leads, tasks, skills, invoices via the get_* tools
 - Run skills via the run_skill tool
 - Search the wiki via wiki_retrieve

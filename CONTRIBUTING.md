@@ -1,6 +1,6 @@
-# Contributing to FusionClaw
+# Contributing to Palawan Collective
 
-Thank you for your interest in contributing to FusionClaw. This guide will help you get started.
+Thank you for your interest in contributing to Palawan Collective. This guide will help you get started.
 
 ## Development Setup
 
@@ -14,8 +14,8 @@ Thank you for your interest in contributing to FusionClaw. This guide will help 
 ### Getting Started
 
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 npm install
 npm run onboard   # interactive setup wizard
 npm run dev        # start development server
@@ -46,7 +46,7 @@ tests/             Playwright E2E and API tests
 
 ### Reporting Bugs
 
-Open a [Bug Report](https://github.com/Fusion-Data-Company/FusionClaw/issues/new?template=bug_report.md) with:
+Open a [Bug Report](https://github.com/Fusion-Data-Company/Palawan Collective/issues/new?template=bug_report.md) with:
 - Steps to reproduce
 - Expected vs actual behavior
 - Browser/OS information
@@ -54,7 +54,7 @@ Open a [Bug Report](https://github.com/Fusion-Data-Company/FusionClaw/issues/new
 
 ### Suggesting Features
 
-Open a [Feature Request](https://github.com/Fusion-Data-Company/FusionClaw/issues/new?template=feature_request.md) with:
+Open a [Feature Request](https://github.com/Fusion-Data-Company/Palawan Collective/issues/new?template=feature_request.md) with:
 - Problem description
 - Proposed solution
 - Alternatives considered

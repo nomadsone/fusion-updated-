@@ -10,7 +10,7 @@
 ## TITLE FORMAT (this is the exact title — paste it)
 
 ```
-Show HN: FusionClaw – open-source MCP-native business OS for AI agents
+Show HN: Palawan Collective – open-source MCP-native business OS for AI agents
 ```
 
 **Why this title:**
@@ -23,7 +23,7 @@ Show HN: FusionClaw – open-source MCP-native business OS for AI agents
 ## URL
 
 ```
-https://github.com/Fusion-Data-Company/FusionClaw
+https://github.com/Fusion-Data-Company/Palawan Collective
 ```
 
 **Why GitHub, not the marketing site:**
@@ -50,7 +50,7 @@ Three install paths: clone+npm, docker compose, Vercel deploy button.
 
 Happy to answer technical questions or take feedback on architecture, the MCP design, the auth model, anything.
 
-Repo: https://github.com/Fusion-Data-Company/FusionClaw
+Repo: https://github.com/Fusion-Data-Company/Palawan Collective
 Site + demo: https://fusionclaw.app
 ```
 
@@ -61,7 +61,7 @@ Site + demo: https://fusionclaw.app
 1. **Submit Tue/Wed/Thu, 9–11am ET.** Avoid Mondays (post-weekend chaos), Fridays (low traffic), weekends (almost dead).
 2. **Don't pre-announce on Twitter / LinkedIn.** HN downvotes brigaded posts. The simultaneous LinkedIn/FB/IG posts are fine because they reach a different audience — but don't link to the HN submission from them. Just announce the project; let HN find itself.
 3. **Be in the comments within the first 30 minutes.** Reply substantively to every early comment, even the harsh ones. Especially the harsh ones. HN's audience respects engagement with criticism more than agreement with praise.
-4. **Email dang.** Same day as submission, drop a quick courtesy email to dang@hncares (HN's mod). One paragraph: "Hi dang — I'm doing a Show HN today for FusionClaw, an open-source MCP-native business OS. Just wanted to give you a heads up. URL: [...]." He won't reply, but he'll see it. Sometimes that matters.
+4. **Email dang.** Same day as submission, drop a quick courtesy email to dang@hncares (HN's mod). One paragraph: "Hi dang — I'm doing a Show HN today for Palawan Collective, an open-source MCP-native business OS. Just wanted to give you a heads up. URL: [...]." He won't reply, but he'll see it. Sometimes that matters.
 5. **Pre-warm by commenting on adjacent threads in the days before.** If a Show HN about an AI agent gets posted in the week before launch, leave a substantive comment on it from your account. Builds at least minimal account trust before you submit your own.
 
 ## IF THE POST SINKS

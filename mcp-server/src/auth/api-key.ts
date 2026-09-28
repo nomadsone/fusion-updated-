@@ -10,7 +10,7 @@
 export function validateApiKey(key: string): boolean {
   const validKey = process.env.MCP_API_KEY;
   if (!validKey) {
-    console.error("[FusionClaw MCP] MCP_API_KEY not configured");
+    console.error("[Palawan Collective MCP] MCP_API_KEY not configured");
     return false;
   }
   return key === validKey;

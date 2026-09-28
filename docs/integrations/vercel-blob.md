@@ -1,6 +1,6 @@
 ---
 title: vercel-blob integration
-summary: How FusionClaw uses vercel-blob — full content coming in v1.0.x docs polish pass.
+summary: How Palawan Collective uses vercel-blob — full content coming in v1.0.x docs polish pass.
 ---
 
 # vercel-blob

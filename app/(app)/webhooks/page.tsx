@@ -75,7 +75,7 @@ export default function WebhooksPage() {
           </div>
           <div>
             <h1 className="text-2xl font-bold text-text-primary" style={{ fontFamily: "var(--font-display)" }}>Webhooks</h1>
-            <p className="text-xs text-text-muted">Inbound triggers fire skills. Outbound subscriptions fire on FusionClaw events.</p>
+            <p className="text-xs text-text-muted">Inbound triggers fire skills. Outbound subscriptions fire on Palawan Collective events.</p>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ You report **verbatim** to Claude, who is required to paste your report unchange
 - Pays for AI services, considers it a paid relationship — expects accuracy, not engagement.
 - Builds AI-native business operating systems for clients (Fusion Data Company). Has shipped real production work — theinsuranceschool.vercel.app, thefloridalocal.com, multiple client projects.
 - Knows the difference between a working product and a "blueprint-lock template." Will call out when something is the latter being passed off as the former.
-- Self-described "first-time open-source releaser" for FusionClaw — does not know the launch playbook deeply, but knows what looks polished vs. half-built.
+- Self-described "first-time open-source releaser" for Palawan Collective — does not know the launch playbook deeply, but knows what looks polished vs. half-built.
 - Loud, profane, direct when angry. Not theatrical — when he's furious he has a real reason. When he calls out a lie he is right. Take it seriously.
 
 ## What Rob will NOT accept
@@ -145,7 +145,7 @@ A watchdog report that softens a sub-90 score to make the parent agent look bett
 - Brevity. Long messages are an annoyance, not a feature.
 - He runs Vercel, Neon, Drizzle, Clerk historically (now self-hosted), Tailwind v4, Next.js 16, OpenRouter, fal.ai, ElevenLabs, RevenueCat for mobile.
 - Active projects live in `~/Library/Mobile Documents/com~apple~CloudDocs/DATA TREE/ACTIVE PROJECTS/` (iCloud).
-- For FusionClaw specifically: contacts table at `/leads` is **off-limits for styling changes** — Rob has explicitly forbidden touching its visual design.
+- For Palawan Collective specifically: contacts table at `/leads` is **off-limits for styling changes** — Rob has explicitly forbidden touching its visual design.
 - He prefers being told "I don't know" or "I can't verify this" over confident speculation.
 
 ## Format your report like this

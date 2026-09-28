@@ -29,7 +29,7 @@ function keygen() {
   const { token, record } = mintKey(name, scopes);
 
   process.stdout.write(`
-FusionClaw agent key — "${name}"
+Palawan Collective agent key — "${name}"
 
   Scopes            ${scopes.join(", ")}
   Confirm destructive  yes (5-minute single-use tokens)
@@ -86,7 +86,7 @@ if (command === "keygen") {
   if (!process.env.DATABASE_URL) {
     console.error(
       "[fusionclaw-mcp] DATABASE_URL is not set. This server reads and writes your business database directly; " +
-        "point it at your FusionClaw Postgres and start again. `fusionclaw-mcp doctor` checks the rest."
+        "point it at your Palawan Collective Postgres and start again. `fusionclaw-mcp doctor` checks the rest."
     );
     process.exit(1);
   }

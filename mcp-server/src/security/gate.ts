@@ -70,7 +70,7 @@ export async function run(
       error: {
         code: "AUTH_INVALID_KEY",
         message:
-          "No valid FusionClaw key. Set FUSIONCLAW_MCP_KEY in this server's environment to a key minted with " +
+          "No valid Palawan Collective key. Set FUSIONCLAW_MCP_KEY in this server's environment to a key minted with " +
           "`npx fusionclaw-mcp keygen`, or set FUSIONCLAW_MCP_KEYS on the server to the key set it printed.",
       },
     });

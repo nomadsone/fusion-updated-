@@ -1,4 +1,4 @@
-# MODEL — how FusionClaw makes money, and what it must stop pretending
+# MODEL — how Palawan Collective makes money, and what it must stop pretending
 
 Written 2026-09-09, against the evidence in [COMPS.md](COMPS.md). Every price here is derived
 from a competitor's published number, not from a feeling. No Stripe object was created, changed
@@ -33,9 +33,9 @@ From COMPS.md, the market for *governed MCP access to business records*:
 | Pantalytics Max | €100/user/mo, 10k calls/day | What "we run it and you never think about it" is worth to a business with compliance pressure. |
 | HoneyBook Starter | $36/mo | The suite floor, with an MCP connector included since August. |
 
-So: a hosted single-tenant FusionClaw is worth **more than a $9 seat** (it is a whole instance,
+So: a hosted single-tenant Palawan Collective is worth **more than a $9 seat** (it is a whole instance,
 not a seat, and there is no per-user multiplication) and **less than €25 per user** (because
-Pantalytics sits on Odoo, which is the system of record for a real business, and FusionClaw is
+Pantalytics sits on Odoo, which is the system of record for a real business, and Palawan Collective is
 not yet).
 
 **$99/month was 4× the closest governance comp and 11× the closest bundled comp, while shipping
@@ -69,7 +69,7 @@ nothing else in this file has a discovery path without it.
 We run the Postgres and the app. The customer keeps their own agent keys, which is the point.
 
 Derivation: Twenty Organization is $19 **per user**. A two-person shop pays Twenty $38.
-FusionClaw at $24 flat undercuts that at two seats and looks better every seat after, while
+Palawan Collective at $24 flat undercuts that at two seats and looks better every seat after, while
 being an entire instance rather than a tenant. It is also under Moxie's $12 × 2 and under
 HoneyBook's $36, so it never has to win a price argument against a suite it cannot out-feature.
 

@@ -123,7 +123,7 @@ Format your response as plain markdown. No preamble, no apology, just the 3 edit
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-        "X-Title": "FusionClaw — Skill Reflection",
+        "X-Title": "Palawan Collective — Skill Reflection",
       },
       body: JSON.stringify({
         model: "anthropic/claude-sonnet-4",

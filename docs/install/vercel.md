@@ -19,10 +19,10 @@ The fastest way to a public URL. Vercel handles building and hosting, Neon handl
 
 ## One-click deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FFusion-Data-Company%2FFusionClaw&env=DATABASE_URL,MCP_API_KEY,SESSION_SECRET,OWNER_PASSWORD,OPENROUTER_API_KEY,FAL_KEY,OPENAI_API_KEY&envDescription=Generate%20MCP_API_KEY%2C%20SESSION_SECRET%2C%20and%20OWNER_PASSWORD%20locally%20first%20(see%20docs)&envLink=https%3A%2F%2Fgithub.com%2FFusion-Data-Company%2FFusionClaw%2Fblob%2Fmain%2Fdocs%2Finstall%2Fvercel.md)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FFusion-Data-Company%2FPalawan Collective&env=DATABASE_URL,MCP_API_KEY,SESSION_SECRET,OWNER_PASSWORD,OPENROUTER_API_KEY,FAL_KEY,OPENAI_API_KEY&envDescription=Generate%20MCP_API_KEY%2C%20SESSION_SECRET%2C%20and%20OWNER_PASSWORD%20locally%20first%20(see%20docs)&envLink=https%3A%2F%2Fgithub.com%2FFusion-Data-Company%2FPalawan Collective%2Fblob%2Fmain%2Fdocs%2Finstall%2Fvercel.md)
 
 What this does:
-1. Forks `Fusion-Data-Company/FusionClaw` to your GitHub
+1. Forks `Fusion-Data-Company/Palawan Collective` to your GitHub
 2. Creates a new Vercel project pointed at the fork
 3. Prompts for env vars (see below)
 4. Deploys
@@ -77,7 +77,7 @@ Update `NEXT_PUBLIC_APP_URL` in Vercel env vars to match.
 Vercel auto-deploys on every push to `main` of your fork. To pull upstream changes:
 
 ```bash
-git remote add upstream https://github.com/Fusion-Data-Company/FusionClaw.git
+git remote add upstream https://github.com/Fusion-Data-Company/Palawan Collective.git
 git fetch upstream
 git merge upstream/main
 git push origin main

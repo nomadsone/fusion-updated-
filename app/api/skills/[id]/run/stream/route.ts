@@ -103,7 +103,7 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
         }
 
         const messages: Msg[] = [
-          { role: "system", content: `You are a skill in the FusionClaw agent fleet. Skill: "${skill.name}". Think step-by-step before answering. Use wiki_retrieve, wiki_append, wiki_write as needed. Output the final answer as plain text or as a {componentType:...} JSON object matching the platform's generative-UI schema.` },
+          { role: "system", content: `You are a skill in the Palawan Collective agent fleet. Skill: "${skill.name}". Think step-by-step before answering. Use wiki_retrieve, wiki_append, wiki_write as needed. Output the final answer as plain text or as a {componentType:...} JSON object matching the platform's generative-UI schema.` },
           { role: "user", content: promptRendered },
         ];
 
@@ -120,7 +120,7 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
               Authorization: `Bearer ${apiKey}`,
               "Content-Type": "application/json",
               "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-              "X-Title": "FusionClaw stream",
+              "X-Title": "Palawan Collective stream",
             },
             body: JSON.stringify({
               model,

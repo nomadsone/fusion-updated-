@@ -1,6 +1,6 @@
 ---
 title: openai-realtime integration
-summary: How FusionClaw uses openai-realtime — full content coming in v1.0.x docs polish pass.
+summary: How Palawan Collective uses openai-realtime — full content coming in v1.0.x docs polish pass.
 ---
 
 # openai-realtime

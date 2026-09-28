@@ -73,7 +73,7 @@ export default function LoginPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/fusionclaw-logo.png"
-              alt="FusionClaw"
+              alt="Palawan Collective"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
@@ -81,7 +81,7 @@ export default function LoginPage() {
             className="text-2xl font-extrabold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent"
             style={{ fontFamily: 'var(--font-display)' }}
           >
-            FusionClaw
+            Palawan Collective
           </h1>
           <p className="text-sm text-text-muted mt-1">Enter your owner password</p>
         </div>
@@ -123,7 +123,7 @@ export default function LoginPage() {
           </button>
 
           <p className="text-[11px] text-text-muted text-center pt-2">
-            FusionClaw is self-hosted. Your password lives in your own <code className="text-cyan-400">OWNER_PASSWORD</code> env
+            Palawan Collective is self-hosted. Your password lives in your own <code className="text-cyan-400">OWNER_PASSWORD</code> env
             var. We don&apos;t store it. We don&apos;t track you.
           </p>
         </form>

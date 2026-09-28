@@ -27,9 +27,9 @@ interface Step {
 const STEPS: Step[] = [
   {
     icon: Sparkles,
-    title: "Welcome to FusionClaw",
+    title: "Welcome to Palawan Collective",
     body:
-      "FusionClaw is your agent-native business OS — CRM, content studio, finance, marketing, and a self-curating Wiki Brain that doubles as your AI agent's memory. Your agent can read everything, write to the wiki, and modify the platform to match how you work.",
+      "Palawan Collective is your agent-native business OS — CRM, content studio, finance, marketing, and a self-curating Wiki Brain that doubles as your AI agent's memory. Your agent can read everything, write to the wiki, and modify the platform to match how you work.",
     accentGlow: "rgba(59,130,246,0.18)",
     chipBg: "bg-blue-500/15",
     chipText: "text-blue-300",

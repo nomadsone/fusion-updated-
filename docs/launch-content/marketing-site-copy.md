@@ -24,7 +24,7 @@ demo.fusionclaw.app → Read-only demo subdomain (Phase 6)
 ### NAV (sticky top)
 
 ```
-Logo · FusionClaw
+Logo · Palawan Collective
 
 [Features] [Install] [Docs] [Demo]   [Star on GitHub] [Live Demo]
 ```
@@ -90,7 +90,7 @@ campaign builder, AI content queue with approval workflow.
 ```
 ## Connect your OpenClaw or Claude agent safely.
 
-OpenClaw is the assistant. FusionClaw is the world the assistant operates
+OpenClaw is the assistant. Palawan Collective is the world the assistant operates
 in. Where your data lives, where your agent reads and writes, where your
 business runs — without giving the agent uncontrolled access to a
 half-dozen separate SaaS APIs.
@@ -131,7 +131,7 @@ Add this to your Claude Code config:
 {
   "fusionclaw": {
     "command": "node",
-    "args": ["/path/to/FusionClaw/mcp-server/dist/index.js"],
+    "args": ["/path/to/Palawan Collective/mcp-server/dist/index.js"],
     "env": {
       "MCP_API_KEY": "your-key",
       "DATABASE_URL": "your-db-url"
@@ -161,7 +161,7 @@ you connected them to — and connecting an agent to ten different APIs
 means ten OAuth flows, ten security surfaces, ten places things can go
 wrong.
 
-FusionClaw puts every business primitive — leads, tasks, invoices,
+Palawan Collective puts every business primitive — leads, tasks, invoices,
 content, campaigns, expenses — in one Postgres database. The agent has
 one connection. One auth. One surface to know. Everything else is
 implementation detail.
@@ -177,7 +177,7 @@ first-class user.
 ## Built by an agency owner, for agency owners.
 
 I run Fusion Data Company. We build AI-native platforms for small
-businesses and agencies. FusionClaw is the platform behind every client
+businesses and agencies. Palawan Collective is the platform behind every client
 project we ship — released today as our gift to anyone who wants to run
 their business with an AI agent on their own infrastructure.
 
@@ -191,7 +191,7 @@ All hustle. No luck. One database.
 ### FOOTER
 
 ```
-[Logo] FusionClaw
+[Logo] Palawan Collective
 
 [About / Vision]   [Docs]   [Changelog]   [Press kit]
 
@@ -218,14 +218,14 @@ Reuse the install section above, expanded. Each tab includes:
 ## /press PAGE — PRESS KIT
 
 ```
-# FusionClaw Press Kit
+# Palawan Collective Press Kit
 
 ## Description (short — for headlines)
-FusionClaw — the open-source agent-native business OS. CRM, ops, finance,
+Palawan Collective — the open-source agent-native business OS. CRM, ops, finance,
 content, and marketing in one Postgres database, 234 MCP tools.
 
 ## Description (long — for articles)
-FusionClaw is a self-hostable, MIT-licensed business operating system
+Palawan Collective is a self-hostable, MIT-licensed business operating system
 designed to be the data layer that AI agents operate on. It merges CRM,
 operations, content creation, marketing, and bookkeeping into a single
 Next.js application backed by one Postgres database, then exposes the
@@ -237,7 +237,7 @@ business with a single API key. Released as open source on
 ## Founder bio
 Rob Yeager is the founder of Fusion Data Company, an AI-native platform
 agency that builds business operating systems for small businesses and
-agencies. FusionClaw is the open-source foundation behind Fusion's
+agencies. Palawan Collective is the open-source foundation behind Fusion's
 client work — released as the first OSS contribution from the agency
 in [year].
 

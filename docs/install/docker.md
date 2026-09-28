@@ -1,11 +1,11 @@
 ---
 title: Docker install
-summary: Run FusionClaw + Postgres in containers with one curl command. Zero Node setup.
+summary: Run Palawan Collective + Postgres in containers with one curl command. Zero Node setup.
 ---
 
 # Docker install
 
-Use this path if you want to skip Node/npm entirely or run FusionClaw in an isolated environment.
+Use this path if you want to skip Node/npm entirely or run Palawan Collective in an isolated environment.
 
 ---
 
@@ -23,8 +23,8 @@ That's it. No Node, no Postgres, no Neon account required — Docker spins up it
 ## Install
 
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 docker compose up -d
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: google-workspace integration
-summary: How FusionClaw uses google-workspace — full content coming in v1.0.x docs polish pass.
+summary: How Palawan Collective uses google-workspace — full content coming in v1.0.x docs polish pass.
 ---
 
 # google-workspace

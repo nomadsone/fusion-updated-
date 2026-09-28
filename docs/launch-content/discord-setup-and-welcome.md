@@ -1,6 +1,6 @@
 # Discord — Server Setup + Welcome Content
 
-**Server name:** FusionClaw
+**Server name:** Palawan Collective
 **Goal:** Pre-launch server set up with channels, roles, welcome flow, and pinned posts. Low staffing during launch week, scales after.
 
 ---
@@ -20,7 +20,7 @@
 
 💬 GENERAL
   #general              ← off-topic and casual
-  #showcase             ← share screenshots of YOUR FusionClaw, agent integrations, customizations
+  #showcase             ← share screenshots of YOUR Palawan Collective, agent integrations, customizations
   #integrations         ← Claude Code, OpenClaw, custom agents calling MCP tools
 
 🤖 DEV
@@ -43,18 +43,18 @@ Use Discord's autorole feature to assign @early-adopter to anyone joining in the
 ## WELCOME MESSAGE (pin to #welcome)
 
 ```
-👋 Welcome to FusionClaw.
+👋 Welcome to Palawan Collective.
 
 You're in the right place if you:
 • Are running a small business or agency and wondering how to actually use AI agents in operations
 • Want a self-hosted business OS your AI agent can read and write across
 • Are interested in MCP, agent-native platforms, or the Karpathy LLM Wiki pattern
-• Want to fork FusionClaw and white-label it for your clients
+• Want to fork Palawan Collective and white-label it for your clients
 
 📖 **Start here:**
-• Repo: https://github.com/Fusion-Data-Company/FusionClaw
+• Repo: https://github.com/Fusion-Data-Company/Palawan Collective
 • Site + demo: https://fusionclaw.app
-• Setup guide: https://github.com/Fusion-Data-Company/FusionClaw/blob/main/docs/start/getting-started.md
+• Setup guide: https://github.com/Fusion-Data-Company/Palawan Collective/blob/main/docs/start/getting-started.md
 • 60-second install video: [PASTE YOUTUBE URL OR REMOVE LINE]
 
 🔧 **Help channels:**
@@ -63,7 +63,7 @@ You're in the right place if you:
 • #bugs for reproducible failures (please include OS + Node version + the exact error)
 
 🚀 **Show off your build:**
-• #showcase — your FusionClaw screenshot, your customizations, your white-label
+• #showcase — your Palawan Collective screenshot, your customizations, your white-label
 • #integrations — Claude Code / OpenClaw / custom agent setups
 
 📜 **Rules:**
@@ -72,7 +72,7 @@ You're in the right place if you:
 3. Keep #install-issues for actual install problems — use #setup-questions for "how do I configure X."
 4. Help others. The next install issue is going to be solved by someone who solved theirs yesterday.
 
-🔧 **Built by** Rob Yeager / Fusion Data Company. We build AI-native platforms for small businesses and agencies. FusionClaw is the open-source foundation behind our client work.
+🔧 **Built by** Rob Yeager / Fusion Data Company. We build AI-native platforms for small businesses and agencies. Palawan Collective is the open-source foundation behind our client work.
 
 All hustle. No luck. One database.
 ```
@@ -80,7 +80,7 @@ All hustle. No luck. One database.
 ## ANNOUNCEMENTS PIN (post to #announcements on launch day)
 
 ```
-🚀 **FusionClaw v1.0 is live.**
+🚀 **Palawan Collective v1.0 is live.**
 
 After a year of building this internally for clients, we're releasing the platform as open source under MIT.
 
@@ -93,7 +93,7 @@ After a year of building this internally for clients, we're releasing the platfo
 
 **Get started:**
 • https://fusionclaw.app
-• https://github.com/Fusion-Data-Company/FusionClaw
+• https://github.com/Fusion-Data-Company/Palawan Collective
 • 60-second install: [YouTube]
 
 **This server is the place to:**
@@ -113,7 +113,7 @@ Welcome aboard.
 
 ## NOTES
 
-- Set the server icon to the FusionClaw mascot
+- Set the server icon to the Palawan Collective mascot
 - Set server banner (Nitro/Boost-tier feature) to a wider mascot artwork
 - Verification level: Medium (verified email required) — keeps the spam down
 - Enable Community features: Welcome Screen, Discovery, etc.

@@ -1,6 +1,6 @@
 ---
 title: Claude Code MCP config
-summary: Copy-paste block to wire Claude Code to a FusionClaw instance.
+summary: Copy-paste block to wire Claude Code to a Palawan Collective instance.
 ---
 
 # Claude Code MCP config
@@ -12,7 +12,7 @@ Add this to `~/.claude/mcp_servers.json`. Replace the three placeholder values.
   "mcpServers": {
     "fusionclaw": {
       "command": "node",
-      "args": ["/absolute/path/to/FusionClaw/mcp-server/dist/index.js"],
+      "args": ["/absolute/path/to/Palawan Collective/mcp-server/dist/index.js"],
       "env": {
         "MCP_API_KEY": "fusionclaw_sk_live_REPLACE_ME",
         "DATABASE_URL": "postgresql://user:pass@host-pooler.neon.tech/db?sslmode=require"
@@ -28,7 +28,7 @@ Add this to `~/.claude/mcp_servers.json`. Replace the three placeholder values.
 
 | Field | Where to find it |
 |---|---|
-| `args[0]` | The absolute path to `mcp-server/dist/index.js` in your FusionClaw clone. Run `pwd` inside the FusionClaw repo and append `/mcp-server/dist/index.js`. Tilde (`~`) does NOT expand in this config — must be full path starting with `/`. |
+| `args[0]` | The absolute path to `mcp-server/dist/index.js` in your Palawan Collective clone. Run `pwd` inside the Palawan Collective repo and append `/mcp-server/dist/index.js`. Tilde (`~`) does NOT expand in this config — must be full path starting with `/`. |
 | `MCP_API_KEY` | In your `.env.local` after `npm run onboard`. Format `fusionclaw_sk_live_<48 chars>`. |
 | `DATABASE_URL` | Same one you put in `.env.local`. The MCP server connects directly to your DB; it doesn't go through the Next.js app. |
 
@@ -39,7 +39,7 @@ Add this to `~/.claude/mcp_servers.json`. Replace the three placeholder values.
 If `mcp-server/dist/index.js` doesn't exist yet:
 
 ```bash
-cd /path/to/FusionClaw
+cd /path/to/Palawan Collective
 npm run mcp:build
 ```
 

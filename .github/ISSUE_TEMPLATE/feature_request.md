@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest a feature for FusionClaw
+about: Suggest a feature for Palawan Collective
 title: "[Feature] "
 labels: enhancement
 assignees: ''
@@ -16,7 +16,7 @@ Describe the solution you'd like.
 Any alternative solutions or features you've considered.
 
 ## Module
-Which part of FusionClaw does this affect?
+Which part of Palawan Collective does this affect?
 - [ ] Dashboard
 - [ ] Leads / Pipeline
 - [ ] Tasks

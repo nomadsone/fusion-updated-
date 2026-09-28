@@ -38,7 +38,7 @@ async function callOpenRouter(question: string, hits: QueryHit[]): Promise<strin
     .map((h) => `### ${h.title} (${h.slug})\n${h.excerpt}`)
     .join("\n\n");
 
-  const systemPrompt = `You are FusionClaw's Wiki Brain query agent. Answer the user's question using ONLY the wiki pages provided. Cite each claim with [[slug]] inline. If the wiki does not contain the answer, say so explicitly and suggest what page would need to exist. Never invent facts.`;
+  const systemPrompt = `You are Palawan Collective's Wiki Brain query agent. Answer the user's question using ONLY the wiki pages provided. Cite each claim with [[slug]] inline. If the wiki does not contain the answer, say so explicitly and suggest what page would need to exist. Never invent facts.`;
   const userPrompt = `WIKI HITS:\n\n${context}\n\nQUESTION: ${question}\n\nAnswer with citations.`;
 
   try {
@@ -48,7 +48,7 @@ async function callOpenRouter(question: string, hits: QueryHit[]): Promise<strin
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
         "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-        "X-Title": "FusionClaw Wiki Query",
+        "X-Title": "Palawan Collective Wiki Query",
       },
       body: JSON.stringify({
         model,

@@ -1,6 +1,6 @@
 # GitHub Repo Metadata — Set These Before Public Flip
 
-Open https://github.com/Fusion-Data-Company/FusionClaw/settings as repo admin.
+Open https://github.com/Fusion-Data-Company/Palawan Collective/settings as repo admin.
 
 ---
 
@@ -97,7 +97,7 @@ Cut a `v1.0.0` GitHub Release at launch with these notes:
 ```
 # v1.0.0 — Public OSS Launch
 
-The first public release of FusionClaw. Built internally at Fusion Data
+The first public release of Palawan Collective. Built internally at Fusion Data
 Company over the past year. Released today under MIT.
 
 ## Highlights
@@ -127,7 +127,7 @@ Company over the past year. Released today under MIT.
 ## Get Started
 
 - Site + demo: https://fusionclaw.app
-- Setup guide: https://github.com/Fusion-Data-Company/FusionClaw/blob/main/docs/start/getting-started.md
+- Setup guide: https://github.com/Fusion-Data-Company/Palawan Collective/blob/main/docs/start/getting-started.md
 - Discord: [PASTE INVITE URL]
 
 All hustle. No luck. One database.
@@ -143,7 +143,7 @@ Create one pinned discussion under `Discussions → Show and tell`:
 
 **Body:**
 ```
-This is the catch-all welcome thread for FusionClaw.
+This is the catch-all welcome thread for Palawan Collective.
 
 If you installed it, drop a screenshot of your dashboard.
 If you forked it for an agency, share the link.

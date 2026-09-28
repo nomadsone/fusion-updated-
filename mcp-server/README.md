@@ -178,7 +178,7 @@ Read it back from inside the agent with `fusionclaw_audit_tail`.
 
 | Variable | Meaning |
 |---|---|
-| `DATABASE_URL` | **Required.** Postgres holding the FusionClaw schema. |
+| `DATABASE_URL` | **Required.** Postgres holding the Palawan Collective schema. |
 | `FUSIONCLAW_MCP_KEY` | The token this process presents. |
 | `FUSIONCLAW_MCP_KEYS` | JSON array of key records the server accepts. |
 | `FUSIONCLAW_MCP_KEYS_FILE` | Path to that same JSON, for hosts that dislike long env values. |
@@ -216,4 +216,4 @@ else to go on.
 - This server talks to your database directly. It is as trusted as the machine
   it runs on — scopes limit the agent, not an attacker with the process.
 
-MIT. Part of [FusionClaw](https://github.com/Fusion-Data-Company/FusionClaw).
+MIT. Part of [Palawan Collective](https://github.com/Fusion-Data-Company/Palawan Collective).

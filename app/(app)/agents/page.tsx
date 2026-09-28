@@ -277,7 +277,7 @@ export default function AgentsPage() {
             Agent Connections
           </h1>
           <p className="text-sm text-text-muted">
-            Connect AI agents and APIs to extend FusionClaw capabilities
+            Connect AI agents and APIs to extend Palawan Collective capabilities
           </p>
         </div>
         <button

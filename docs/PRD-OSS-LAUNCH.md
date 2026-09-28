@@ -1,4 +1,4 @@
-# FusionClaw — OSS Launch PRD
+# Palawan Collective — OSS Launch PRD
 
 > **Multi-session document.** This PRD is intentionally larger than a typical FDC PRD. Per Boss's directive, it covers the full arc from current state to public OSS launch — designed to be the equivalent of four separate PRDs consolidated into one. Sections marked **[OUTLINE — DEEPEN IN SESSION N+1]** are placeholders to be filled in follow-up sessions; everything else is meant to be authoritative now.
 >
@@ -18,11 +18,11 @@
 
 ## 1. Executive Summary
 
-FusionClaw is a self-hostable, MCP-native business operating system designed to be the data and operations layer that any AI agent — Claude Code, OpenClaw, custom — operates on. It merges CRM, operations, content, finance, and marketing into a single Next.js 16 app backed by one Postgres database, then exposes 234 MCP tools so an agent can read, write, and automate across the entire business with one API key.
+Palawan Collective is a self-hostable, MCP-native business operating system designed to be the data and operations layer that any AI agent — Claude Code, OpenClaw, custom — operates on. It merges CRM, operations, content, finance, and marketing into a single Next.js 16 app backed by one Postgres database, then exposes 234 MCP tools so an agent can read, write, and automate across the entire business with one API key.
 
-The OSS launch is FusionClaw's first public release. The goal is not parity with OpenClaw — it is **complement**: where OpenClaw is a personal AI assistant that hooks into chat platforms, FusionClaw is the *business* the assistant operates on. Tagline candidates carry the "All Hustle No Luck / B.Y.O.A." mascot universe (Bring Your Own Agent).
+The OSS launch is Palawan Collective's first public release. The goal is not parity with OpenClaw — it is **complement**: where OpenClaw is a personal AI assistant that hooks into chat platforms, Palawan Collective is the *business* the assistant operates on. Tagline candidates carry the "All Hustle No Luck / B.Y.O.A." mascot universe (Bring Your Own Agent).
 
-**The honest current state** (as of session 1, 2026-04-26): FusionClaw is structurally sound but visually and experientially looks like a "blueprint-lock template" rather than a finished product. The app shell, auth (now self-hosted, no third-party), database schema, MCP server, landing page, and 19 module routes exist. What's missing is the **substance** — the moments that make a product feel built rather than scaffolded. Closing that gap is the primary work of this PRD.
+**The honest current state** (as of session 1, 2026-04-26): Palawan Collective is structurally sound but visually and experientially looks like a "blueprint-lock template" rather than a finished product. The app shell, auth (now self-hosted, no third-party), database schema, MCP server, landing page, and 19 module routes exist. What's missing is the **substance** — the moments that make a product feel built rather than scaffolded. Closing that gap is the primary work of this PRD.
 
 **Headline phases** (full plan in §15):
 - **Phase 0** — Stabilization and verification of the work already done in this session
@@ -48,13 +48,13 @@ The OSS launch is FusionClaw's first public release. The goal is not parity with
 
 ### 2.1 Vision
 
-The operating system for AI-run small businesses. Not a chatbot that answers questions about your business — an agent that *runs* it. Processes invoices, follows up with leads, publishes content, files quarterly taxes, and reports back what it did while the human slept. FusionClaw is the substrate that makes that possible by putting every business primitive (lead, task, invoice, employee, content piece, campaign) in one place that the agent can see, read, write, and reason over.
+The operating system for AI-run small businesses. Not a chatbot that answers questions about your business — an agent that *runs* it. Processes invoices, follows up with leads, publishes content, files quarterly taxes, and reports back what it did while the human slept. Palawan Collective is the substrate that makes that possible by putting every business primitive (lead, task, invoice, employee, content piece, campaign) in one place that the agent can see, read, write, and reason over.
 
 ### 2.2 Positioning vs OpenClaw
 
-OpenClaw is the assistant. FusionClaw is the world the assistant operates in. They are not competitive products — they are layers of the same stack.
+OpenClaw is the assistant. Palawan Collective is the world the assistant operates in. They are not competitive products — they are layers of the same stack.
 
-| | OpenClaw | FusionClaw |
+| | OpenClaw | Palawan Collective |
 |---|---|---|
 | Primary surface | Chat (WhatsApp, Slack, iMessage, etc.) | Web dashboard + MCP API |
 | Hero feature | "AI assistant on every channel you use" | "One database, 234 tools, agent-native business OS" |
@@ -62,13 +62,13 @@ OpenClaw is the assistant. FusionClaw is the world the assistant operates in. Th
 | Distribution | curl one-liner CLI install | Three-path install (Local / Docker / Vercel) |
 | License | MIT | BSL 1.1 → Apache 2.0 in 2030 (open question — see §12) |
 
-The launch post should explicitly frame the relationship: *"Connect your OpenClaw or Claude agent safely to your business — FusionClaw is the data layer they operate on."* This positioning earns respect from OpenClaw's audience instead of competing with them.
+The launch post should explicitly frame the relationship: *"Connect your OpenClaw or Claude agent safely to your business — Palawan Collective is the data layer they operate on."* This positioning earns respect from OpenClaw's audience instead of competing with them.
 
 ### 2.3 What this PRD is NOT
 
 - Not a re-architecture proposal. The stack stays Next.js 16 + Neon + Drizzle + Tailwind v4 + Vercel.
 - Not an AI feature land-grab. AI features are scoped narrowly to what already differentiates: MCP tools, Wiki Brain auto-research, voice agent.
-- Not a multi-tenant SaaS PRD. FusionClaw is single-tenant per install. Multi-tenant is post-1.0.
+- Not a multi-tenant SaaS PRD. Palawan Collective is single-tenant per install. Multi-tenant is post-1.0.
 
 ---
 
@@ -80,9 +80,9 @@ The launch post should explicitly frame the relationship: *"Connect your OpenCla
 
 **P2: The AI-first operator.** Already heavy user of Claude Code, OpenClaw, or similar. Wants their agent to actually *do* things in their business instead of just talking about them. The MCP server is the hook.
 
-**P3: The agency dev / consultant.** Forks FusionClaw to build white-label business platforms for their own clients. Cares about extensibility, branding overrides, and the BSL/MIT licensing question.
+**P3: The agency dev / consultant.** Forks Palawan Collective to build white-label business platforms for their own clients. Cares about extensibility, branding overrides, and the BSL/MIT licensing question.
 
-**P4: The curious developer.** Sees FusionClaw on Hacker News, clones it to see how a 234-MCP-tool app is structured. May or may not stick around — but their stars and word-of-mouth shape adoption.
+**P4: The curious developer.** Sees Palawan Collective on Hacker News, clones it to see how a 234-MCP-tool app is structured. May or may not stick around — but their stars and word-of-mouth shape adoption.
 
 ### 3.2 User stories — top-of-funnel
 
@@ -136,7 +136,7 @@ This section names what the app *must do* across all phases. Specifics for each 
 - Plugin marketplace
 - Mobile app (Expo) — separate future PRD
 - Real-time collaboration features (multiple humans editing the same lead)
-- Stripe / payment processing for FusionClaw itself (it's free)
+- Stripe / payment processing for Palawan Collective itself (it's free)
 - Hosted SaaS version run by Fusion Data Company
 
 ---
@@ -176,7 +176,7 @@ This section names what the app *must do* across all phases. Specifics for each 
 
 ### 5.3 Architecture decisions outstanding
 
-- **License (BSL 1.1 vs MIT).** BSL converts to Apache 2030. MIT is the OSS standard. BSL protects against cloud strip-mining, MIT maximizes adoption. Decision needed before launch. Default recommendation: **MIT** unless Boss has a specific commercial concern about a hyperscaler offering FusionClaw as a managed service. Confidence: 60% (not high enough to act unilaterally).
+- **License (BSL 1.1 vs MIT).** BSL converts to Apache 2030. MIT is the OSS standard. BSL protects against cloud strip-mining, MIT maximizes adoption. Decision needed before launch. Default recommendation: **MIT** unless Boss has a specific commercial concern about a hyperscaler offering Palawan Collective as a managed service. Confidence: 60% (not high enough to act unilaterally).
 - **Wiki auto-research engine.** "Karpathian-style auto-research" was named by Boss. Implementation pattern is currently underspecified — could be (a) a cron job that periodically processes ingested docs through OpenRouter to generate links/summaries, (b) a real-time pipeline triggered on doc upload, (c) something else theinsuranceschool implements that I haven't reverse-engineered. **Requires clarification with Boss before Phase 1 deepens.** Confidence: 30%.
 - **Telemetry posture for self-host.** Plausible-style anonymous opt-in, or fully opt-out by default? Default recommendation: **opt-out by default**, opt-in only if user explicitly enables. Confidence: 75%.
 
@@ -254,7 +254,7 @@ Decision required before Phase 9 (marketing site).
 
 ### 8.1 Threat model (one-paragraph version)
 
-FusionClaw is self-hosted. The user owns the deploy, owns the database, owns the keys. The threat surface is: (a) the deployed app being accessible without auth on a public URL, mitigated by the `OWNER_PASSWORD` requirement on non-localhost; (b) MCP API key leak letting an attacker hit the API as if they were an authorized agent, mitigated by the key being treated as secret in env vars and rotatable via `npm run key:rotate`; (c) SQL injection via Drizzle parameter binding, mitigated by Drizzle's prepared statements.
+Palawan Collective is self-hosted. The user owns the deploy, owns the database, owns the keys. The threat surface is: (a) the deployed app being accessible without auth on a public URL, mitigated by the `OWNER_PASSWORD` requirement on non-localhost; (b) MCP API key leak letting an attacker hit the API as if they were an authorized agent, mitigated by the key being treated as secret in env vars and rotatable via `npm run key:rotate`; (c) SQL injection via Drizzle parameter binding, mitigated by Drizzle's prepared statements.
 
 ### 8.2 Hard rules
 
@@ -265,7 +265,7 @@ FusionClaw is self-hosted. The user owns the deploy, owns the database, owns the
 
 ### 8.3 Compliance scope
 
-FusionClaw is a self-hosted tool. The user is the data controller for their own deploy. Fusion Data Company does not collect or process user data. No GDPR/CCPA scope for the OSS distribution itself; users running their own instances inherit responsibility. SECURITY.md should make this explicit.
+Palawan Collective is a self-hosted tool. The user is the data controller for their own deploy. Fusion Data Company does not collect or process user data. No GDPR/CCPA scope for the OSS distribution itself; users running their own instances inherit responsibility. SECURITY.md should make this explicit.
 
 ### 8.4 Pre-launch security pass (Phase 0 deliverable)
 
@@ -292,7 +292,7 @@ Per Boss's direction (memory: `fusionclaw_launch_plan.md`), v1.0 ships three pat
 
 All three paths produce a working dashboard within ~2 minutes of clicking/curling.
 
-### 9.2 Hosting (FusionClaw the project, not the user's instance)
+### 9.2 Hosting (Palawan Collective the project, not the user's instance)
 
 - Marketing site — `fusionclaw.com` or `fusionclaw.dev` on Vercel
 - Docs site — `docs.fusionclaw.dev` on Vercel
@@ -384,7 +384,7 @@ Pre-launch must-pass checks (Phase 12 gate):
 | # | Risk | Probability | Impact | Mitigation |
 |---|---|---|---|---|
 | R-1 | A user runs the curl install on a clean Mac and it errors on Step 1 | High | Critical | Phase 7 watchdog tests on a clean VM before Phase 12 |
-| R-2 | An OpenClaw user complains FusionClaw is positioning against OpenClaw | Medium | Medium | Launch post explicitly frames complementary, not competitive |
+| R-2 | An OpenClaw user complains Palawan Collective is positioning against OpenClaw | Medium | Medium | Launch post explicitly frames complementary, not competitive |
 | R-3 | The 234 MCP tools claim is challenged — someone counts and finds 217 actual tools | Medium | High (credibility) | Phase 5 watchdog runs `npm run mcp:build` and counts tools registered; update README to actual number |
 | R-4 | Voice agent (ElevenLabs) costs balloon for a popular self-hosted app | Low | Low | ElevenLabs cost is on the user's own ElevenLabs account, not Fusion Data |
 | R-5 | A security issue shipped in v1.0 — exposed key, bypass auth | Medium | Critical | Phase 0 security pass + Phase 12 final security pass + responsible disclosure email in SECURITY.md |
@@ -440,9 +440,9 @@ This section reflects the actual state as of 2026-04-26 end of session 1, with c
 
 ## 14. Substance Gap (vs theinsuranceschool.vercel.app)
 
-Side-by-side comparison of what theinsuranceschool already has running vs FusionClaw at end of session 1. **Closing this gap is the body of work in Phases 1–4.**
+Side-by-side comparison of what theinsuranceschool already has running vs Palawan Collective at end of session 1. **Closing this gap is the body of work in Phases 1–4.**
 
-| Feature | theinsuranceschool | FusionClaw (now) | Phase to close |
+| Feature | theinsuranceschool | Palawan Collective (now) | Phase to close |
 |---|---|---|---|
 | Wiki Brain with file tree | ✅ 67 pages organized by folder | ⚠️ scaffolded, not running | 1 |
 | Force-directed graph view | ✅ 67 nodes / 453 edges, sliders for force params | ⚠️ scaffolded, not running | 1 |
@@ -457,7 +457,7 @@ Side-by-side comparison of what theinsuranceschool already has running vs Fusion
 | Branded loading / login states | ✅ "Strategic Oversight Protocol Initialized" | ❌ generic dark page | 4 |
 | Mascot footer watermark on all pages | ✅ visible | ⚠️ partial (only in dashboard background) | 4 |
 
-**Honest read:** theinsuranceschool is roughly 18–24 months ahead of FusionClaw on substance. The good news is Boss already built theinsuranceschool — most of the patterns are reusable. Phases 1–4 are largely *port what already exists* in another repo, not invent from scratch.
+**Honest read:** theinsuranceschool is roughly 18–24 months ahead of Palawan Collective on substance. The good news is Boss already built theinsuranceschool — most of the patterns are reusable. Phases 1–4 are largely *port what already exists* in another repo, not invent from scratch.
 
 ---
 
@@ -470,7 +470,7 @@ Side-by-side comparison of what theinsuranceschool already has running vs Fusion
 
 ### PHASE 0 — Stabilization & verification of session-1 work
 
-**Goal.** Verify everything claimed "fixed" in session 1 actually works under watchdog scrutiny. Close the audit doc's outstanding items. Get FusionClaw to a confirmed-stable baseline before any new work proceeds.
+**Goal.** Verify everything claimed "fixed" in session 1 actually works under watchdog scrutiny. Close the audit doc's outstanding items. Get Palawan Collective to a confirmed-stable baseline before any new work proceeds.
 
 **Scope.**
 - Watchdog-verify the auth refactor on both localhost and a non-localhost host header
@@ -524,7 +524,7 @@ Side-by-side comparison of what theinsuranceschool already has running vs Fusion
 
 ### PHASE 1 — Wiki Brain (file tree + graph view + auto-research)
 
-**Goal.** Deliver FusionClaw's hero feature: an Obsidian-grade knowledge graph for the user's business. File tree on the left, force-directed graph view alternative, full CRUD, wikilink parsing, and (extension) Karpathian-style auto-research on document ingest.
+**Goal.** Deliver Palawan Collective's hero feature: an Obsidian-grade knowledge graph for the user's business. File tree on the left, force-directed graph view alternative, full CRUD, wikilink parsing, and (extension) Karpathian-style auto-research on document ingest.
 
 **Scope.**
 - **Core (Phase 1.0)** — already scaffolded in session 1, needs activation:
@@ -780,7 +780,7 @@ Side-by-side comparison of what theinsuranceschool already has running vs Fusion
 - Axis B — 404 visual: navigate to /this-does-not-exist, screenshot, mascot present
 - Axis C — Error page visual: trigger an error (dev-tool-induced), screenshot, mascot present
 - Axis D — OG image: curl /og.png, file size > 0, image dimensions 1200×630
-- Axis E — Repo social preview: `gh api repos/Fusion-Data-Company/FusionClaw` shows `social_preview` set
+- Axis E — Repo social preview: `gh api repos/Fusion-Data-Company/Palawan Collective` shows `social_preview` set
 
 **Risks.**
 - Icon production timeline — Boss-dependent. Mitigation: ship Phase 4 last among 1–4, or accept mixed-state for v1.0 launch with a v1.0.1 polish.
@@ -886,7 +886,7 @@ Plus per-page watchdog axes from above.
 
 **Scope.**
 - **Local install** (`install.sh`): detect OS (macOS/Linux), install Node via nvm if missing, clone repo, `npm install`, `npm run onboard`, open browser to `localhost:3000`.
-- **Docker compose** (`install-docker.sh` + `docker-compose.yml`): pulls latest image of FusionClaw + Postgres, starts both, opens browser.
+- **Docker compose** (`install-docker.sh` + `docker-compose.yml`): pulls latest image of Palawan Collective + Postgres, starts both, opens browser.
 - **Vercel deploy button** (`vercel.json` + button on marketing page): user clicks → Vercel forks repo to their GitHub → user provides Neon URL via Vercel env vars UI → deployment.
 - All scripts hosted as static files at `fusionclaw.dev/install.sh`, `/install-docker.sh`, etc.
 - Marketing-site `/install` page with three tabs.
@@ -914,7 +914,7 @@ Plus per-page watchdog axes from above.
 - Static site at `docs.fusionclaw.app` (subdomain of the marketing domain). Deployed separately from the app.
 - Tech: **Nextra** on Next.js 15 (matches the team's Next.js skill set; supports MDX for code samples; supports search out of the box).
 - Sections, in this order in the sidebar:
-  1. **Getting Started** — what FusionClaw is in 3 paragraphs, install one-liner, first-run experience walkthrough
+  1. **Getting Started** — what Palawan Collective is in 3 paragraphs, install one-liner, first-run experience walkthrough
   2. **Setup** — full setup-guide.md content (already exists in `docs/setup-guide.md`), reformatted for Nextra
   3. **Architecture** — the diagram from `docs/architecture.md` + an explainer of the three-layer pattern (raw / wiki / schema for Wiki Brain; data / API / UI for the rest)
   4. **MCP API Reference** — auto-generated from the `mcp-server/src/tools/` registry. One page per tool category (CRUD / Query / Analytics / AI / System). Each tool entry: name, description, input schema, output schema, example call, example response.
@@ -930,7 +930,7 @@ Plus per-page watchdog axes from above.
 - API playground / interactive sandbox — deferred
 
 **User stories.**
-- As a brand-new visitor, I land on `docs.fusionclaw.app/getting-started`, read 3 paragraphs, and know whether FusionClaw is for me.
+- As a brand-new visitor, I land on `docs.fusionclaw.app/getting-started`, read 3 paragraphs, and know whether Palawan Collective is for me.
 - As someone who just installed it, I land on `docs.fusionclaw.app/setup` and find the exact next step (env vars, schema migration, first run).
 - As an agent developer, I navigate to `/mcp/leads/leads_list` and see a copy-paste-able example of calling that tool.
 - As an agency owner, I navigate to `/white-label`, see the steps, fork the repo, ship to a client.
@@ -959,7 +959,7 @@ Plus per-page watchdog axes from above.
 **Dependencies.** Phase 0 complete (no point shipping docs that describe broken modules). Phase 4 complete is preferred (mascot + branding ready). Phases 1, 2, 3, 5 don't strictly block — docs can ship before Wiki Brain ingest is finished, with that section marked "v1.1."
 
 **Watchdog verification axes.**
-- Axis A — Site responds: `curl https://docs.fusionclaw.app` returns 200, HTML body contains "FusionClaw"
+- Axis A — Site responds: `curl https://docs.fusionclaw.app` returns 200, HTML body contains "Palawan Collective"
 - Axis B — All sidebar nav links resolve: scrape sidebar, curl each, count 200s vs 404s
 - Axis C — MCP tool reference accurate: parse the rendered HTML, count tool entries, compare to `mcp-server/src/tools/` registered count — must match
 - Axis D — Search works: hit search index, query "install," result includes the Setup page
@@ -1173,7 +1173,7 @@ The privacy posture is non-negotiable per Boss's launch decision. "Self-hosted, 
 
 **Surface 4 — GitHub metrics dashboard (internal):**
 - Simple internal dashboard on the marketing site at `/internal/metrics` (password-gated to Rob): stars, forks, clones, PR count, issue count, weekly trend lines.
-- Pulls from GitHub API (`/repos/Fusion-Data-Company/FusionClaw/traffic/clones` etc.)
+- Pulls from GitHub API (`/repos/Fusion-Data-Company/Palawan Collective/traffic/clones` etc.)
 - Updated daily via Vercel Cron.
 
 **Out of scope.**
@@ -1223,7 +1223,7 @@ The privacy posture is non-negotiable per Boss's launch decision. "Self-hosted, 
 - Axis C — Telemetry opt-out actually doesn't send: install with N at the prompt, run dev for 5 minutes, watchdog confirms no POST to `/api/telemetry/install`
 - Axis D — Telemetry opt-in does send: install with Y, run dev, watchdog confirms POST occurred + new row in `installs` table
 - Axis E — Public install counter updates: run a fresh opt-in install, refresh marketing site, counter increments by 1
-- Axis F — Internal metrics dashboard renders accurate numbers vs GitHub API: cross-check stars count between dashboard and `gh api repos/Fusion-Data-Company/FusionClaw`
+- Axis F — Internal metrics dashboard renders accurate numbers vs GitHub API: cross-check stars count between dashboard and `gh api repos/Fusion-Data-Company/Palawan Collective`
 
 **Risks.**
 - Telemetry mistrust — even opt-in, OSS communities are wary. Mitigation: source code for telemetry sender is in the repo, fully auditable, telemetry README page on the docs site explains exactly what's collected.
@@ -1280,7 +1280,7 @@ The privacy posture is non-negotiable per Boss's launch decision. "Self-hosted, 
 
 **Acceptance criteria.**
 - [ ] All 10 readiness gates above are CONFIRMED at watchdog ≥90% literal score
-- [ ] `gh repo edit Fusion-Data-Company/FusionClaw --visibility public` runs cleanly when triggered
+- [ ] `gh repo edit Fusion-Data-Company/Palawan Collective --visibility public` runs cleanly when triggered
 - [ ] All 6 launch posts ready to copy-paste from the `launch-content/` files
 - [ ] OG card for fusionclaw.app validates on opengraph.xyz with correct title + image
 - [ ] Demo instance verified up + read-only mode working 1 hour before launch
@@ -1375,7 +1375,7 @@ Mobile is its own product. v1.0 is web-only. The Expo companion app is **not** i
 **13.6 — Day 1 retrospective + community ritual:**
 
 - **Launch + 24h**: short retro post to LinkedIn + Discord — "24 hours in, [N] stars, what's surprising"
-- **Launch + 7 days**: longer retro on the blog — "What I learned launching FusionClaw on [day]"
+- **Launch + 7 days**: longer retro on the blog — "What I learned launching Palawan Collective on [day]"
 - **Launch + 30 days**: roadmap reveal, community-input Discussion launches v1.1 process
 
 **Out of scope.**

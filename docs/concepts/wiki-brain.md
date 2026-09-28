@@ -1,11 +1,11 @@
 ---
 title: Wiki Brain — the Karpathy LLM Wiki pattern
-summary: How FusionClaw's knowledge memory works. Source-pure raw layer + LLM-maintained wiki + appendable log.
+summary: How Palawan Collective's knowledge memory works. Source-pure raw layer + LLM-maintained wiki + appendable log.
 ---
 
 # Wiki Brain
 
-FusionClaw's knowledge memory is not a vector database. It's a **transparent wiki** the agent maintains for you, following the pattern Andrej Karpathy described in his [LLM Wiki gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+Palawan Collective's knowledge memory is not a vector database. It's a **transparent wiki** the agent maintains for you, following the pattern Andrej Karpathy described in his [LLM Wiki gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
 The thesis: most "AI memory" treats every question as fresh and re-derives knowledge from raw sources every time. Wiki Brain is different — the agent builds and maintains a persistent, cross-linked markdown wiki between you and your raw sources. **Knowledge accumulates instead of being re-derived.**
 
@@ -182,4 +182,4 @@ The short version: an agent runs as a worker (cron job + on-upload trigger) that
 
 - Andrej Karpathy, "[LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)" (the original gist that drives this pattern)
 - forrestchang, [andrej-karpathy-skills CLAUDE.md](https://github.com/forrestchang/andrej-karpathy-skills) (the disciplined-agent schema document)
-- FusionClaw's full implementation spec: [agent-protocols/wiki_brain_karpathy_pattern.md](../agent-protocols/wiki_brain_karpathy_pattern.md)
+- Palawan Collective's full implementation spec: [agent-protocols/wiki_brain_karpathy_pattern.md](../agent-protocols/wiki_brain_karpathy_pattern.md)

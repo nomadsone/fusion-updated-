@@ -1,11 +1,11 @@
 ---
-title: What is FusionClaw?
+title: What is Palawan Collective?
 summary: The five-minute introduction. Why this exists, who it's for, what makes it different.
 ---
 
-# What is FusionClaw?
+# What is Palawan Collective?
 
-FusionClaw is a self-hostable business operating system that puts CRM, operations, content creation, marketing, and bookkeeping into a single Next.js app backed by one Postgres database — and exposes the entire platform through 234 MCP tools so any AI agent can read, write, and automate across your whole business with a single API key.
+Palawan Collective is a self-hostable business operating system that puts CRM, operations, content creation, marketing, and bookkeeping into a single Next.js app backed by one Postgres database — and exposes the entire platform through 234 MCP tools so any AI agent can read, write, and automate across your whole business with a single API key.
 
 Your AI doesn't need ten integrations. It needs one.
 
@@ -23,10 +23,10 @@ What if everything lived in one place?
 
 ## The idea
 
-FusionClaw puts every business primitive — leads, tasks, invoices, content pieces, campaigns, expenses, employees, knowledge — into a single Postgres database. Then it exposes the platform through 234 MCP tools so any agent (Claude Code, [OpenClaw](https://github.com/openclaw/openclaw), or a custom one) can operate on the whole business through one API key.
+Palawan Collective puts every business primitive — leads, tasks, invoices, content pieces, campaigns, expenses, employees, knowledge — into a single Postgres database. Then it exposes the platform through 234 MCP tools so any agent (Claude Code, [OpenClaw](https://github.com/openclaw/openclaw), or a custom one) can operate on the whole business through one API key.
 
 ```
-[ Your AI agent ] → MCP key → [ FusionClaw ] → Postgres
+[ Your AI agent ] → MCP key → [ Palawan Collective ] → Postgres
                                     │
                                     └─→ Web dashboard for the human
 ```
@@ -54,7 +54,7 @@ One database. One key. Two surfaces (web for humans, MCP for agents). No sync jo
 
 **Self-hostable.** Your data stays on your infrastructure. Clone the repo, set your env vars, deploy to Vercel or run it locally. No vendor lock-in. No third-party auth provider.
 
-**White-label ready.** FusionClaw is a template. Fork it, rebrand it, sell it to your clients. The architecture is designed to be customized, not just consumed.
+**White-label ready.** Palawan Collective is a template. Fork it, rebrand it, sell it to your clients. The architecture is designed to be customized, not just consumed.
 
 ---
 
@@ -80,12 +80,12 @@ One database. One key. Two surfaces (web for humans, MCP for agents). No sync jo
 
 [OpenClaw](https://github.com/openclaw/openclaw) is a multi-channel gateway for AI agents — a personal AI assistant you can message from WhatsApp, Telegram, Slack, etc., running on your own machine.
 
-FusionClaw is the **business** that an OpenClaw or Claude Code agent would operate. Where your data lives. Where your agent reads and writes. The two complement each other:
+Palawan Collective is the **business** that an OpenClaw or Claude Code agent would operate. Where your data lives. Where your agent reads and writes. The two complement each other:
 
 - **OpenClaw** = "AI assistant for any chat platform"
-- **FusionClaw** = "the business OS that AI assistant runs"
+- **Palawan Collective** = "the business OS that AI assistant runs"
 
-If you have OpenClaw, FusionClaw is what your agent operates on. If you don't, FusionClaw still works perfectly with Claude Code or any custom MCP-compatible agent.
+If you have OpenClaw, Palawan Collective is what your agent operates on. If you don't, Palawan Collective still works perfectly with Claude Code or any custom MCP-compatible agent.
 
 ---
 

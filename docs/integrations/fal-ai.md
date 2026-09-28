@@ -1,6 +1,6 @@
 ---
 title: fal-ai integration
-summary: How FusionClaw uses fal-ai — full content coming in v1.0.x docs polish pass.
+summary: How Palawan Collective uses fal-ai — full content coming in v1.0.x docs polish pass.
 ---
 
 # fal-ai

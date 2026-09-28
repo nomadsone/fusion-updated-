@@ -226,7 +226,7 @@ export async function POST(
   }
 
   // Multi-turn loop with tool calling
-  const systemMsg = `You are a skill in the FusionClaw agent fleet. Skill: "${skill.name}".
+  const systemMsg = `You are a skill in the Palawan Collective agent fleet. Skill: "${skill.name}".
 
 KNOWLEDGE: Use wiki_retrieve to gather context before answering. Use wiki_append to persist findings the operator should be able to find later. Cross-link with [[slug]] syntax.
 
@@ -279,7 +279,7 @@ If the task doesn't match any of these, return plain text (the operator will see
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-        "X-Title": "FusionClaw",
+        "X-Title": "Palawan Collective",
       },
       body: JSON.stringify({
         model,

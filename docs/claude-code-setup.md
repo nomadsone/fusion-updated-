@@ -1,10 +1,10 @@
 # Claude Code Integration Guide
 
-This guide explains how to connect Claude Code to FusionClaw for complete programmatic control over your business platform.
+This guide explains how to connect Claude Code to Palawan Collective for complete programmatic control over your business platform.
 
 ## Prerequisites
 
-- FusionClaw installed and configured (`npm run onboard` completed)
+- Palawan Collective installed and configured (`npm run onboard` completed)
 - Claude Code CLI installed
 - MCP API key from your `.env.local` file
 
@@ -19,7 +19,7 @@ npm run mcp:build
 
 ### 2. Configure Claude Code
 
-Add the FusionClaw MCP server to your Claude Code configuration.
+Add the Palawan Collective MCP server to your Claude Code configuration.
 
 **Edit `~/.claude/mcp_servers.json`:**
 
@@ -54,7 +54,7 @@ claude-code --restart
 In Claude Code, ask:
 
 ```
-List all available FusionClaw tools
+List all available Palawan Collective tools
 ```
 
 You should see 234 tools registered.
@@ -150,7 +150,7 @@ Execute: UPDATE leads SET priority = 'high' WHERE deal_value > 50000
 
 ## Security Notes
 
-- The MCP API key grants full access to your FusionClaw instance
+- The MCP API key grants full access to your Palawan Collective instance
 - Keep your API key secure and don't commit it to version control
 - Raw SQL write operations require the admin permission level
 - All operations are logged for audit purposes
@@ -193,4 +193,4 @@ Verify your `DATABASE_URL` is correct and the database is accessible.
 ## Further Reading
 
 - [MCP Tools Reference](./mcp-tools.md) - Complete list of all tools and parameters
-- [FusionClaw README](../README.md) - Getting started guide
+- [Palawan Collective README](../README.md) - Getting started guide

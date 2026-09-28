@@ -8,11 +8,11 @@ I run a small agency. Like most of you, I had the tool sprawl problem: one CRM, 
 
 Then I started using AI agents (Claude Code, specifically) and realized something: my agent could only see what I connected it to. And connecting it to five different SaaS products meant five different integrations, five different APIs, five different auth flows. The agent was blind to 80% of my business at any given moment.
 
-So I built FusionClaw.
+So I built Palawan Collective.
 
 ## What It Is
 
-FusionClaw is a self-hostable business operating system that puts CRM, operations, content creation, marketing, and bookkeeping into one Next.js app backed by one Postgres database. Then it exposes the entire platform through 234 MCP tools — so any AI agent can read, write, and automate across your whole business with a single API key.
+Palawan Collective is a self-hostable business operating system that puts CRM, operations, content creation, marketing, and bookkeeping into one Next.js app backed by one Postgres database. Then it exposes the entire platform through 234 MCP tools — so any AI agent can read, write, and automate across your whole business with a single API key.
 
 Your AI doesn't need ten integrations. It needs one.
 
@@ -80,8 +80,8 @@ The design targets people who stare at screens 12+ hours a day. It should feel l
 ## Self-Hosting
 
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 npm install
 npm run onboard   # interactive wizard: DB URL, optional API keys, generates MCP key
 npm run dev       # http://localhost:3000 — no login required on localhost
@@ -110,9 +110,9 @@ Docker support is also included if you prefer containers — `docker build && do
 
 ## Links
 
-- GitHub: github.com/Fusion-Data-Company/FusionClaw
+- GitHub: github.com/Fusion-Data-Company/Palawan Collective
 - Live Demo: fusionclaw.vercel.app
-- Vision Doc: github.com/Fusion-Data-Company/FusionClaw/blob/main/VISION.md
+- Vision Doc: github.com/Fusion-Data-Company/Palawan Collective/blob/main/VISION.md
 
 If you've been duct-taping SaaS tools together and dreaming of something unified — give it a look. Stars help with visibility. Issues help with direction. PRs help with everything.
 

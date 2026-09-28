@@ -1,6 +1,6 @@
-# Provisioning a Hosted FusionClaw buyer ($99 / month)
+# Provisioning a Hosted Palawan Collective buyer ($99 / month)
 
-FusionClaw is single-tenant by design: one owner password, one MCP key, one database per
+Palawan Collective is single-tenant by design: one owner password, one MCP key, one database per
 business. So every hosted buyer gets their own Vercel project and their own Neon database.
 
 | Instance | Vercel project | Database | Notes |
@@ -19,7 +19,7 @@ within 1 business day. Read both fields from the Checkout Session in the Stripe 
 ## Steps (about 25 minutes)
 
 1. **Neon** – create project `fusionclaw-<slug>` (us-east-2), copy the pooled URI.
-2. **Vercel** – create project `fusionclaw-<slug>` linked to `Fusion-Data-Company/FusionClaw`,
+2. **Vercel** – create project `fusionclaw-<slug>` linked to `Fusion-Data-Company/Palawan Collective`,
    branch `main`. Env for all environments, set **before** the first deploy:
    ```
    DATABASE_URL, DATABASE_URL_UNPOOLED   <neon>
@@ -34,7 +34,7 @@ within 1 business day. Read both fields from the Checkout Session in the Stripe 
    ```
 3. **Schema + owner** – on the device VM:
    ```
-   cd ~/work/FusionClaw && git pull
+   cd ~/work/Palawan Collective && git pull
    DATABASE_URL=<neon> npx drizzle-kit push --force
    DATABASE_URL=<neon> OWNER_EMAIL=<email> OWNER_NAME="<name>" npx tsx scripts/seed-wiki.ts   # wiki memory only, no sample business data
    ```

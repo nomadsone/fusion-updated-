@@ -72,7 +72,7 @@ export function getAiTools(): ToolDefinition[] {
         // Add system prompt if provided
         const allMessages = systemPrompt
           ? [{ role: "system", content: systemPrompt }, ...messages]
-          : [{ role: "system", content: "You are a helpful AI assistant for FusionClaw." }, ...messages];
+          : [{ role: "system", content: "You are a helpful AI assistant for Palawan Collective." }, ...messages];
 
         try {
           const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -81,7 +81,7 @@ export function getAiTools(): ToolDefinition[] {
               "Content-Type": "application/json",
               Authorization: `Bearer ${apiKey}`,
               "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://fusionclaw.local",
-              "X-Title": "FusionClaw MCP",
+              "X-Title": "Palawan Collective MCP",
             },
             body: JSON.stringify({
               model,
@@ -260,7 +260,7 @@ Return ONLY the humanized content, no explanations.`;
               "Content-Type": "application/json",
               Authorization: `Bearer ${apiKey}`,
               "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://fusionclaw.local",
-              "X-Title": "FusionClaw MCP - Humanizer",
+              "X-Title": "Palawan Collective MCP - Humanizer",
             },
             body: JSON.stringify({
               model: "anthropic/claude-sonnet-4",
@@ -360,7 +360,7 @@ Be specific, cite numbers from the data, and provide actionable insights.`;
               "Content-Type": "application/json",
               Authorization: `Bearer ${apiKey}`,
               "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://fusionclaw.local",
-              "X-Title": "FusionClaw MCP - Analyzer",
+              "X-Title": "Palawan Collective MCP - Analyzer",
             },
             body: JSON.stringify({
               model: "anthropic/claude-sonnet-4",
@@ -449,7 +449,7 @@ Be specific, cite numbers from the data, and provide actionable insights.`;
               "Content-Type": "application/json",
               Authorization: `Bearer ${apiKey}`,
               "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL || "https://fusionclaw.local",
-              "X-Title": "FusionClaw MCP",
+              "X-Title": "Palawan Collective MCP",
             },
             body: JSON.stringify({
               model,

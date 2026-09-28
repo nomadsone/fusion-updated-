@@ -1,5 +1,5 @@
 /**
- * FusionClaw's plates. Three photographs, generated for this product, of the
+ * Palawan Collective's plates. Three photographs, generated for this product, of the
  * world it actually lives in: a small operation's paperwork after hours.
  *
  * Focal points are set because `object-fit: cover` on a 16:9 source in a tall

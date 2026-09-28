@@ -1,6 +1,6 @@
-# FusionClaw — User Experience Walkthrough
+# Palawan Collective — User Experience Walkthrough
 
-**Audience:** Anyone who needs to understand what FusionClaw does, who uses it, and how a new user moves through it from first install to daily use.
+**Audience:** Anyone who needs to understand what Palawan Collective does, who uses it, and how a new user moves through it from first install to daily use.
 
 This is not marketing copy. This is the actual flow, page by page, with what happens, what data appears, and what action the user is meant to take.
 
@@ -8,13 +8,13 @@ This is not marketing copy. This is the actual flow, page by page, with what hap
 
 ## The Three Ways In
 
-A user reaches FusionClaw through one of three entry points:
+A user reaches Palawan Collective through one of three entry points:
 
 1. **The hosted demo** — visits `fusionclaw.vercel.app` and is prompted for the demo's `OWNER_PASSWORD` (or a public-demo password if Boss publishes one).
 2. **Self-host install** — clones the repo, runs `npm run onboard`, gets a local instance running on `localhost:3000` they fully own. **No login required on localhost** — they're trusted.
-3. **Agent integration only** — an existing FusionClaw user gives an MCP API key to their AI agent (Claude Code, OpenClaw, etc.) so the agent can read and write across the platform programmatically. No UI access required.
+3. **Agent integration only** — an existing Palawan Collective user gives an MCP API key to their AI agent (Claude Code, OpenClaw, etc.) so the agent can read and write across the platform programmatically. No UI access required.
 
-**There is no third-party auth.** No Clerk, no Auth0, no Google sign-in, no signup flow with an external company. FusionClaw is self-hosted and free. The only credentials in the system are: (a) `OWNER_PASSWORD` for non-localhost UI access, set in the user's own env vars, and (b) the MCP API key for agents.
+**There is no third-party auth.** No Clerk, no Auth0, no Google sign-in, no signup flow with an external company. Palawan Collective is self-hosted and free. The only credentials in the system are: (a) `OWNER_PASSWORD` for non-localhost UI access, set in the user's own env vars, and (b) the MCP API key for agents.
 
 ---
 
@@ -25,8 +25,8 @@ This is the path a new user takes from `git clone` to "I just added my first lea
 ### Minute 0–2: Install
 
 ```bash
-git clone https://github.com/Fusion-Data-Company/FusionClaw.git
-cd FusionClaw
+git clone https://github.com/Fusion-Data-Company/Palawan Collective.git
+cd Palawan Collective
 npm install
 ```
 
@@ -66,7 +66,7 @@ Click **Live Demo** → routed straight to `/dashboard`. **No login screen.** Lo
 
 **Behind the scenes:** `app/(app)/layout.tsx` calls `getCurrentUser()` from `lib/auth.ts`. The middleware's localhost passthrough has already let the request through. `getCurrentUser()` calls `getOrCreateOwner()` which queries the `users` table for the row with `authId = 'owner'`. On the very first request, there is none, so it creates one with `role: 'admin'`. Every subsequent request returns that same singleton user. No accounts to manage.
 
-When this user later deploys their FusionClaw instance to Vercel, they set `OWNER_PASSWORD` in their env vars. The deployed `/login` page accepts that password, validates timing-safely against the env var, and sets a signed JWT cookie. From then on the deployed instance authenticates against the cookie.
+When this user later deploys their Palawan Collective instance to Vercel, they set `OWNER_PASSWORD` in their env vars. The deployed `/login` page accepts that password, validates timing-safely against the env var, and sets a signed JWT cookie. From then on the deployed instance authenticates against the cookie.
 
 ### Minute 7–10: First impression — the Command Center
 
@@ -229,7 +229,7 @@ User goes to **Agent Connections** (`/agents`), copies their MCP API key. Adds t
 {
   "fusionclaw": {
     "command": "node",
-    "args": ["/path/to/FusionClaw/mcp-server/dist/index.js"],
+    "args": ["/path/to/Palawan Collective/mcp-server/dist/index.js"],
     "env": {
       "MCP_API_KEY": "fusionclaw_sk_live_...",
       "DATABASE_URL": "postgresql://..."

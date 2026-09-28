@@ -233,7 +233,7 @@ export default function SettingsPage() {
           <h2 className="text-xs font-medium uppercase tracking-wider text-text-muted">API Keys & Integrations</h2>
         </div>
         <p className="text-[11px] text-text-disabled mb-4">
-          Connect services to power your workflows. Sign up through our links to support FusionClaw. Keys are encrypted with AES-256-GCM and never exposed.
+          Connect services to power your workflows. Sign up through our links to support Palawan Collective. Keys are encrypted with AES-256-GCM and never exposed.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {PROVIDERS.map((config) => (

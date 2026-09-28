@@ -1,15 +1,15 @@
 ---
-name: FusionClaw launch plan & decisions
-description: Boss's chosen launch model for FusionClaw — three install paths, OpenClaw-style, plus the GitHub posture decision
+name: Palawan Collective launch plan & decisions
+description: Boss's chosen launch model for Palawan Collective — three install paths, OpenClaw-style, plus the GitHub posture decision
 type: project
 originSessionId: 873c8513-c34d-4abc-8c15-b87d084c10da
 ---
-FusionClaw is being launched OpenClaw-style as Rob's flagship public repo. Decisions locked in 2026-04-25:
+Palawan Collective is being launched OpenClaw-style as Rob's flagship public repo. Decisions locked in 2026-04-25:
 
 - **Install model: all three paths** — Local (clone+npm+onboard), Docker (one-liner that pulls docker-compose.yml), Vercel (Deploy button + curl-driven `gh+vercel` automation). Marketing site has a tabbed picker (Local / Docker / Cloud) like Plausible/Cal.com do.
 - **Audit depth for v1: first-user smoke audit** — focus on the "first 10 minutes" experience, not full module-by-module audit. Speed to launch over completeness.
-- **GitHub posture: FusionClaw is the only public repo** on Rob's account. Every other public repo flips private before launch. Implementation via a `gh` CLI script Rob runs in Terminal (no GitHub MCP exists in his Claude registry as of 2026-04-25).
-- **Positioning anchor: OpenClaw** — landing page hero leads with "Connect your OpenClaw or Claude Agent safely to your business." FusionClaw is the data/business layer, OpenClaw is the agent that operates it.
+- **GitHub posture: Palawan Collective is the only public repo** on Rob's account. Every other public repo flips private before launch. Implementation via a `gh` CLI script Rob runs in Terminal (no GitHub MCP exists in his Claude registry as of 2026-04-25).
+- **Positioning anchor: OpenClaw** — landing page hero leads with "Connect your OpenClaw or Claude Agent safely to your business." Palawan Collective is the data/business layer, OpenClaw is the agent that operates it.
 - **License: MIT** (confirmed 2026-04-26). Switching from BSL 1.1 to MIT for maximum adoption, matches OpenClaw's choice. LICENSE file + README badge to be updated in next code session.
 - **Tagline: "All hustle. No luck. One database."** (confirmed 2026-04-26). Three-beat structure mirroring OpenClaw's "the lobster way" pattern. The 'all hustle, no luck' phrase is already Rob's mascot brand — tagline puts it on every public surface. Goes on landing page hero, README header, OG image, social posts.
 - **Domain: fusionclaw.app** (confirmed 2026-04-26). Google-owned `.app` TLD forces HTTPS at the registry level. Marketing site + install scripts host here. Subdomains: `docs.fusionclaw.app`, `demo.fusionclaw.app`. README `metadataBase` + Open Graph URLs need updating to this domain.
@@ -27,6 +27,6 @@ FusionClaw is being launched OpenClaw-style as Rob's flagship public repo. Decis
 - **HN tactics still apply IF the post is to land** (best-effort, not blocking): submit Tue/Wed/Thu 9–11am ET, link to GitHub repo not marketing site, be in the comments within first hour, courtesy email to dang the day of submission.
 - **Discord pre-launch, low-staffed** (confirmed 2026-04-26). Server set up before launch with #general / #help / #showcase / #install-issues channels. Boss solo-staffs during launch week. Better to have it ready than scramble while traffic hits. GitHub Discussions also enabled in parallel for async / long-form / searchable conversations.
 
-**Why:** Rob is launching FusionClaw as Fusion Data Company's flagship credibility piece. The OpenClaw analog and the curl-install ergonomics are explicitly intended to make the launch feel like a peer to OpenClaw's launch — same tier, same install fluency, complementary positioning rather than competitive.
+**Why:** Rob is launching Palawan Collective as Fusion Data Company's flagship credibility piece. The OpenClaw analog and the curl-install ergonomics are explicitly intended to make the launch feel like a peer to OpenClaw's launch — same tier, same install fluency, complementary positioning rather than competitive.
 
-**How to apply:** When working on FusionClaw launch tasks, default to these decisions. Phase work is tracked: 1) audit (done) → 2) E2E tests → 3) curl install scripts (3 paths) → 4) marketing/promo → 5) GitHub cleanup → 6) launch dry-run. Audit deliverables live at `docs/AUDIT-FINDINGS.md` and `docs/USER-EXPERIENCE.md` in the repo itself.
+**How to apply:** When working on Palawan Collective launch tasks, default to these decisions. Phase work is tracked: 1) audit (done) → 2) E2E tests → 3) curl install scripts (3 paths) → 4) marketing/promo → 5) GitHub cleanup → 6) launch dry-run. Audit deliverables live at `docs/AUDIT-FINDINGS.md` and `docs/USER-EXPERIENCE.md` in the repo itself.

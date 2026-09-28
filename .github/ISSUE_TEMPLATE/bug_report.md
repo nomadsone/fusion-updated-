@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Report a bug to help us improve FusionClaw
+about: Report a bug to help us improve Palawan Collective
 title: "[Bug] "
 labels: bug
 assignees: ''
@@ -28,7 +28,7 @@ If applicable, add screenshots.
 - OS: [e.g. macOS 15, Windows 11]
 - Browser: [e.g. Chrome 130, Safari 18]
 - Node.js: [e.g. 22.x]
-- FusionClaw version: [e.g. 0.9.0]
+- Palawan Collective version: [e.g. 0.9.0]
 
 ## Console Errors
 ```

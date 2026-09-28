@@ -1,4 +1,4 @@
-# FusionClaw repositioning — one page
+# Palawan Collective repositioning — one page
 
 Status: proposal for Rob. No live rename until a name is picked. Everything below can ship
 under the current name today.
@@ -21,7 +21,7 @@ any of their tools.
 - "All hustle. No luck. One database." is a vibe, not a promise. Nobody searches for it.
 - "Agent-native business operating system" sounds like a platform play; the buyer wants a tool
   that makes their agent useful on Monday.
-- The name FusionClaw reads as a Fusion Data Company internal project (and OpenClaw's shadow).
+- The name Palawan Collective reads as a Fusion Data Company internal project (and OpenClaw's shadow).
   It does not say what the product does, and "claw" fights the trust a finance/CRM tool needs.
 
 ## Proposed line

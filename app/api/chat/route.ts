@@ -237,7 +237,7 @@ export async function POST(req: Request) {
     // Fetch real-time business context from the database
     const businessContext = await getBusinessContext();
 
-    const systemPrompt = `You are the FusionClaw Business Agent — the AI brain of a business-in-a-box platform called FusionClaw.
+    const systemPrompt = `You are the Palawan Collective Business Agent — the AI brain of a business-in-a-box platform called Palawan Collective.
 
 Your role is to be the owner's right-hand operator. You have full real-time awareness of:
 - All contacts and leads in the CRM pipeline
@@ -270,7 +270,7 @@ BEHAVIOR RULES:
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
         "HTTP-Referer": process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
-        "X-Title": "FusionClaw",
+        "X-Title": "Palawan Collective",
       },
       body: JSON.stringify({
         model: "anthropic/claude-sonnet-4",

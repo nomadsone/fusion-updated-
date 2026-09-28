@@ -1,4 +1,4 @@
-# FusionClaw Launch Day Timeline
+# Palawan Collective Launch Day Timeline
 
 **Launch day:** Tuesday, 2026-04-28 (today). Repo public, MIT, fusionclaw.app live.
 
@@ -25,7 +25,7 @@
 ## T-3 DAYS — Final dry runs
 
 - [ ] Watchdog clean install on a fresh VM (or clean macOS user account):
-  - `git clone https://github.com/Fusion-Data-Company/FusionClaw.git && cd FusionClaw && npm run onboard` works end-to-end
+  - `git clone https://github.com/Fusion-Data-Company/Palawan Collective.git && cd Palawan Collective && npm run onboard` works end-to-end
   - Docker compose path works
   - Vercel deploy button works
 - [ ] Verify https://fusionclaw.app loads in incognito, every module renders, no console errors
@@ -61,7 +61,7 @@ All times are local (US Eastern recommended; HN's audience peaks then).
 
 ### 09:00 — REPO GOES PUBLIC
 ```
-gh repo edit Fusion-Data-Company/FusionClaw --visibility public
+gh repo edit Fusion-Data-Company/Palawan Collective --visibility public
 ```
 - YouTube videos flip to **Public** (both)
 - Twitter video re-upload (if applicable)
@@ -126,7 +126,7 @@ These four go up within ~5 minutes of each other. Don't space them out — same 
 
 ## T+72 HOURS
 
-- Write a public retro: "FusionClaw launch — what worked, what didn't, what's next"
+- Write a public retro: "Palawan Collective launch — what worked, what didn't, what's next"
 - Post to LinkedIn + Discord
 - Set up the v1.1 roadmap based on community feedback
 

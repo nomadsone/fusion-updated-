@@ -1,4 +1,4 @@
-# FusionClaw — Pre-Launch Audit Findings
+# Palawan Collective — Pre-Launch Audit Findings
 
 **Date:** 2026-04-25
 **Auditor:** Claude (Capo) for Rob Yeager / Fusion Data Company
@@ -10,7 +10,7 @@
 
 ## Executive Summary
 
-FusionClaw's foundation is **solid**. The repo has the bones of a real open-source launch: Next.js 16 app, Clerk auth with first-user-becomes-admin auto-provisioning, 234 MCP tools, Playwright E2E suite, Dockerfile, BSL 1.1 license, GitHub Actions CI, full open-source repo hygiene (CODE_OF_CONDUCT, CONTRIBUTING, SECURITY, ISSUE templates, FUNDING), and a polished marketing-grade landing page.
+Palawan Collective's foundation is **solid**. The repo has the bones of a real open-source launch: Next.js 16 app, Clerk auth with first-user-becomes-admin auto-provisioning, 234 MCP tools, Playwright E2E suite, Dockerfile, BSL 1.1 license, GitHub Actions CI, full open-source repo hygiene (CODE_OF_CONDUCT, CONTRIBUTING, SECURITY, ISSUE templates, FUNDING), and a polished marketing-grade landing page.
 
 **What's broken:** A handful of doc-rot and UX-honesty issues will confuse the first user and erode trust on day one. They are all small, all fixable in under a day.
 
@@ -150,7 +150,7 @@ Visible in `.git/refs/heads/`. Make sure that branch isn't going to leak into a 
 10. **N4** (Deploy to Vercel button + vercel.json) — 30 min — Phase 3 territory
 11. **N5** (landing hero A/B variant) — judgment call, not blocking
 
-After 1–7 are done, FusionClaw is launch-ready. 8–11 are polish that can ship in week 2.
+After 1–7 are done, Palawan Collective is launch-ready. 8–11 are polish that can ship in week 2.
 
 ---
 

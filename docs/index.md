@@ -1,15 +1,15 @@
 ---
-summary: "FusionClaw is a self-hosted, agent-native business operating system. CRM, ops, content, finance — plus a self-improving agent fleet (Skill Forge, Council mode, Eval Studio, reflection loop) and 234 MCP tools."
+summary: "Palawan Collective is a self-hosted, agent-native business operating system. CRM, ops, content, finance — plus a self-improving agent fleet (Skill Forge, Council mode, Eval Studio, reflection loop) and 234 MCP tools."
 read_when:
-  - Introducing FusionClaw to newcomers
+  - Introducing Palawan Collective to newcomers
   - First visit to the docs
-title: "FusionClaw"
+title: "Palawan Collective"
 ---
 
-# FusionClaw 🦞
+# Palawan Collective 🦞
 
 <p align="center">
-  <img src="/docs/images/fusionclaw-mascot.png" alt="FusionClaw — All Hustle No Luck" width="500" />
+  <img src="/docs/images/fusionclaw-mascot.png" alt="Palawan Collective — All Hustle No Luck" width="500" />
 </p>
 
 > _"All hustle. No luck. One database."_
@@ -33,9 +33,9 @@ title: "FusionClaw"
 
 ---
 
-## What is FusionClaw?
+## What is Palawan Collective?
 
-FusionClaw is a **self-hosted business operating system** with a **self-improving agent fleet built into the metal.** CRM, operations, content, finance, and marketing live on one Postgres database. An agent fleet runs alongside — generating skills, evaluating them, debating deals via Council mode, executing voice flows via OpenAI Realtime, browsing the web for intel, picking the cheapest model that meets your eval bar.
+Palawan Collective is a **self-hosted business operating system** with a **self-improving agent fleet built into the metal.** CRM, operations, content, finance, and marketing live on one Postgres database. An agent fleet runs alongside — generating skills, evaluating them, debating deals via Council mode, executing voice flows via OpenAI Realtime, browsing the web for intel, picking the cheapest model that meets your eval bar.
 
 Two surfaces, one database:
 - **Web UI** — what you (the human) use day-to-day
@@ -50,7 +50,7 @@ Two surfaces, one database:
 
 **What makes it different?**
 
-Most CRMs added a chat sidebar. FusionClaw is built around a self-improving agent fleet:
+Most CRMs added a chat sidebar. Palawan Collective is built around a self-improving agent fleet:
 
 - 🪄 **Skill Forge** — type a one-line goal, get a working skill (prompt + eval criteria + seed test cases) in 5 seconds
 - 🧠 **Karpathy reflection loop** — every Monday at 6am the worst-performing skill gets analyzed and 3 prompt edits proposed
@@ -103,7 +103,7 @@ The database is the single source of truth. Three things write to it: the human 
 
 | Path       | Command                                              | Time | Guide                              |
 | ---------- | ---------------------------------------------------- | ---- | ---------------------------------- |
-| **Local**  | `git clone …/FusionClaw && cd FusionClaw && npm run onboard` | ~60s | [install/local](install/local.md)  |
+| **Local**  | `git clone …/Palawan Collective && cd Palawan Collective && npm run onboard` | ~60s | [install/local](install/local.md)  |
 | **Docker** | `docker compose up` after cloning                    | ~90s | [install/docker](install/docker.md) |
 | **Vercel** | One-click deploy → fork → live URL                   | ~90s | [install/vercel](install/vercel.md) |
 
@@ -120,7 +120,7 @@ Add this to `~/.claude/mcp_servers.json`:
   "mcpServers": {
     "fusionclaw": {
       "command": "node",
-      "args": ["/absolute/path/to/FusionClaw/mcp-server/dist/index.js"],
+      "args": ["/absolute/path/to/Palawan Collective/mcp-server/dist/index.js"],
       "env": {
         "MCP_API_KEY": "fusionclaw_sk_live_...",
         "DATABASE_URL": "postgresql://..."
@@ -138,7 +138,7 @@ Restart Claude Code → run `/mcp` → 234 tools available. Full reference: [ref
 
 | Section                        | What's there                                                                                                                                                                              |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [start/](start/)               | Getting started · what FusionClaw is · the first 10 minutes                                                                                                                               |
+| [start/](start/)               | Getting started · what Palawan Collective is · the first 10 minutes                                                                                                                               |
 | [install/](install/)           | Local · Docker · Vercel install paths                                                                                                                                                     |
 | [concepts/](concepts/)         | Agent-native · MCP server · Wiki Brain · Skill Forge · Council mode · Eval Studio · reflection loop · voice agent · browser skills · cost routing · self-hosted auth · design system    |
 | [modules/](modules/)           | Per-module guides — Dashboard, Today, Tasks, Leads, Wiki Brain, Skills, Council, Eval, Voice, etc.                                                                                       |
@@ -153,13 +153,13 @@ Restart Claude Code → run `/mcp` → 234 tools available. Full reference: [ref
 
 ## Learn more
 
-- [VISION.md](../VISION.md) — what FusionClaw is for and where it's going
+- [VISION.md](../VISION.md) — what Palawan Collective is for and where it's going
 - [CHANGELOG.md](../CHANGELOG.md) — release history
 - [CONTRIBUTING.md](../CONTRIBUTING.md) — how to contribute
 - [SECURITY.md](../SECURITY.md) — responsible disclosure
 - [Discord](#) — community + help (link in repo description)
-- [GitHub Discussions](https://github.com/Fusion-Data-Company/FusionClaw/discussions) — async / long-form
+- [GitHub Discussions](https://github.com/Fusion-Data-Company/Palawan Collective/discussions) — async / long-form
 
 ---
 
-**FusionClaw** — Built by [Rob Yeager](https://github.com/Rob-Yeager) at [Fusion Data Company](https://fusiondataco.com). MIT licensed.
+**Palawan Collective** — Built by [Rob Yeager](https://github.com/Rob-Yeager) at [Fusion Data Company](https://fusiondataco.com). MIT licensed.

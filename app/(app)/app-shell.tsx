@@ -340,14 +340,14 @@ export function AppShell({ user, children }: AppShellProps) {
               style={{ boxShadow: '0 0 12px rgba(59,130,246,0.15)' }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/fusionclaw-logo.png" alt="FusionClaw" className="w-full h-full object-cover" />
+              <img src="/fusionclaw-logo.png" alt="Palawan Collective" className="w-full h-full object-cover" />
             </div>
             {!sidebarCollapsed && (
               <span
                 className="text-lg font-extrabold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
-                FusionClaw
+                Palawan Collective
               </span>
             )}
           </div>

@@ -19,22 +19,22 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'FusionClaw — the business-data layer for your agent',
+  title: 'Palawan Collective — the business-data layer for your agent',
   description:
-      'Your agent already runs your terminal. FusionClaw gives it your customers, jobs, invoices, expenses and notes over MCP — with per-agent scoped keys, a confirmation gate on anything destructive, rate limits and an audit log of everything it did. Open source, self-hosted, one Postgres. Works with Hermes, OpenClaw and Claude Code.',
+      'Your agent already runs your terminal. Palawan Collective gives it your customers, jobs, invoices, expenses and notes over MCP — with per-agent scoped keys, a confirmation gate on anything destructive, rate limits and an audit log of everything it did. Open source, self-hosted, one Postgres. Works with Hermes, OpenClaw and Claude Code.',
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'),
   openGraph: {
-    title: 'FusionClaw — the business-data layer for your agent',
+    title: 'Palawan Collective — the business-data layer for your agent',
     description:
-      'Your agent already runs your terminal. FusionClaw gives it your customers, jobs, invoices, expenses and notes over MCP — with per-agent scoped keys, a confirmation gate on anything destructive, rate limits and an audit log of everything it did. Open source, self-hosted, one Postgres. Works with Hermes, OpenClaw and Claude Code.',
-    url: 'https://sanvicpalawan.github.io/FusionClaw',
-    siteName: 'FusionClaw',
+      'Your agent already runs your terminal. Palawan Collective gives it your customers, jobs, invoices, expenses and notes over MCP — with per-agent scoped keys, a confirmation gate on anything destructive, rate limits and an audit log of everything it did. Open source, self-hosted, one Postgres. Works with Hermes, OpenClaw and Claude Code.',
+    url: 'https://sanvicpalawan.github.io/Palawan Collective',
+    siteName: 'Palawan Collective',
     images: [
       {
         url: '/img/hero-desk.jpg',
         width: 1600,
         height: 893,
-        alt: 'FusionClaw — an after-hours desk of invoices and a ledger lit by a terminal',
+        alt: 'Palawan Collective — an after-hours desk of invoices and a ledger lit by a terminal',
       },
     ],
     locale: 'en_US',
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FusionClaw — the business-data layer for your agent',
+    title: 'Palawan Collective — the business-data layer for your agent',
     description:
-      'Your agent already runs your terminal. FusionClaw gives it your customers, jobs, invoices, expenses and notes over MCP — with per-agent scoped keys, a confirmation gate on anything destructive, rate limits and an audit log of everything it did. Open source, self-hosted, one Postgres. Works with Hermes, OpenClaw and Claude Code.',
+      'Your agent already runs your terminal. Palawan Collective gives it your customers, jobs, invoices, expenses and notes over MCP — with per-agent scoped keys, a confirmation gate on anything destructive, rate limits and an audit log of everything it did. Open source, self-hosted, one Postgres. Works with Hermes, OpenClaw and Claude Code.',
     images: ['/img/hero-desk.jpg'],
   },
   keywords: [
