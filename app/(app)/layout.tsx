@@ -76,7 +76,7 @@ const NAV_SECTIONS: NavSection[] = [
     accent: "text-blue-300",
     glowRgba: "rgba(96,165,250,0.45)",
     items: [
-      { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard, iconColor: "text-blue-400", iconBg: "bg-blue-500/20", glowColor: "rgba(59,130,246,0.25)" },
+      { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard, iconColor: "text-white", iconBg: "bg-blue-500/20", glowColor: "rgba(59,130,246,0.25)" },
       { name: "Today", href: "/today", icon: CalendarCheck, iconColor: "text-emerald-400", iconBg: "bg-emerald-500/20", glowColor: "rgba(16,185,129,0.25)" },
       { name: "Tasks", href: "/tasks", icon: ListTodo, iconColor: "text-rose-400", iconBg: "bg-rose-500/20", glowColor: "rgba(244,63,94,0.25)" },
       { name: "Reports", href: "/reports", icon: FileBarChart, iconColor: "text-pink-400", iconBg: "bg-pink-500/20", glowColor: "rgba(236,72,153,0.25)" },

@@ -136,7 +136,7 @@ const NAV_SECTIONS: NavSection[] = [
   {
     label: 'COMMAND',
     items: [
-      { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard, iconColor: 'text-blue-400', iconBg: 'bg-blue-500/20', glowColor: 'rgba(59,130,246,0.25)' },
+      { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard, iconColor: 'text-white', iconBg: 'bg-blue-500/20', glowColor: 'rgba(59,130,246,0.25)' },
       { name: 'Today', href: '/today', icon: CalendarCheck, iconColor: 'text-emerald-400', iconBg: 'bg-emerald-500/20', glowColor: 'rgba(16,185,129,0.25)' },
     ],
   },
@@ -180,7 +180,7 @@ function UserMenu({ user }: { user: AppUser | null }) {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 text-black text-xs font-bold flex items-center justify-center cursor-pointer ring-1 ring-white/10 hover:ring-white/20"
+        className="w-8 h-8 rounded-full bg-gradient-to-br from-[#B91C1C] to-cyan-500 text-black text-xs font-bold flex items-center justify-center cursor-pointer ring-1 ring-white/10 hover:ring-white/20"
         aria-label="User menu"
       >
         {user?.avatarUrl ? (
