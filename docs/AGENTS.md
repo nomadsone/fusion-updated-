@@ -109,3 +109,6 @@ If you intend to claim a fix, do the verification yourself first. If you can't, 
 - [docs/reference/mcp-tools.md](reference/mcp-tools.md) — full tool catalog
 - [docs/security/auth.md](security/auth.md) — auth model
 - [CLAUDE.md](../CLAUDE.md) — root-level project instructions
+
+
+--- Agency: Palawan Collective (merQato.digital) — Building Operational Systems from Paradise. Agents: Kap, Ate Inquire, Manong Post, Sherlock Kuya, Inspektor Bok. Free-model-first (OpenRouter: upstage/solar-pro4:free). Human approves external actions.
