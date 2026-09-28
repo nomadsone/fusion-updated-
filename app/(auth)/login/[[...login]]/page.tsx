@@ -72,7 +72,7 @@ export default function LoginPage() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/fusionclaw-logo.png"
+              src="/logo-palawan.png"
               alt="Palawan Collective"
               className="w-full h-full object-cover rounded-2xl"
             />

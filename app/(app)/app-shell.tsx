@@ -340,7 +340,7 @@ export function AppShell({ user, children }: AppShellProps) {
               style={{ boxShadow: '0 0 12px rgba(59,130,246,0.15)' }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/fusionclaw-logo.png" alt="Palawan Collective" className="w-full h-full object-cover" />
+              <img src="/logo-palawan.png" alt="Palawan Collective" className="w-full h-full object-cover" />
             </div>
             {!sidebarCollapsed && (
               <span

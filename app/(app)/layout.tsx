@@ -285,7 +285,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/fusionclaw-logo.png"
+                src="/logo-palawan.png"
                 alt="Palawan Collective"
                 className="w-full h-full object-cover"
               />
