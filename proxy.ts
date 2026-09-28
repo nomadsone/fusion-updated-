@@ -83,9 +83,9 @@ const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
 const DEMO_READ_METHODS = new Set(['GET', 'HEAD', 'OPTIONS'])
 const DEMO_WRITE_ALLOW = [/^\/api\/auth\//, /^\/api\/demo\/seed$/]
 
-// ─── Main middleware ────────────────────────────────────────────────────────
+// ─── Main proxy (Next 16 renamed middleware → proxy) ────────────────────────
 
-export default async function middleware(req: NextRequest) {
+export default async function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl
 
   // 0. Public demo: reads pass through as the owner, writes are refused.
