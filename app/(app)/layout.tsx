@@ -88,9 +88,9 @@ const NAV_SECTIONS: NavSection[] = [
     accent: "text-cyan-300",
     glowRgba: "rgba(34,211,238,0.45)",
     items: [
-      { name: "Contacts", href: "/leads", icon: Contact, iconColor: "text-cyan-400", iconBg: "bg-cyan-500/20", glowColor: "rgba(34,211,238,0.25)" },
+      { name: "Contacts", href: "/leads", icon: Contact, iconColor: "text-red-700", iconBg: "bg-cyan-500/20", glowColor: "rgba(34,211,238,0.25)" },
       { name: "Pipeline", href: "/leads/pipeline", icon: Kanban, iconColor: "text-violet-400", iconBg: "bg-violet-500/20", glowColor: "rgba(139,92,246,0.25)" },
-      { name: "Inbox", href: "/inbox", icon: Inbox, iconColor: "text-cyan-400", iconBg: "bg-cyan-500/20", glowColor: "rgba(34,211,238,0.25)" },
+      { name: "Inbox", href: "/inbox", icon: Inbox, iconColor: "text-red-700", iconBg: "bg-cyan-500/20", glowColor: "rgba(34,211,238,0.25)" },
     ],
   },
   {
@@ -133,7 +133,7 @@ const NAV_SECTIONS: NavSection[] = [
       { name: "Agent Connections", href: "/agents", icon: Bot, iconColor: "text-orange-400", iconBg: "bg-orange-500/20", glowColor: "rgba(251,146,60,0.25)" },
       { name: "Workflows", href: "/workflows", icon: WorkflowIcon, iconColor: "text-violet-400", iconBg: "bg-violet-500/20", glowColor: "rgba(167,139,250,0.3)" },
       { name: "Activity Stream", href: "/activity", icon: Activity, iconColor: "text-rose-400", iconBg: "bg-rose-500/20", glowColor: "rgba(244,63,94,0.25)" },
-      { name: "Webhooks", href: "/webhooks", icon: Webhook, iconColor: "text-cyan-400", iconBg: "bg-cyan-500/20", glowColor: "rgba(34,211,238,0.25)" },
+      { name: "Webhooks", href: "/webhooks", icon: Webhook, iconColor: "text-red-700", iconBg: "bg-cyan-500/20", glowColor: "rgba(34,211,238,0.25)" },
       { name: "Wiki Brain", href: "/wiki", icon: Network, iconColor: "text-purple-400", iconBg: "bg-purple-500/20", glowColor: "rgba(167,139,250,0.3)" },
     ],
   },
@@ -250,7 +250,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             Get your own hosted instance — $99/mo, 14-day trial
           </a>{" "}
           or{" "}
-          <a href="https://github.com/Fusion-Data-Company/Palawan Collective" className="font-semibold text-cyan-400 hover:text-cyan-300">
+          <a href="https://github.com/Fusion-Data-Company/Palawan Collective" className="font-semibold text-red-700 hover:text-cyan-300">
             self-host free (MIT)
           </a>
           .
@@ -291,7 +291,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               />
             </div>
             {!sidebarCollapsed && (
-              <span className="text-lg font-extrabold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: "var(--font-display)" }}>
+              <span className="text-lg font-extrabold bg-gradient-to-r from-blue-400 via-cyan-400 to-red-900 bg-clip-text text-transparent" style={{ fontFamily: "var(--font-display)" }}>
                 Palawan Collective
               </span>
             )}
@@ -441,7 +441,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           <>
             <div className="p-4 border-t border-border">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent/30 to-blue-500/20 flex items-center justify-center border border-accent/20">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent/30 to-red-900/20 flex items-center justify-center border border-accent/20">
                   <User className="w-4 h-4 text-accent" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -494,7 +494,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             <NotificationBell />
 
             <div className="hidden md:block">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent/30 to-blue-500/20 flex items-center justify-center border border-accent/20">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent/30 to-red-900/20 flex items-center justify-center border border-accent/20">
                 <User className="w-4 h-4 text-accent" />
               </div>
             </div>

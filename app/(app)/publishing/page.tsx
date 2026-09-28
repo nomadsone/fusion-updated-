@@ -135,7 +135,7 @@ const WP_PLATFORM_CONFIG: Record<string, { icon: React.ComponentType<React.SVGPr
   wordpress: { icon: Globe, color: "text-blue-400", bg: "bg-blue-500/10", label: "WordPress" },
   vercel: { icon: Globe, color: "text-white", bg: "bg-white/10", label: "Vercel" },
   wix: { icon: Globe, color: "text-purple-400", bg: "bg-purple-500/10", label: "Wix" },
-  generic: { icon: LinkIcon, color: "text-cyan-400", bg: "bg-cyan-500/10", label: "Website" },
+  generic: { icon: LinkIcon, color: "text-red-700", bg: "bg-cyan-500/10", label: "Website" },
 };
 
 // ─── Page Component ────────────────────────────────────────────────────────
@@ -393,7 +393,7 @@ export default function PublishingPage() {
       success: { bg: "bg-emerald-500/10", text: "text-emerald-400", label: "Success" },
       pending: { bg: "bg-amber-500/10", text: "text-amber-400", label: "Pending" },
       failed: { bg: "bg-red-500/10", text: "text-red-400", label: "Failed" },
-      scheduled: { bg: "bg-cyan-500/10", text: "text-cyan-400", label: "Scheduled" },
+      scheduled: { bg: "bg-cyan-500/10", text: "text-red-700", label: "Scheduled" },
     };
     const s = map[status] || map.pending;
     return (

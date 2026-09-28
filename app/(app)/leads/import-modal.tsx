@@ -307,7 +307,7 @@ export default function ImportModal({ open, onClose, onImportComplete }: ImportM
                   s === step
                     ? "bg-cyan-500 text-black"
                     : s < step
-                    ? "bg-cyan-500/20 text-cyan-400"
+                    ? "bg-cyan-500/20 text-red-700"
                     : "bg-white/5 text-text-muted"
                 }`}
               >
@@ -360,7 +360,7 @@ export default function ImportModal({ open, onClose, onImportComplete }: ImportM
 
               {file && csvData.length > 0 && (
                 <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10">
-                  <FileSpreadsheet className="w-5 h-5 text-cyan-400 shrink-0" />
+                  <FileSpreadsheet className="w-5 h-5 text-red-700 shrink-0" />
                   <div className="min-w-0 flex-1">
                     <p className="text-sm text-text-primary font-medium truncate">{file.name}</p>
                     <p className="text-xs text-text-muted">

@@ -70,7 +70,7 @@ export default function WebhooksPage() {
     <div className="space-y-5">
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.35)]">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-red-800 to-blue-600 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.35)]">
             <Webhook className="w-5 h-5 text-white" />
           </div>
           <div>
@@ -81,7 +81,7 @@ export default function WebhooksPage() {
       </div>
 
       {loading ? (
-        <div className="flex items-center justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-cyan-400" /></div>
+        <div className="flex items-center justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-red-700" /></div>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {/* Inbound */}
@@ -103,7 +103,7 @@ export default function WebhooksPage() {
           <Section
             icon={ArrowUpFromLine}
             title="Outbound — fire on events"
-            tint="text-cyan-400"
+            tint="text-red-700"
             count={outbound.length}
             onCreate={() => setShowCreate("outbound")}
           >
@@ -183,7 +183,7 @@ function HookRow({ hook, skills, onToggle, onRemove }: {
               <code className="truncate">{inboundUrl}</code>
               <button
                 onClick={() => { navigator.clipboard.writeText(inboundUrl); fc.log("URL copied"); }}
-                className="text-text-muted hover:text-cyan-400 cursor-pointer shrink-0"
+                className="text-text-muted hover:text-red-700 cursor-pointer shrink-0"
                 title="Copy URL"
               >
                 <Copy className="w-2.5 h-2.5" />

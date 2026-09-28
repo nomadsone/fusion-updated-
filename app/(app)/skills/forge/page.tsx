@@ -221,7 +221,7 @@ export default function SkillForgePage() {
                     <div key={i} className="rounded-lg border border-border bg-surface-2/40 p-3">
                       <div className="text-[12px] font-bold text-text-primary">{t.name}</div>
                       <div className="text-[10px] text-text-muted font-mono mt-1">
-                        <span className="text-cyan-400">inputs</span> {JSON.stringify(t.inputs)}
+                        <span className="text-red-700">inputs</span> {JSON.stringify(t.inputs)}
                       </div>
                       <div className="text-[10px] text-text-muted font-mono mt-0.5">
                         <span className="text-emerald-400">assert</span> {t.assertion}

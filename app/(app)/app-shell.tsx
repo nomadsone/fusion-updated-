@@ -144,10 +144,10 @@ const NAV_SECTIONS: NavSection[] = [
     label: 'HUBS',
     items: [
       { name: 'Operations', href: '/tasks', hub: 'operations', icon: ListTodo, iconColor: 'text-rose-400', iconBg: 'bg-rose-500/20', glowColor: 'rgba(244,63,94,0.25)' },
-      { name: 'Contacts', href: '/leads', hub: 'contacts', icon: Contact, iconColor: 'text-cyan-400', iconBg: 'bg-cyan-500/20', glowColor: 'rgba(34,211,238,0.25)' },
+      { name: 'Contacts', href: '/leads', hub: 'contacts', icon: Contact, iconColor: 'text-red-700', iconBg: 'bg-cyan-500/20', glowColor: 'rgba(34,211,238,0.25)' },
       { name: 'Finance', href: '/invoices', hub: 'finance', icon: TrendingUp, iconColor: 'text-green-400', iconBg: 'bg-green-500/20', glowColor: 'rgba(74,222,128,0.25)' },
       { name: 'Marketing', href: '/campaigns', hub: 'marketing', icon: Megaphone, iconColor: 'text-fuchsia-400', iconBg: 'bg-fuchsia-500/20', glowColor: 'rgba(232,121,249,0.25)' },
-      { name: 'Intelligence', href: '/wiki', hub: 'intelligence', icon: Network, iconColor: 'text-cyan-400', iconBg: 'bg-cyan-500/20', glowColor: 'rgba(34,211,238,0.25)' },
+      { name: 'Intelligence', href: '/wiki', hub: 'intelligence', icon: Network, iconColor: 'text-red-700', iconBg: 'bg-cyan-500/20', glowColor: 'rgba(34,211,238,0.25)' },
       { name: 'System', href: '/settings', hub: 'system', icon: Settings, iconColor: 'text-slate-400', iconBg: 'bg-slate-500/20' },
     ],
   },
@@ -344,7 +344,7 @@ export function AppShell({ user, children }: AppShellProps) {
             </div>
             {!sidebarCollapsed && (
               <span
-                className="text-lg font-extrabold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent"
+                className="text-lg font-extrabold bg-gradient-to-r from-blue-400 via-cyan-400 to-red-900 bg-clip-text text-transparent"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
                 Palawan Collective

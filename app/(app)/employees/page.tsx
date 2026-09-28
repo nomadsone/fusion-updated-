@@ -265,7 +265,7 @@ export default function EmployeesPage() {
           {/* Employee Card */}
           <GlassCard padding="lg">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent/30 to-blue-500/20 flex items-center justify-center text-accent font-bold text-xl border border-accent/20">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent/30 to-red-900/20 flex items-center justify-center text-accent font-bold text-xl border border-accent/20">
                 {activeEmployee.name
                   ? activeEmployee.name
                       .split(" ")

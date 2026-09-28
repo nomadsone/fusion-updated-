@@ -52,7 +52,7 @@ type ViewMode = "list" | "kanban";
 const KANBAN_COLUMNS = [
   { id: "overdue", label: "Overdue", color: "from-red-500 to-rose-600", glow: "rgba(239,68,68,0.3)" },
   { id: "today", label: "Today", color: "from-emerald-400 to-green-500", glow: "rgba(16,185,129,0.3)" },
-  { id: "tomorrow", label: "Tomorrow", color: "from-blue-400 to-blue-500", glow: "rgba(59,130,246,0.3)" },
+  { id: "tomorrow", label: "Tomorrow", color: "from-blue-400 to-red-900", glow: "rgba(59,130,246,0.3)" },
   { id: "this_week", label: "This Week", color: "from-violet-400 to-purple-500", glow: "rgba(139,92,246,0.3)" },
   { id: "this_month", label: "This Month", color: "from-amber-400 to-orange-500", glow: "rgba(245,158,11,0.3)" },
   { id: "this_quarter", label: "This Quarter", color: "from-cyan-400 to-teal-500", glow: "rgba(6,182,212,0.3)" },

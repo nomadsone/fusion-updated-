@@ -143,7 +143,7 @@ export default function AuditLogPage() {
                         <td className="px-4 py-2 text-text-secondary">
                           {e.entityKind ? (
                             <span className="text-[11px]">
-                              <span className="text-cyan-400">{e.entityKind}</span>
+                              <span className="text-red-700">{e.entityKind}</span>
                               {e.entityId && <span className="text-text-muted ml-1 font-mono">{e.entityId.slice(0, 8)}</span>}
                             </span>
                           ) : <span className="text-text-disabled">—</span>}

@@ -43,7 +43,7 @@ interface Skill {
 
 const STAGES: { id: Stage; label: string; icon: typeof Lightbulb; accent: string; glow: string; ring: string }[] = [
   { id: "idea",       label: "Idea",       icon: Lightbulb,    accent: "text-amber-400",   glow: "rgba(251,191,36,0.35)",  ring: "border-amber-500/30" },
-  { id: "testing",    label: "Testing",    icon: FlaskConical, accent: "text-cyan-400",    glow: "rgba(34,211,238,0.35)",  ring: "border-cyan-500/30" },
+  { id: "testing",    label: "Testing",    icon: FlaskConical, accent: "text-red-700",    glow: "rgba(34,211,238,0.35)",  ring: "border-cyan-500/30" },
   { id: "validated",  label: "Validated",  icon: ShieldCheck,  accent: "text-violet-400",  glow: "rgba(167,139,250,0.35)", ring: "border-violet-500/30" },
   { id: "production", label: "Production", icon: Rocket,       accent: "text-emerald-400", glow: "rgba(52,211,153,0.35)",  ring: "border-emerald-500/30" },
 ];
@@ -52,7 +52,7 @@ const CATEGORY_META: Record<Category, { label: string; icon: typeof Mail; tint: 
   outreach:      { label: "Outreach",      icon: Mail,     tint: "text-blue-400 bg-blue-500/10" },
   qualification: { label: "Qualification", icon: Target,   tint: "text-violet-400 bg-violet-500/10" },
   content:       { label: "Content",       icon: FileText, tint: "text-fuchsia-400 bg-fuchsia-500/10" },
-  research:      { label: "Research",      icon: Search,   tint: "text-cyan-400 bg-cyan-500/10" },
+  research:      { label: "Research",      icon: Search,   tint: "text-red-700 bg-cyan-500/10" },
   ops:           { label: "Ops",           icon: Zap,      tint: "text-amber-400 bg-amber-500/10" },
   support:       { label: "Support",       icon: LifeBuoy, tint: "text-emerald-400 bg-emerald-500/10" },
 };
@@ -201,7 +201,7 @@ export default function SkillsPage() {
             <Divider />
             <Stat label="Runs" value={totalRuns.toLocaleString()} accent="text-amber-400" />
             <Divider />
-            <Stat label="Success" value={`${overallRate}%`} accent="text-cyan-400" />
+            <Stat label="Success" value={`${overallRate}%`} accent="text-red-700" />
             {costData && (
               <>
                 <Divider />
@@ -596,7 +596,7 @@ function SkillDrawer({
             </SpotlightCard>
             <SpotlightCard className="p-3 text-center">
               <div className="text-[9px] uppercase tracking-wider text-text-muted">Success</div>
-              <div className={`text-lg font-bold font-mono ${rate >= 90 ? "text-emerald-400" : rate >= 70 ? "text-cyan-400" : "text-amber-400"}`}>
+              <div className={`text-lg font-bold font-mono ${rate >= 90 ? "text-emerald-400" : rate >= 70 ? "text-red-700" : "text-amber-400"}`}>
                 {skill.runs === 0 ? "—" : `${rate}%`}
               </div>
             </SpotlightCard>

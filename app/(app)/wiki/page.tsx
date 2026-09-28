@@ -181,7 +181,7 @@ function FolderRow({
                 <FileText className="w-3 h-3 text-text-disabled shrink-0" />
                 <span className="truncate flex-1 text-left">{page.title}</span>
                 {page.linkCount > 0 && (
-                  <span className="text-[9px] text-cyan-400/80 font-mono">↗{page.linkCount}</span>
+                  <span className="text-[9px] text-red-700/80 font-mono">↗{page.linkCount}</span>
                 )}
               </button>
             ))}
@@ -411,7 +411,7 @@ function GraphView({
               <Network className="w-10 h-10 text-text-disabled mx-auto mb-3" />
               <div className="text-sm text-text-secondary mb-1">No pages yet.</div>
               <div className="text-xs text-text-muted">
-                Create pages and link them with <code className="text-cyan-400">[[slug]]</code> to see the graph.
+                Create pages and link them with <code className="text-red-700">[[slug]]</code> to see the graph.
               </div>
             </div>
           </div>
@@ -565,7 +565,7 @@ export default function WikiPage() {
           </h1>
           <p className="text-sm text-text-muted mt-1">
             File tree + graph view of your team&apos;s knowledge. Link pages with{" "}
-            <code className="text-cyan-400 text-xs">[[slug]]</code> to see them connect.
+            <code className="text-red-700 text-xs">[[slug]]</code> to see them connect.
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -600,7 +600,7 @@ export default function WikiPage() {
         </GlassCard>
         <GlassCard padding="sm" className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-lg bg-cyan-500/10 flex items-center justify-center">
-            <Link2 className="w-4 h-4 text-cyan-400" />
+            <Link2 className="w-4 h-4 text-red-700" />
           </div>
           <div>
             <div className="text-xs text-text-muted">Total Links</div>
@@ -676,7 +676,7 @@ export default function WikiPage() {
                 <div className="text-center px-4 py-8">
                   <FileText className="w-8 h-8 text-text-disabled mx-auto mb-2" />
                   <div className="text-xs text-text-muted">
-                    No pages yet. Click <span className="text-cyan-400 font-bold">+ New Page</span> to start.
+                    No pages yet. Click <span className="text-red-700 font-bold">+ New Page</span> to start.
                   </div>
                 </div>
               ) : (
@@ -714,7 +714,7 @@ export default function WikiPage() {
                             <FileText className="w-3 h-3 text-text-disabled shrink-0" />
                             <span className="truncate flex-1 text-left">{p.title}</span>
                             {p.linkCount > 0 && (
-                              <span className="text-[9px] text-cyan-400/80 font-mono">
+                              <span className="text-[9px] text-red-700/80 font-mono">
                                 ↗{p.linkCount}
                               </span>
                             )}
@@ -742,7 +742,7 @@ export default function WikiPage() {
                   Select a page from the tree
                 </div>
                 <div className="text-xs text-text-muted max-w-sm">
-                  Pages support <code className="text-cyan-400">[[wikilinks]]</code> — anything in
+                  Pages support <code className="text-red-700">[[wikilinks]]</code> — anything in
                   double brackets that matches another page&apos;s slug becomes an edge in the
                   graph view.
                 </div>

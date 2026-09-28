@@ -43,7 +43,7 @@ export default function InboxPage() {
   return (
     <div className="space-y-5 h-full flex flex-col">
       <div className="flex items-center gap-3 shrink-0">
-        <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+        <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-red-800 to-blue-600 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.3)]">
           <InboxIcon className="w-5 h-5 text-white" />
         </div>
         <div>
@@ -56,11 +56,11 @@ export default function InboxPage() {
         {/* List */}
         <div className="w-full md:w-[400px] border-r border-border overflow-y-auto">
           {loading ? (
-            <div className="flex items-center justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-cyan-400" /></div>
+            <div className="flex items-center justify-center py-12"><Loader2 className="w-6 h-6 animate-spin text-red-700" /></div>
           ) : emails.length === 0 ? (
             <div className="text-center py-16 px-8">
               <div className="w-12 h-12 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center mx-auto mb-3">
-                <Mail className="w-5 h-5 text-cyan-400" />
+                <Mail className="w-5 h-5 text-red-700" />
               </div>
               <div className="text-sm font-bold text-text-primary mb-1">No emails yet</div>
               <div className="text-[11px] text-text-muted max-w-[260px] mx-auto">
@@ -96,7 +96,7 @@ export default function InboxPage() {
               <div className="px-5 py-3 border-b border-border">
                 <div className="flex items-center justify-between mb-1">
                   <div className="flex items-center gap-2">
-                    <User className="w-3.5 h-3.5 text-cyan-400" />
+                    <User className="w-3.5 h-3.5 text-red-700" />
                     <span className="text-sm font-bold text-text-primary">{open.fromName || open.fromEmail}</span>
                     <span className="text-[10px] text-text-muted font-mono">{open.fromEmail}</span>
                   </div>

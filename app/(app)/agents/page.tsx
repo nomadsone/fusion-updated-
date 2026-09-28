@@ -39,7 +39,7 @@ interface AgentConnection {
 const AGENT_META: Record<string, { icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; color: string; gradient: string; model?: string; endpoint?: string }> = {
   openclaw: { icon: Zap, color: "text-orange-400", gradient: "from-orange-500 to-amber-500" },
   claude: { icon: Brain, color: "text-purple-400", gradient: "from-purple-500 to-violet-500", model: "claude-sonnet-4-20250514" },
-  openrouter: { icon: Globe, color: "text-cyan-400", gradient: "from-cyan-500 to-blue-500", endpoint: "https://openrouter.ai/api/v1" },
+  openrouter: { icon: Globe, color: "text-red-700", gradient: "from-red-800 to-red-900", endpoint: "https://openrouter.ai/api/v1" },
   custom: { icon: Cpu, color: "text-emerald-400", gradient: "from-emerald-500 to-green-500" },
 };
 

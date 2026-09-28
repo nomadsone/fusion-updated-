@@ -30,7 +30,7 @@ const KIND_ICON = {
 };
 const KIND_TINT = {
   skill_run: "text-amber-400",
-  lead_activity: "text-cyan-400",
+  lead_activity: "text-red-700",
   webhook_delivery: "text-violet-400",
 };
 
@@ -128,7 +128,7 @@ export default function ActivityPage() {
         {[
           { id: "all", label: "All" },
           { id: "skill_run", label: "Skill runs", icon: Sparkles, tint: "text-amber-400" },
-          { id: "lead_activity", label: "Lead activity", icon: Contact, tint: "text-cyan-400" },
+          { id: "lead_activity", label: "Lead activity", icon: Contact, tint: "text-red-700" },
           { id: "webhook_delivery", label: "Webhooks", icon: Webhook, tint: "text-violet-400" },
         ].map((f) => {
           const active = filter === f.id;
@@ -164,7 +164,7 @@ export default function ActivityPage() {
               const now = Date.now();
               const Icon = KIND_ICON[e.kind];
               const StatusIcon = e.status === "success" ? CheckCircle2 : e.status === "failed" ? XCircle : Clock;
-              const statusColor = e.status === "success" ? "text-emerald-400" : e.status === "failed" ? "text-rose-400" : "text-cyan-400";
+              const statusColor = e.status === "success" ? "text-emerald-400" : e.status === "failed" ? "text-rose-400" : "text-red-700";
               const isNew = i < 3 && now - new Date(e.at).getTime() < 8000;
               return (
                 <Link key={e.id} href={e.href ?? "#"} className="block hover:bg-elevated/40 transition-colors">

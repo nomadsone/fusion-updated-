@@ -23,7 +23,7 @@ interface ScheduleItem {
 }
 
 const CHANNEL_META: Record<Channel, { label: string; icon: typeof Globe; tint: string; ring: string }> = {
-  blog:       { label: "Blog",      icon: Globe,    tint: "text-cyan-400",    ring: "border-cyan-500/30" },
+  blog:       { label: "Blog",      icon: Globe,    tint: "text-red-700",    ring: "border-cyan-500/30" },
   linkedin:   { label: "LinkedIn",  icon: Linkedin, tint: "text-blue-400",    ring: "border-blue-500/30" },
   twitter_x:  { label: "X",         icon: Twitter,  tint: "text-text-primary", ring: "border-border-med" },
   facebook:   { label: "Facebook",  icon: Facebook, tint: "text-blue-500",    ring: "border-blue-500/30" },

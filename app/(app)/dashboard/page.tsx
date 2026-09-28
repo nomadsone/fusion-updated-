@@ -71,10 +71,10 @@ const TOOL_STYLES: Record<string, ToolStyle> = {
   neon:       { icon: Database, color: "text-emerald-400", glowColor: "rgba(52,211,153,0.3)" },
   vercel:     { icon: Ship,     color: "text-white",       glowColor: "rgba(255,255,255,0.2)" },
   mcp:        { icon: Cpu,      color: "text-amber-400",   glowColor: "rgba(251,191,36,0.3)" },
-  openrouter: { icon: Bot,      color: "text-cyan-400",    glowColor: "rgba(34,211,238,0.3)" },
+  openrouter: { icon: Bot,      color: "text-red-700",    glowColor: "rgba(34,211,238,0.3)" },
   fal:        { icon: Image,    color: "text-violet-400",  glowColor: "rgba(167,139,250,0.3)" },
   resend:     { icon: Send,     color: "text-blue-400",    glowColor: "rgba(59,130,246,0.3)" },
-  blob:       { icon: Cloud,    color: "text-cyan-400",    glowColor: "rgba(34,211,238,0.3)" },
+  blob:       { icon: Cloud,    color: "text-red-700",    glowColor: "rgba(34,211,238,0.3)" },
   wordpress:  { icon: Globe,    color: "text-slate-400",   glowColor: "rgba(148,163,184,0.2)" },
 };
 

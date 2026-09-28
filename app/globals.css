@@ -147,6 +147,9 @@ body {
  * this page in daylight on a phone.
  * ═════════════════════════════════════════════════════════════════════════ */
 :root {
+  --crimson: #B91C1C;
+  --crimson-deep: #8B0000;
+  --white: #FFFFFF;
   --elite-bg:      #0A0B0A;
   --elite-surface: #131614;
   --elite-ink:     #F3F6EF;
