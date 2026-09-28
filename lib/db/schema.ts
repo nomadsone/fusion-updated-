@@ -1193,3 +1193,54 @@ export const modelPerformance = pgTable("model_performance", {
 ]);
 
 export type ModelPerf = InferSelectModel<typeof modelPerformance>;
+
+// ─── LLM Connections (OpenRouter / Ollama / Hermes / Pi / custom) ───────────
+
+export const llmConnections = pgTable("llm_connections", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  /** openrouter | ollama | hermes | pi | custom */
+  kind: varchar("kind", { length: 30 }).notNull(),
+  name: varchar("name", { length: 120 }).notNull(),
+  baseUrl: varchar("base_url", { length: 500 }).notNull(),
+  /** Optional api_vault row holding the encrypted key */
+  vaultId: uuid("vault_id"),
+  enabled: boolean("enabled").default(true).notNull(),
+  /** unknown | ok | fail */
+  status: varchar("status", { length: 20 }).default("unknown").notNull(),
+  lastCheckedAt: timestamp("last_checked_at"),
+  lastLatencyMs: integer("last_latency_ms"),
+  lastError: text("last_error"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+}, (t) => [index("idx_llm_conn_kind").on(t.kind)]);
+
+export const llmModels = pgTable("llm_models", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  connectionId: uuid("connection_id").references(() => llmConnections.id, { onDelete: "cascade" }).notNull(),
+  modelId: varchar("model_id", { length: 200 }).notNull(),
+  name: varchar("name", { length: 250 }),
+  /** free | paid | local */
+  tier: varchar("tier", { length: 10 }).notNull(),
+  contextLength: integer("context_length"),
+  enabled: boolean("enabled").default(false).notNull(),
+  /** unknown | ok | fail */
+  status: varchar("status", { length: 20 }).default("unknown").notNull(),
+  lastCheckedAt: timestamp("last_checked_at"),
+  lastLatencyMs: integer("last_latency_ms"),
+  lastError: text("last_error"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+}, (t) => [
+  index("idx_llm_models_conn").on(t.connectionId),
+  index("idx_llm_models_combo").on(t.connectionId, t.modelId),
+]);
+
+/** Single-row config: the site-wide default model + paid-model lock. */
+export const llmConfig = pgTable("llm_config", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  defaultModelRowId: uuid("default_model_row_id"),
+  /** false = paid models are hard-blocked everywhere */
+  allowPaid: boolean("allow_paid").default(false).notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export type LlmConnection = InferSelectModel<typeof llmConnections>;
+export type LlmModel = InferSelectModel<typeof llmModels>;
