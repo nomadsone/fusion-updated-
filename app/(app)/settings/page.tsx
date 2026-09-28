@@ -28,6 +28,7 @@ const AI_MODELS = [
   { value: "openai/gpt-4.1", label: "GPT-4.1", provider: "OpenAI", tier: "premium" },
   { value: "google/gemini-2.5-flash", label: "Gemini 2.5 Flash", provider: "Google", tier: "budget" },
   { value: "google/gemini-2.5-pro", label: "Gemini 2.5 Pro", provider: "Google", tier: "premium" },
+  { value: "upstage/solar-pro4:free", label: "Upstage Solar Pro (Free)", provider: "OpenRouter", tier: "free" },
 ];
 
 const IMAGE_MODELS = [
